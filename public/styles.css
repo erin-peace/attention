@@ -1,0 +1,405 @@
+@font-face {
+    font-family: Reglo-Bold;
+    src: url("fonts/Reglo-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: LibreBaskerville-Regular;
+    src: url("fonts/LibreBaskerville-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: CothamSans;
+    src: url("fonts/CothamSans.otf") format("opentype");
+}
+
+#navbar {
+  overflow: visible;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 21;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding-left: 2.5vw;
+  padding-top: 1vw;
+  text-decoration: none;
+  z-index: 21;
+}
+
+#sidemenu1 {
+  z-index: 0;
+  font-family: 'Reglo-Bold';
+  font-size: 3vw;
+  position: fixed;
+  top:20vw;
+  left: 2.5vw;
+}
+#sidemenu2 {
+  z-index: 0;
+  font-family: 'Reglo-Bold';
+  font-size: 3vw;
+  position: fixed;
+  top:25vw;
+  left: 2.5vw;
+}
+#sidemenu3 {
+  z-index: 0;
+  font-family: 'Reglo-Bold';
+  font-size: 3vw;
+  position: fixed;
+  top:30vw;
+  left: 2.5vw;
+}
+
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+  padding: 1px;
+  z-index: 2;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.button {
+  background-color: yellow;
+  border: none;
+  color: black;
+  font-family: 'Reglo-Bold';
+  text-decoration: none;
+  font-size: 30px;
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  z-index: 20;
+}
+.notification-button {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+h1 {
+  font-family: 'Reglo-Bold';
+  font-size: 5vw;
+  text-align: center;
+}
+h2 {
+  font-family: 'Reglo-Bold';
+  font-size: 2vw;
+  padding-right: 1vw;
+}
+h3 {
+  font-family: 'CothamSans';
+  font-size: 5vw;
+}
+h4 {
+  font-family: 'CothamSans';
+  font-size: 2vw;
+  text-align: center;
+  margin-left: 21vw;
+  margin-right: 21vw;
+  line-height: 3vw;
+}
+h5 {
+  font-family: 'Reglo-Bold';
+  font-size: 3vw;
+  padding-right: 2vw;
+}
+h6 {
+  font-family: 'Reglo-Bold';
+  font-size: 2vw;
+  top: 0vw;
+  right: 3.6vw;
+  position: fixed;
+  z-index: 30;
+}
+p {
+  font-family: 'Reglo-Bold';
+  font-size: 3vw;
+}
+
+img{
+    position:absolute;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/*TopMenu*/
+#hello {
+  position: right;
+  margin-top: 3vw;
+  z-index: 22;
+}
+#MessageIcon {
+   z-index: 21;
+   position: fixed;
+   top: 4.6vw;
+   right: 15vw;
+   width: 2.5%;
+}
+#notification-pulse {
+  z-index: 21;
+  position: fixed;
+  top: 1.8vw;
+  right: 12vw;
+  width: 6%;
+}
+#BannerAd {
+   z-index: 20;
+   position: absolute;
+   top: 10vw;
+   left: 3vw;
+   width: 94%;
+}
+
+/*Radio*/
+#radio {
+   z-index: 3;
+   position: absolute;
+   top: 40vw;
+   left: 20vw;
+   width: 20%;
+}
+#notification-radio {
+  z-index: 4;
+  position: absolute;
+  top: 36vw;
+  left: 36vw;
+  width: 8%;
+}
+
+#wave {
+   z-index: 1;
+   position: absolute;
+   top: 15vw;
+   right: 0vw;
+}
+#BtnCEO {
+  position: absolute;
+  top: 100vw;
+  right: 0vw;
+  z-index: 20;
+}
+#BtnGIFs {
+  position: absolute;
+  top: 200vw;
+  right: 0vw;
+  z-index: 20;
+}
+#BtnSushi {
+  position: absolute;
+  top: 300vw;
+  right: 0vw;
+  z-index: 20;
+}
+#BtnStalker {
+  position: absolute;
+  top: 400vw;
+  right: 0vw;
+  z-index: 20;
+}
+#BtnKFC {
+  position: absolute;
+  top: 500vw;
+  right: 0vw;
+  z-index: 20;
+}
+#BtnToddler {
+  position: absolute;
+  top: 600vw;
+  right: 0vw;
+  z-index: 20;
+}
+#BtnInstaRobot {
+  position: absolute;
+  top: 700vw;
+  right: 0vw;
+  z-index: 20;
+}
+#narcissus {
+   z-index: 3;
+   position: absolute;
+   top: 290vw;
+   right: 0vw;
+   width:75%;
+}
+
+/*iPhones*/
+#LeftHand1 {
+  position: absolute;
+  top: 700vw;
+  left: -10vw;
+  z-index: 19;
+  width: 65%;
+}
+#RightHand {
+  position: absolute;
+  top: 710vw;
+  right: 0vw;
+  z-index: 19;
+  width: 65%;
+}
+#LeftHand2 {
+  position: absolute;
+  top: 730vw;
+  left: 0vw;
+  z-index: 19;
+  width: 60%;
+}
+#notification-iPhones {
+  z-index: 30;
+  position: absolute;
+  top: 731.5vw;
+  left: 42.5vw;
+  width: 9%;
+}
+
+#TV {
+	position: absolute;
+	top: 4vw;
+	left: 18vw;
+  z-index: 31;
+}
+
+#minutes {
+  z-index: 21;
+  font-family: 'Reglo-Bold';
+  font-size: 3vw;
+  position: fixed;
+  top: 40vw;
+  left: 3vw;
+  color: rgb(214,194,160)
+}
+#seconds {
+  z-index: 21;
+  font-family: 'Reglo-Bold';
+  font-size: 3vw;
+  position: fixed;
+  top: 40vw;
+  left: 7vw;
+  color: rgb(214,194,160)
+}
+
+#wam-game {
+	height: 100vw;
+	width: 70%;
+	display: block;
+	position: absolute;
+	top: 700vw;
+	left: 5vw;
+  right: 5vw;
+  z-index:32;
+}
+.wam-pesky-mole,
+.wam-pesky-mole-dead {
+	width: 10vw;
+	height: 10vw;
+	background: url('GIFs/notification-transparent.gif') no-repeat;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 10;
+}
+.wam-pesky-mole-dead {
+	background: url('images/mole-dead8.png') no-repeat;
+}
+.wam-scoreboard {
+	width: 60vw;
+	line-height: 3vw;
+	position: fixed;
+	top: 10vw;
+	left: 2vw;
+	font-size: 3vw;
+	text-transform: uppercase;
+	color: red;
+	font-family: Reglo-Bold;
+	z-index: 30;
+}
+.wam-startScreen {
+  position: absolute;
+  top: 31.5vw;
+  left: 41vw;
+	cursor: pointer;
+  font-family: 'CothamSans';
+  font-size: 4vw;
+  color: red;
+	z-index: 32;
+
+}
+.wam-endScreen {
+  height: 300px;
+	width: 300px;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+	cursor: pointer;
+  font-family: 'CothamSans';
+  font-size: 40vw;
+  color: yellow;
+	z-index: 1;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+.modal-content {
+    position: absolute;
+    top:100px;
+    left:100px;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    border: 0px solid #888;
+    width: 50%;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+    z-index: 20;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    padding: 2px 16px;
+    background-color: yellow;
+    color: black;
+}
+.modal-body {
+  padding: 2px 16px;
+  background-color: yellow;
+  color: black;
+}
+.modal-footer {
+    background-color: yellow;
+    padding: 2px 16px;
+    color: black;
+}
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}

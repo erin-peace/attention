@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Reglo-Bold;
+    src: url("fonts/Reglo-Bold.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white; }
+  body .controls {
+    display: none;}
+
+body.preview {
+  background-color: grey; }
+  body.preview .controls {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 40px; }
+  body.preview .paper {
+    background-color: white;
+    width: 440px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    margin: 20px auto;
+}
+
+body.preview .content {
+    -webkit-font-smoothing: antialiased; }
+
+body .content {
+  -webkit-font-smoothing: none;
+  width: 384px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: white; }
+
+h1 {
+    font-family: 'Reglo-Bold', monospace;
+    font-size: 55px;
+    text-align: center;
+
+      }
+
+h2 {
+    font-family: 'Reglo-Bold', monospace;
+    font-size: 30px;
+    text-align: center;
+
+      }
+
+p {
+    font-family: 'Reglo-Bold', monospace;
+    font-size: 25px;
+    text-align: center;
+    }
+
+a {
+  text-decoration: none;
+  color: white;
+}

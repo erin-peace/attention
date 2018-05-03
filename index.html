@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="public/styles.css">
+<title> (1) dopamine</title>
+</head>
+
+<body onLoad="popup('popup-test.html', 'ad')">
+
+<!-- top nav -->
+<div id="navbar"><a href="#home"><p>DOPAMINE</p></a></div>
+<img id="MessageIcon" src="public/images/MessageIcon.png">
+<img id=notification-pulse src="public/GIFs/transparent.gif">
+<h6 onclick="window.location.href = '/print?attention=' + totalSeconds">CHECKOUT</h6>
+
+<!-- banner ad -->
+<img id="BannerAd" src="public/images/BannerAd-test.png">
+
+<!-- side bar -->
+<!-- <div id="sidemenu1">
+<a href="printer/print.html"><h5>SHOP</h5></a>
+</div>
+<div id="sidemenu2">
+<a href="printer/print.html"><h5><font color="red">SALE</font></h5></a>
+</div>
+<div id="sidemenu3">
+<a href="printer/print.html"><h5>ABOUT</h5></a>
+</div> -->
+
+<!-- Timer -->
+<label id="minutes">00</label><label id="seconds">00</label>
+
+<!-- Radio -->
+<img id="radio" src="public/images/radio.svg">
+<button class="notification-button"><img id="notification-radio" src="public/GIFs/transparent.gif"></button>
+
+
+<!-- <img id=wave src="public/images/wave.jpg" width="80%"> -->
+<img id=narcissus src="public/images/echonarcissus.jpg" width="80%">
+<!-- <img id="plant" src="public/images/plant.png"> -->
+<!-- <img id="TV" src="public/images/TV.png"> -->
+
+
+<!-- iPhones -->
+<img id="LeftHand1" src="public/images/LeftBrown.png">
+<img id="LeftHand2" src="public/images/LeftWhite.png">
+<img id="RightHand" src="public/images/RightBrown.png">
+<img id="notification-iPhones" src="public/GIFs/transparent.gif">
+
+
+<div id="wam-game"></div>
+
+<!-- Clickbait -->
+<button id="BtnCEO" class="button">You’ll never guess which CEOs are covered in Tattoos</button>
+<button id="BtnGIFs" class="button">11 perfect GIFs that are too real</button>
+<button id="BtnSushi" class="button">Why you're eating sushi wrong</button>
+<button id="BtnStalker" class="button">Watch this mum punch her daughter’s stalker on CCTV</button>
+<button id="BtnKFC" class="button">KFC unveiled rainbow chicken for Pride week and it’s causing a hilarious controversy</button>
+<button id="BtnToddler" class="button">Watch this toddler freak out at her surprise party</button>
+<button id="BtnInstaRobot" class="button">You’ll never guess which Instagram model is actually a robot</button>
+
+<!-- Modal CEO-->
+<div id="ModalCEO" class="modal">
+<div class="modal-content">
+<div class="modal-header">
+  <span class="close">&times;</span>
+  <h3>CEOs</h3>
+</div>
+<div class="modal-body">
+  <p>Some text in the Modal Body</p>
+</div>
+<div class="modal-footer">
+  <p>Modal Footer</p>
+</div>
+</div>
+</div>
+
+<!-- Modal GIFs---->
+<div id="ModalGIFs" class="modal">
+<div class="modal-content">
+<div class="modal-header">
+  <span class="close">&times;</span>
+  <h3>GIFs</h3>
+</div>
+<div class="modal-body">
+  <p>Some text in the Modal Body</p>
+</div>
+<div class="modal-footer">
+  <p>Modal Footer</p>
+</div>
+</div>
+</div>
+
+<!-- Modal sushi---->
+<div id="ModalSushi" class="modal">
+<div class="modal-content">
+<div class="modal-header">
+  <span class="close">&times;</span>
+  <h3>sushi</h3>
+</div>
+<div class="modal-body">
+  <p>Some text in the Modal Body</p>
+</div>
+<div class="modal-footer">
+  <p>Modal Footer</p>
+</div>
+</div>
+</div>
+
+<!-- Modal stalker---->
+<div id="ModalStalker" class="modal">
+<div class="modal-content">
+<div class="modal-header">
+  <span class="close">&times;</span>
+  <h3>stalker</h3>
+</div>
+<div class="modal-body">
+  <p>Some text in the Modal Body</p>
+</div>
+<div class="modal-footer">
+  <p>Modal Footer</p>
+</div>
+</div>
+</div>
+
+<!-- Modal KFC---->
+<div id="ModalKFC" class="modal">
+<div class="modal-content">
+<div class="modal-header">
+  <span class="close">&times;</span>
+  <h3>stalker</h3>
+</div>
+<div class="modal-body">
+  <p>Some text in the Modal Body</p>
+</div>
+<div class="modal-footer">
+  <p>Modal Footer</p>
+</div>
+</div>
+</div>
+
+<!-- Modal Toddler---->
+<div id="ModalToddler" class="modal">
+<div class="modal-content">
+<div class="modal-header">
+  <span class="close">&times;</span>
+  <h3>Toddler</h3>
+</div>
+<div class="modal-body">
+  <p>Some text in the Modal Body</p>
+</div>
+<div class="modal-footer">
+  <p>Modal Footer</p>
+</div>
+</div>
+</div>
+
+<!-- Modal InstaRobot---->
+<div id="ModalInstaRobot" class="modal">
+<div class="modal-content">
+<div class="modal-header">
+  <span class="close">&times;</span>
+  <h3>InstaRobot</h3>
+</div>
+<div class="modal-body">
+  <p>Some text in the Modal Body</p>
+</div>
+<div class="modal-footer">
+  <p>Modal Footer</p>
+</div>
+</div>
+</div>
+
+<!-- javascript -->
+<script src="public/script.js"></script>
+
+<!--Whack-a-mole Start -->
+<script type="text/javascript" src="public/whackamole.js"></script>
+<script type="text/javascript">
+window.onload = function() {whackamole.setup("wam-game");
+  }
+</script>
+
+
+</body>
