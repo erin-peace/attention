@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
 <link rel="stylesheet" href="public/styles.css">
 <title> (1) dopamine</title>
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+
+
 </head>
 
 <body onLoad="popup('popup-test.html', 'ad')">
@@ -16,6 +20,26 @@
 
 <!-- banner ad -->
 <img id="BannerAd" src="public/images/BannerAd-test.png">
+
+<!-- top picks -->
+<img id="TopPicks" src="public/images/TopPicks.png">
+<img id="AngryNewsGIF" src="public/GIFs/AngryNews.gif">
+<img id="QuizGIF" src="public/GIFs/Quiz.gif">
+<img id="DiceGIF" src="public/GIFs/Die.gif">
+<img id="ScarfGirlGIF" src="public/GIFs/ScarfGirl.gif">
+
+
+<!-- Attention Collection -->
+
+<img id="AttnCollectionTitle" src="public/images/AttnCollectionTitle.png">
+<img id="AttnCollection" src="public/images/AttnCollection2.png">
+<button class="notification-button"><img id="notification-radio" src="public/GIFs/transparent.gif"></button>
+<button class="notification-button"><img id="notification-tv" src="public/GIFs/transparent.gif"></button>
+<!-- <img id="Erino" src="public/images/Erino.png"> -->
+<img id="SmallBanner1" src="public/images/SmallBanner1.png">
+<img id="PuppyCouch" src="public/images/PuppyCouch.png">
+<button class="notification-button"><img id="notification-PuppyCouch" src="public/GIFs/transparent.gif"></button>
+
 
 <!-- side bar -->
 <!-- <div id="sidemenu1">
@@ -31,15 +55,15 @@
 <!-- Timer -->
 <label id="minutes">00</label><label id="seconds">00</label>
 
-<!-- Radio -->
-<img id="radio" src="public/images/radio.svg">
-<button class="notification-button"><img id="notification-radio" src="public/GIFs/transparent.gif"></button>
-
 
 <!-- <img id=wave src="public/images/wave.jpg" width="80%"> -->
 <img id=narcissus src="public/images/echonarcissus.jpg" width="80%">
 <!-- <img id="plant" src="public/images/plant.png"> -->
 <!-- <img id="TV" src="public/images/TV.png"> -->
+
+<!-- start feedwind code -->
+<!-- <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="77819/"></script> -->
+<!-- end feedwind code -->
 
 
 <!-- iPhones -->
@@ -60,103 +84,24 @@
 <button id="BtnToddler" class="button">Watch this toddler freak out at her surprise party</button>
 <button id="BtnInstaRobot" class="button">You’ll never guess which Instagram model is actually a robot</button>
 
-<!-- Modal CEO-->
-<div id="ModalCEO" class="modal">
-<div class="modal-content">
-<div class="modal-header">
+
+<!-- Modal Radio -->
+<div id="ModalRadio" class="modal">
+  <div class="modal-content">
+  <div class="modal-header">
   <span class="close">&times;</span>
   <h3>CEOs</h3>
 </div>
 <div class="modal-body">
   <p>Some text in the Modal Body</p>
 </div>
-<div class="modal-footer">
-  <p>Modal Footer</p>
+<div class="modal-footer"><p>Modal Footer</p>
 </div>
-</div>
-</div>
-
-<!-- Modal GIFs---->
-<div id="ModalGIFs" class="modal">
-<div class="modal-content">
-<div class="modal-header">
-  <span class="close">&times;</span>
-  <h3>GIFs</h3>
-</div>
-<div class="modal-body">
-  <p>Some text in the Modal Body</p>
-</div>
-<div class="modal-footer">
-  <p>Modal Footer</p>
-</div>
-</div>
+  </div>
 </div>
 
-<!-- Modal sushi---->
-<div id="ModalSushi" class="modal">
-<div class="modal-content">
-<div class="modal-header">
-  <span class="close">&times;</span>
-  <h3>sushi</h3>
-</div>
-<div class="modal-body">
-  <p>Some text in the Modal Body</p>
-</div>
-<div class="modal-footer">
-  <p>Modal Footer</p>
-</div>
-</div>
-</div>
 
-<!-- Modal stalker---->
-<div id="ModalStalker" class="modal">
-<div class="modal-content">
-<div class="modal-header">
-  <span class="close">&times;</span>
-  <h3>stalker</h3>
-</div>
-<div class="modal-body">
-  <p>Some text in the Modal Body</p>
-</div>
-<div class="modal-footer">
-  <p>Modal Footer</p>
-</div>
-</div>
-</div>
-
-<!-- Modal KFC---->
-<div id="ModalKFC" class="modal">
-<div class="modal-content">
-<div class="modal-header">
-  <span class="close">&times;</span>
-  <h3>stalker</h3>
-</div>
-<div class="modal-body">
-  <p>Some text in the Modal Body</p>
-</div>
-<div class="modal-footer">
-  <p>Modal Footer</p>
-</div>
-</div>
-</div>
-
-<!-- Modal Toddler---->
-<div id="ModalToddler" class="modal">
-<div class="modal-content">
-<div class="modal-header">
-  <span class="close">&times;</span>
-  <h3>Toddler</h3>
-</div>
-<div class="modal-body">
-  <p>Some text in the Modal Body</p>
-</div>
-<div class="modal-footer">
-  <p>Modal Footer</p>
-</div>
-</div>
-</div>
-
-<!-- Modal InstaRobot---->
+<!-- Modal---->
 <div id="ModalInstaRobot" class="modal">
 <div class="modal-content">
 <div class="modal-header">
@@ -172,6 +117,8 @@
 </div>
 </div>
 
+
+
 <!-- javascript -->
 <script src="public/script.js"></script>
 
@@ -181,6 +128,5 @@
 window.onload = function() {whackamole.setup("wam-game");
   }
 </script>
-
 
 </body>

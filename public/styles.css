@@ -11,6 +11,8 @@
     src: url("fonts/CothamSans.otf") format("opentype");
 }
 
+@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+
 #navbar {
   overflow: visible;
   width: 100%;
@@ -27,7 +29,6 @@
   text-decoration: none;
   z-index: 21;
 }
-
 #sidemenu1 {
   z-index: 0;
   font-family: 'Reglo-Bold';
@@ -52,6 +53,12 @@
   top:30vw;
   left: 2.5vw;
 }
+#feed {
+  margin-top : 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width : 440px;
+}
 
 .content {
   padding: 16px;
@@ -64,9 +71,8 @@
   z-index: 2;
 }
 .sticky + .content {
-  padding-top: 60px;
+  padding-top: 1vw;
 }
-
 .button {
   background-color: yellow;
   border: none;
@@ -125,13 +131,30 @@ p {
   font-family: 'Reglo-Bold';
   font-size: 3vw;
 }
-
 img{
     position:absolute;
 }
 a{
   text-decoration: none;
   color: black;
+}
+
+/*Cookies*/
+#cookie-law {
+    max-width:940px;
+    background:#EEEADD;
+    margin:10px auto 0;
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+}
+#cookie-law p {
+    padding:10px;
+    font-size:1.2em;
+    font-weight:bold;
+    text-align:center;
+    color:#682008;
+    margin:0;
 }
 
 /*TopMenu*/
@@ -154,6 +177,8 @@ a{
   right: 12vw;
   width: 6%;
 }
+
+/*Content*/
 #BannerAd {
    z-index: 20;
    position: absolute;
@@ -161,23 +186,97 @@ a{
    left: 3vw;
    width: 94%;
 }
-
-/*Radio*/
-#radio {
-   z-index: 3;
+#TopPicks {
+   z-index: 20;
+   position: absolute;
+   top: 35vw;
+   left: 3vw;
+   width: 94%;
+}
+#AngryNewsGIF {
+   z-index: 21;
+   position: absolute;
+   top: 33vw;
+   left: 14vw;
+   width: 22%;
+}
+#QuizGIF {
+   z-index: 21;
+   position: absolute;
+   top: 41vw;
+   left: 32vw;
+   width: 10%;
+}
+#ScarfGirlGIF {
+   z-index: 21;
+   position: absolute;
+   top: 41.4vw;
+   left: 53.7vw;
+   width: 15%;
+}
+#DiceGIF {
+   z-index: 21;
    position: absolute;
    top: 40vw;
-   left: 20vw;
-   width: 20%;
+   left: 43.4vw;
+   width: 11.5%;
+}
+#AttnCollectionTitle {
+   z-index: 20;
+   position: absolute;
+   top: 60vw;
+   right: 0vw;
+   width: 100%;
+}
+#AttnCollection {
+   z-index: 20;
+   position: absolute;
+   top: 60vw;
+   right: 0vw;
+   width: 100%;
 }
 #notification-radio {
-  z-index: 4;
+  z-index: 20;
   position: absolute;
-  top: 36vw;
-  left: 36vw;
+  top: 67vw;
+  left: 67vw;
   width: 8%;
 }
-
+#notification-tv {
+  z-index: 20;
+  position: absolute;
+  top: 88.5vw;
+  left: 85vw;
+  width: 8%;
+}
+#Erino  {
+  z-index: 20;
+  position: absolute;
+  top: 98vw;
+  left: 5vw;
+  width: 45%;
+}
+#SmallBanner1 {
+   z-index: 20;
+   position: absolute;
+   top: 115vw;
+   left: 3vw;
+   width: 94%;
+}
+#PuppyCouch{
+  z-index: 20;
+  position: absolute;
+  top: 130vw;
+  left: -1vw;
+  width: 70%;
+}
+#notification-PuppyCouch {
+  z-index: 21;
+  position: absolute;
+  top: 151.2vw;
+  left: 14.5vw;
+  width: 8%;
+}
 #wave {
    z-index: 1;
    position: absolute;
@@ -186,7 +285,7 @@ a{
 }
 #BtnCEO {
   position: absolute;
-  top: 100vw;
+  top: 60vw;
   right: 0vw;
   z-index: 20;
 }
@@ -361,15 +460,15 @@ a{
 }
 .modal-content {
     position: absolute;
-    top:100px;
-    left:100px;
+    top:11vw;
+    left:25vw;
     background-color: white;
     margin: auto;
     padding: 0;
     border: 0px solid #888;
     width: 50%;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.5s
     z-index: 20;
 }
 .close {
@@ -385,20 +484,21 @@ a{
     cursor: pointer;
 }
 .modal-header {
-    padding: 2px 16px;
-    background-color: yellow;
+    padding: 1vw;
+    background-color: #bb7cd6;
     color: black;
 }
 .modal-body {
-  padding: 2px 16px;
-  background-color: yellow;
+  padding: 1vw;
+  background-color: #bb7cd6;
   color: black;
 }
 .modal-footer {
-    background-color: yellow;
-    padding: 2px 16px;
+    background-color: #bb7cd6;
+    padding: 1vw;
     color: black;
 }
+
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
