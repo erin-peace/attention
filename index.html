@@ -5,16 +5,52 @@
 <link rel="stylesheet" href="public/styles.css">
 <title> (1) dopamine</title>
 
-<window onload="popup('popUpDiv')">
 </head>
 
-<body>
+<body onload="firstPopup()">
+
+  <div id="modal-wrapper">
+    <div id="modal">
+      <h1>Here's an immediate popup</h1>
+      <p>It pops up when the page loads. There's some text inside, and a list which reads as follows:</p>
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+      </ul>
+      <p>That's about it! Thanks for stopping by. Feel free to close the modal now.</p>
+      <button type="button" name="button" onclick="closePopup()">Close Modal</button>
+    </div>
+  </div>
+  <div id="modal-wrapper-two">
+    <div id="modal">
+      <h1>Here's a timed popup</h1>
+      <p>It pops up after a designated amount of time. There's some text inside, and a list which reads as follows:</p>
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+      </ul>
+      <p>That's about it! Thanks for stopping by. Feel free to close the modal now.</p>
+      <button type="button" name="button" onclick="closePopupTwo()">Close Modal</button>
+    </div>
+  </div>
 
 <!-- Popup onload -->
-<div id="blanket" style="display:none;"></div>
+<!-- <div id="blanket" style="display:none;"></div>
   <div id="popUpDiv" style="display:none;">
   <a href="#" onclick="popup('popUpDiv')">X</a></div>
-  <a href="#" onclick="popup('popUpDiv')">Click to Open CSS Pop Up</a>
+  <a href="#" onclick="popup('popUpDiv')">Click to Open CSS Pop Up</a>-->
+
+<!-- Popup test -->
+<!-- <a class="trigger_popup_fricc">Click here to show the popup</a> -->
+  <div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">X</div>
+        <p>Add any HTML content<br />inside the popup box!</p>
+    </div>
+  </div>
 
 <!-- top nav -->
 <img id="TinyNav" src="public/images/TinyNav.png">
@@ -23,11 +59,16 @@
 <img id=notification-pulse src="public/GIFs/transparent.gif">
 <h6 onclick="window.location.href = '/print?attention=' + totalSeconds">CHECKOUT</h6>
 
+<!-- <div class="popup" onclick="myFunction()">Click me to toggle the popup!
+  <span class="popuptext" id="myPopup">A Simple Popup!</span>
+</div>-->
+
 <!-- banner ad -->
 <img id="BannerAd" src="public/images/BannerAd-test.png">
 
 <!-- top picks -->
 <img id="TopPicks" src="public/images/TopPicks-old.png">
+<img id="TopPicks-pink" src="public/images/TopPicks.png">
 <img id="AngryNewsGIF" src="public/GIFs/AngryNews.gif">
 <img id="QuizGIF" src="public/GIFs/Quiz.gif">
 <img id="DiceGIF" src="public/GIFs/Die.gif">
@@ -39,6 +80,7 @@
 <img id="AttnCollectionTitle" src="public/images/AttnCollectionTitle.png">
 <img id="Items-three" src="public/images/Items-three.png">
 <img id="Items0" src="public/images/Items-test.png">
+<img id="Radio" src="public/GIFs/Content-1.gif">
 
 
 
@@ -65,9 +107,8 @@
 <img id="Items11" src="public/images/Items-test.png">
 
 <!-- iPhones -->
-<img id="LeftHand1" src="public/images/LeftBrown.png">
-<img id="LeftHand2" src="public/images/LeftWhite.png">
-<img id="RightHand" src="public/images/RightBrown.png">
+<!-- <img id="LeftHand1" src="public/images/lefthand-straight.png"> -->
+<img id="RightHand" src="public/images/righthand-straight.png">
 <img id="notification-iPhones" src="public/GIFs/transparent.gif">
 
 <div id="wam-game"></div>
@@ -115,6 +156,6 @@ window.onload = function() {whackamole.setup("wam-game");
 </script>
 
 <!-- Pop-up On Load -->
-<script type="text/javascript" src="public/css-pop.js"></script>
+<!-- <script type="text/javascript" src="public/css-pop.js"></script> -->
 
 </body>

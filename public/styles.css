@@ -11,6 +11,41 @@
     src: url("fonts/CothamSans.otf") format("opentype");
 }
 
+#modal {
+  background-color: lightgray;
+  border: 2px solid black;
+
+  padding: 20px 40px;
+  width: 50%;
+}
+#modal-wrapper {
+  align-items: center;
+  display: none;
+  justify-content: center;
+  position: absolute;
+  top: 20vw;
+  z-index:33;
+  width:30%;
+}
+#modal-wrapper-two {
+  align-items: center;
+  display: none;
+  top: 20vw;
+  height: 40vh;
+  justify-content: center;
+  position: absolute;
+  z-index: 31;
+}
+#modal button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  transition: background-color .4s ease
+}
+#modal button:hover {
+  background-color: lightblue;
+}
+
+
 h1 {
   font-family: 'Reglo-Bold';
   font-size: 5vw;
@@ -23,15 +58,19 @@ h2 {
 }
 h3 {
   font-family: 'CothamSans';
-  font-size: 5vw;
+  font-size: 3vw;
+  line-height: 4vw;
+  text-align: center;
 }
 h4 {
-  font-family: 'CothamSans';
-  font-size: 2vw;
-  text-align: center;
-  margin-left: 21vw;
-  margin-right: 21vw;
-  line-height: 3vw;
+  font-family: "Helvetica";
+  font-weight: lighter;
+  font-size: .925vw;
+  text-align: justify;
+  margin-left: 29vw;
+  margin-right: 29vw;
+  line-height: 1.2vw;
+  color: gray;
 }
 h5 {
   font-family: 'Reglo-Bold';
@@ -56,6 +95,13 @@ img{
 a{
   text-decoration: none;
   color: black;
+}
+
+#RedStar {
+  z-index: -1;
+  top: 28vw;
+  left: 42vw;
+  width: 15%;
 }
 
 #blanket {
@@ -108,55 +154,6 @@ a{
   border: none;
   cursor: pointer;
   z-index: 20;
-}
-
-.wam-pesky-mole,
-.wam-pesky-mole-dead {
-	width: 10vw;
-	height: 10vw;
-	background: url('GIFs/notification-transparent.gif') no-repeat;
-	position: absolute;
-	display: block;
-	cursor: pointer;
-	z-index: 10;
-}
-.wam-pesky-mole-dead {
-	background: url('images/mole-dead8.png') no-repeat;
-}
-.wam-scoreboard {
-	width: 60vw;
-	line-height: 3vw;
-	position: fixed;
-	top: 10vw;
-	left: 2vw;
-	font-size: 3vw;
-	text-transform: uppercase;
-	color: red;
-	font-family: Reglo-Bold;
-	z-index: 30;
-}
-.wam-startScreen {
-  position: absolute;
-  top: 31.5vw;
-  left: 41vw;
-	cursor: pointer;
-  font-family: 'CothamSans';
-  font-size: 4vw;
-  color: red;
-	z-index: 28;
-
-}
-.wam-endScreen {
-  height: 300px;
-	width: 300px;
-  position: absolute;
-  top: 40%;
-  left: 5%;
-	cursor: pointer;
-  font-family: 'CothamSans';
-  font-size: 40vw;
-  color: yellow;
-	z-index: 1;
 }
 
 .modal {
@@ -215,7 +212,8 @@ a{
 }
 
 #TinyNav {
-  width: 96%;
+  width: 80%;
+  right:3vw;
   background-color: #ffffff;
   z-index: 31;
 }
@@ -257,6 +255,124 @@ a{
   width: 6%;
 }
 
+
+/* Popup box BEGIN */
+.hover_bkgr_fricc{
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.hover_bkgr_fricc .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+.trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Popup box BEGIN */
+/* Popup container - can be anything you want */
+.popup {
+    position: absolute;
+    top: 20vw;
+    right: 10vw;
+    z-index:32;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
 /*Begin Content*/
 #BannerAd {
    z-index: 20;
@@ -269,8 +385,8 @@ a{
    z-index: 20;
    position: absolute;
    top: 30vw;
-   right: 0vw;
-   width: 100%;
+   left: -1vw;
+   width: 90%;
 }
 #Items-three {
    z-index: 19;
@@ -286,10 +402,24 @@ a{
    left: 3vw;
    width: 94%;
 }
+#Radio {
+  z-index: 19;
+  position: absolute;
+  top: 44vw;
+  left: 26.9vw;
+  width: 22.5%;
+}
 
 /*Top Picks*/
 #TopPicks {
    z-index: 20;
+   position: absolute;
+   top: 107vw;
+   left: 3vw;
+   width: 94%;
+}
+#TopPicks-pink {
+   z-index: 21;
    position: absolute;
    top: 107vw;
    left: 3vw;
@@ -455,42 +585,83 @@ a{
 
 /*iPhones*/
 #wam-game {
-	height: 100vw;
-	width: 70%;
+	height: 15vw;
+	width: 30%;
 	display: block;
 	position: absolute;
-	top: 400vw;
-	left: 5vw;
-  right: 5vw;
+	top: 335vw;
+	left: 55vw;
   z-index:30;
 }
 #LeftHand1 {
   position: absolute;
   top: 400vw;
-  left: -10vw;
+  left: 0vw;
   z-index: 21;
-  width: 65%;
+  width: 100%;
 }
 #RightHand {
   position: absolute;
-  top: 410vw;
+  top: 310vw;
   right: 0vw;
   z-index: 21;
-  width: 65%;
-}
-#LeftHand2 {
-  position: absolute;
-  top: 430vw;
-  left: 0vw;
-  z-index: 21;
-  width: 60%;
+  width: 100%;
 }
 #notification-iPhones {
   z-index: 30;
   position: absolute;
-  top: 431.5vw;
-  left: 42.5vw;
+  top: 334.5vw;
+  left: 48vw;
   width: 9%;
+}
+.wam-pesky-mole,
+.wam-pesky-mole-dead {
+	width: 10vw;
+	height: 10vw;
+	background: url('GIFs/notification-transparent.gif') no-repeat;
+  background-size: 8vw 8vw;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 10;
+}
+.wam-pesky-mole-dead {
+	background: url('images/mole-dead8.png') no-repeat;
+}
+.wam-scoreboard {
+	width: 60vw;
+	line-height: 3vw;
+	position: fixed;
+	top: 10vw;
+	left: 2vw;
+	font-size: 3vw;
+	text-transform: uppercase;
+	color: red;
+	font-family: Reglo-Bold;
+	z-index: 30;
+}
+.wam-startScreen {
+  position: absolute;
+  top: -1.5vw;
+  left: -3.5vw;
+	cursor: pointer;
+  font-family: 'CothamSans';
+  font-size: 4vw;
+  color: red;
+	z-index: 28;
+
+}
+.wam-endScreen {
+  height: 300px;
+	width: 300px;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+	cursor: pointer;
+  font-family: 'CothamSans';
+  font-size: 40vw;
+  color: yellow;
+	z-index: 1;
 }
 
 
@@ -501,31 +672,33 @@ a{
    left: 3vw;
    width: 94%;
 }
+
+/*Footers*/
 #footer{
-  z-index: 30;
+  z-index: 29;
   position: absolute;
   top: 509vw;
-  left: 0vw;
-  width: 95%;
+  left: 2vw;
+  width: 97%;
 }
 
 
-
+/*Timers*/
 #minutes {
-  z-index: 21;
+  z-index: 31;
   font-family: 'Reglo-Bold';
   font-size: 3vw;
   position: fixed;
-  top: 40vw;
-  left: 3vw;
-  color: rgb(214,194,160)
+  top: 4vw;
+  left: 47vw;
+  color: #F7F7F7;
 }
 #seconds {
-  z-index: 21;
+  z-index: 31;
   font-family: 'Reglo-Bold';
   font-size: 3vw;
   position: fixed;
-  top: 40vw;
-  left: 7vw;
-  color: rgb(214,194,160)
+  top: 4vw;
+  left: 51vw;
+  color: #F7F7F7;
 }
