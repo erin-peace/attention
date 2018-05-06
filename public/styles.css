@@ -11,53 +11,51 @@
     src: url("fonts/CothamSans.otf") format("opentype");
 }
 
-@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
-
-#navbar {
-  overflow: visible;
-  width: 100%;
-  background-color: #ffffff;
-  z-index: 21;
-}
-#navbar a {
-  float: left;
-  display: block;
-  color: #000000;
+h1 {
+  font-family: 'Reglo-Bold';
+  font-size: 5vw;
   text-align: center;
-  padding-left: 2.5vw;
-  padding-top: 1vw;
+}
+h2 {
+  font-family: 'Reglo-Bold';
+  font-size: 2vw;
+  padding-right: 1vw;
+}
+h3 {
+  font-family: 'CothamSans';
+  font-size: 5vw;
+}
+h4 {
+  font-family: 'CothamSans';
+  font-size: 2vw;
+  text-align: center;
+  margin-left: 21vw;
+  margin-right: 21vw;
+  line-height: 3vw;
+}
+h5 {
+  font-family: 'Reglo-Bold';
+  font-size: 3vw;
+  padding-right: 2vw;
+}
+h6 {
+  font-family: 'Reglo-Bold';
+  font-size: 2vw;
+  top: 0vw;
+  right: 3.6vw;
+  position: fixed;
+  z-index: 32;
+}
+p {
+  font-family: 'Reglo-Bold';
+  font-size: 3vw;
+}
+img{
+    position:absolute;
+}
+a{
   text-decoration: none;
-  z-index: 21;
-}
-#sidemenu1 {
-  z-index: 0;
-  font-family: 'Reglo-Bold';
-  font-size: 3vw;
-  position: fixed;
-  top:20vw;
-  left: 2.5vw;
-}
-#sidemenu2 {
-  z-index: 0;
-  font-family: 'Reglo-Bold';
-  font-size: 3vw;
-  position: fixed;
-  top:25vw;
-  left: 2.5vw;
-}
-#sidemenu3 {
-  z-index: 0;
-  font-family: 'Reglo-Bold';
-  font-size: 3vw;
-  position: fixed;
-  top:30vw;
-  left: 2.5vw;
-}
-#feed {
-  margin-top : 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width : 440px;
+  color: black;
 }
 
 .content {
@@ -92,313 +90,6 @@
   z-index: 20;
 }
 
-h1 {
-  font-family: 'Reglo-Bold';
-  font-size: 5vw;
-  text-align: center;
-}
-h2 {
-  font-family: 'Reglo-Bold';
-  font-size: 2vw;
-  padding-right: 1vw;
-}
-h3 {
-  font-family: 'CothamSans';
-  font-size: 5vw;
-}
-h4 {
-  font-family: 'CothamSans';
-  font-size: 2vw;
-  text-align: center;
-  margin-left: 21vw;
-  margin-right: 21vw;
-  line-height: 3vw;
-}
-h5 {
-  font-family: 'Reglo-Bold';
-  font-size: 3vw;
-  padding-right: 2vw;
-}
-h6 {
-  font-family: 'Reglo-Bold';
-  font-size: 2vw;
-  top: 0vw;
-  right: 3.6vw;
-  position: fixed;
-  z-index: 30;
-}
-p {
-  font-family: 'Reglo-Bold';
-  font-size: 3vw;
-}
-img{
-    position:absolute;
-}
-a{
-  text-decoration: none;
-  color: black;
-}
-
-/*Cookies*/
-#cookie-law {
-    max-width:940px;
-    background:#EEEADD;
-    margin:10px auto 0;
-    border-radius: 17px;
-    -webkit-border-radius: 17px;
-    -moz-border-radius: 17px;
-}
-#cookie-law p {
-    padding:10px;
-    font-size:1.2em;
-    font-weight:bold;
-    text-align:center;
-    color:#682008;
-    margin:0;
-}
-
-/*TopMenu*/
-#hello {
-  position: right;
-  margin-top: 3vw;
-  z-index: 22;
-}
-#MessageIcon {
-   z-index: 21;
-   position: fixed;
-   top: 4.6vw;
-   right: 15vw;
-   width: 2.5%;
-}
-#notification-pulse {
-  z-index: 21;
-  position: fixed;
-  top: 1.8vw;
-  right: 12vw;
-  width: 6%;
-}
-
-/*Content*/
-#BannerAd {
-   z-index: 20;
-   position: absolute;
-   top: 10vw;
-   left: 3vw;
-   width: 94%;
-}
-#TopPicks {
-   z-index: 20;
-   position: absolute;
-   top: 35vw;
-   left: 3vw;
-   width: 94%;
-}
-#AngryNewsGIF {
-   z-index: 21;
-   position: absolute;
-   top: 33vw;
-   left: 14vw;
-   width: 22%;
-}
-#QuizGIF {
-   z-index: 21;
-   position: absolute;
-   top: 41vw;
-   left: 32vw;
-   width: 10%;
-}
-#ScarfGirlGIF {
-   z-index: 21;
-   position: absolute;
-   top: 41.4vw;
-   left: 53.7vw;
-   width: 15%;
-}
-#DiceGIF {
-   z-index: 21;
-   position: absolute;
-   top: 40vw;
-   left: 43.4vw;
-   width: 11.5%;
-}
-#AttnCollectionTitle {
-   z-index: 20;
-   position: absolute;
-   top: 60vw;
-   right: 0vw;
-   width: 100%;
-}
-#AttnCollection {
-   z-index: 20;
-   position: absolute;
-   top: 60vw;
-   right: 0vw;
-   width: 100%;
-}
-#notification-radio {
-  z-index: 20;
-  position: absolute;
-  top: 67vw;
-  left: 67vw;
-  width: 8%;
-}
-#notification-tv {
-  z-index: 20;
-  position: absolute;
-  top: 88.5vw;
-  left: 85vw;
-  width: 8%;
-}
-#Erino  {
-  z-index: 20;
-  position: absolute;
-  top: 98vw;
-  left: 5vw;
-  width: 45%;
-}
-#SmallBanner1 {
-   z-index: 20;
-   position: absolute;
-   top: 115vw;
-   left: 3vw;
-   width: 94%;
-}
-#PuppyCouch{
-  z-index: 20;
-  position: absolute;
-  top: 130vw;
-  left: -1vw;
-  width: 70%;
-}
-#notification-PuppyCouch {
-  z-index: 21;
-  position: absolute;
-  top: 151.2vw;
-  left: 14.5vw;
-  width: 8%;
-}
-#wave {
-   z-index: 1;
-   position: absolute;
-   top: 15vw;
-   right: 0vw;
-}
-#BtnCEO {
-  position: absolute;
-  top: 60vw;
-  right: 0vw;
-  z-index: 20;
-}
-#BtnGIFs {
-  position: absolute;
-  top: 200vw;
-  right: 0vw;
-  z-index: 20;
-}
-#BtnSushi {
-  position: absolute;
-  top: 300vw;
-  right: 0vw;
-  z-index: 20;
-}
-#BtnStalker {
-  position: absolute;
-  top: 400vw;
-  right: 0vw;
-  z-index: 20;
-}
-#BtnKFC {
-  position: absolute;
-  top: 500vw;
-  right: 0vw;
-  z-index: 20;
-}
-#BtnToddler {
-  position: absolute;
-  top: 600vw;
-  right: 0vw;
-  z-index: 20;
-}
-#BtnInstaRobot {
-  position: absolute;
-  top: 700vw;
-  right: 0vw;
-  z-index: 20;
-}
-#narcissus {
-   z-index: 3;
-   position: absolute;
-   top: 290vw;
-   right: 0vw;
-   width:75%;
-}
-
-/*iPhones*/
-#LeftHand1 {
-  position: absolute;
-  top: 700vw;
-  left: -10vw;
-  z-index: 19;
-  width: 65%;
-}
-#RightHand {
-  position: absolute;
-  top: 710vw;
-  right: 0vw;
-  z-index: 19;
-  width: 65%;
-}
-#LeftHand2 {
-  position: absolute;
-  top: 730vw;
-  left: 0vw;
-  z-index: 19;
-  width: 60%;
-}
-#notification-iPhones {
-  z-index: 30;
-  position: absolute;
-  top: 731.5vw;
-  left: 42.5vw;
-  width: 9%;
-}
-
-#TV {
-	position: absolute;
-	top: 4vw;
-	left: 18vw;
-  z-index: 31;
-}
-
-#minutes {
-  z-index: 21;
-  font-family: 'Reglo-Bold';
-  font-size: 3vw;
-  position: fixed;
-  top: 40vw;
-  left: 3vw;
-  color: rgb(214,194,160)
-}
-#seconds {
-  z-index: 21;
-  font-family: 'Reglo-Bold';
-  font-size: 3vw;
-  position: fixed;
-  top: 40vw;
-  left: 7vw;
-  color: rgb(214,194,160)
-}
-
-#wam-game {
-	height: 100vw;
-	width: 70%;
-	display: block;
-	position: absolute;
-	top: 700vw;
-	left: 5vw;
-  right: 5vw;
-  z-index:32;
-}
 .wam-pesky-mole,
 .wam-pesky-mole-dead {
 	width: 10vw;
@@ -432,7 +123,7 @@ a{
   font-family: 'CothamSans';
   font-size: 4vw;
   color: red;
-	z-index: 32;
+	z-index: 28;
 
 }
 .wam-endScreen {
@@ -498,8 +189,321 @@ a{
     padding: 1vw;
     color: black;
 }
-
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
+}
+
+#TinyNav {
+  width: 96%;
+  background-color: #ffffff;
+  z-index: 31;
+}
+#navbar {
+  overflow: visible;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 31;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding-left: 2.5vw;
+  padding-top: 1vw;
+  text-decoration: none;
+  z-index: 32;
+}
+
+/*TopMenu*/
+#hello {
+  position: right;
+  margin-top: 3vw;
+  z-index: 22;
+}
+#MessageIcon {
+   z-index: 32;
+   position: fixed;
+   top: 4.6vw;
+   right: 15vw;
+   width: 2.5%;
+}
+#notification-pulse {
+  z-index: 32;
+  position: fixed;
+  top: 1.8vw;
+  right: 12vw;
+  width: 6%;
+}
+
+/*Begin Content*/
+#BannerAd {
+   z-index: 20;
+   position: absolute;
+   top: 10vw;
+   left: 3vw;
+   width: 94%;
+}
+#AttnCollectionTitle {
+   z-index: 20;
+   position: absolute;
+   top: 30vw;
+   right: 0vw;
+   width: 100%;
+}
+#Items-three {
+   z-index: 19;
+   position: absolute;
+   top: 44vw;
+   left: 3vw;
+   width: 94%;
+}
+#Items0 {
+   z-index: 19;
+   position: absolute;
+   top: 74vw;
+   left: 3vw;
+   width: 94%;
+}
+
+/*Top Picks*/
+#TopPicks {
+   z-index: 20;
+   position: absolute;
+   top: 105vw;
+   left: 3vw;
+   width: 94%;
+}
+#AngryNewsGIF {
+   z-index: 21;
+   position: absolute;
+   top: 103vw;
+   left: 14vw;
+   width: 22%;
+}
+#QuizGIF {
+   z-index: 21;
+   position: absolute;
+   top: 111vw;
+   left: 32vw;
+   width: 10%;
+}
+#ScarfGirlGIF {
+   z-index: 21;
+   position: absolute;
+   top: 111.4vw;
+   left: 53.7vw;
+   width: 15%;
+}
+#DiceGIF {
+   z-index: 21;
+   position: absolute;
+   top: 110vw;
+   left: 43.4vw;
+   width: 11.5%;
+}
+
+/*Attention Collection*/
+
+#AttnCollection {
+   z-index: 20;
+   position: absolute;
+   top: 60vw;
+   right: 0vw;
+   width: 100%;
+}
+#notification-radio {
+  z-index: 20;
+  position: absolute;
+  top: 67vw;
+  left: 67vw;
+  width: 8%;
+}
+#notification-tv {
+  z-index: 20;
+  position: absolute;
+  top: 88.5vw;
+  left: 85vw;
+  width: 8%;
+}
+#Items {
+  z-index: 20;
+  position: absolute;
+  top: 125vw;
+  left: 3vw;
+  width: 94%;
+}
+#Items2 {
+  z-index: 20;
+  position: absolute;
+  top: 155vw;
+  left: 3vw;
+  width: 94%;
+}
+#PuppyCouch{
+  z-index: 20;
+  position: absolute;
+  top: 130vw;
+  left: -1vw;
+  width: 70%;
+}
+#notification-PuppyCouch {
+  z-index: 21;
+  position: absolute;
+  top: 151.2vw;
+  left: 14.5vw;
+  width: 8%;
+}
+#Items3 {
+  z-index: 20;
+  position: absolute;
+  top: 185vw;
+  left: 3vw;
+  width: 94%;
+}
+#SmallBanner1 {
+   z-index: 20;
+   position: absolute;
+   top: 215vw;
+   left: 3vw;
+   width: 94%;
+}
+#Items4 {
+  z-index: 20;
+  position: absolute;
+  top: 230vw;
+  left: 3vw;
+  width: 94%;
+}
+#Items5 {
+  z-index: 20;
+  position: absolute;
+  top: 260vw;
+  left: 3vw;
+  width: 94%;
+}
+#SmallBanner2 {
+   z-index: 20;
+   position: absolute;
+   top: 290vw;
+   left: 3vw;
+   width: 94%;
+}
+#Items6 {
+  z-index: 20;
+  position: absolute;
+  top: 305vw;
+  left: 3vw;
+  width: 94%;
+}
+#Items7 {
+  z-index: 20;
+  position: absolute;
+  top: 335vw;
+  left: 3vw;
+  width: 94%;
+}
+#Items8 {
+  z-index: 20;
+  position: absolute;
+  top: 365vw;
+  left: 3vw;
+  width: 94%;
+}
+#Items9 {
+  z-index: 20;
+  position: absolute;
+  top: 395vw;
+  left: 3vw;
+  width: 94%;
+}
+#Items10 {
+  z-index: 20;
+  position: absolute;
+  top: 425vw;
+  left: 3vw;
+  width: 94%;
+}
+#Items11 {
+  z-index: 20;
+  position: absolute;
+  top: 455vw;
+  left: 3vw;
+  width: 94%;
+}
+
+/*iPhones*/
+#wam-game {
+	height: 100vw;
+	width: 70%;
+	display: block;
+	position: absolute;
+	top: 400vw;
+	left: 5vw;
+  right: 5vw;
+  z-index:30;
+}
+#LeftHand1 {
+  position: absolute;
+  top: 400vw;
+  left: -10vw;
+  z-index: 21;
+  width: 65%;
+}
+#RightHand {
+  position: absolute;
+  top: 410vw;
+  right: 0vw;
+  z-index: 21;
+  width: 65%;
+}
+#LeftHand2 {
+  position: absolute;
+  top: 430vw;
+  left: 0vw;
+  z-index: 21;
+  width: 60%;
+}
+#notification-iPhones {
+  z-index: 30;
+  position: absolute;
+  top: 431.5vw;
+  left: 42.5vw;
+  width: 9%;
+}
+#SmallBanner3 {
+   z-index: 20;
+   position: absolute;
+   top: 470vw;
+   left: 3vw;
+   width: 94%;
+}
+#footer{
+  z-index: 30;
+  position: absolute;
+  top: 490vw;
+  left: 10vw;
+  width: 90%;
+}
+
+
+
+#minutes {
+  z-index: 21;
+  font-family: 'Reglo-Bold';
+  font-size: 3vw;
+  position: fixed;
+  top: 40vw;
+  left: 3vw;
+  color: rgb(214,194,160)
+}
+#seconds {
+  z-index: 21;
+  font-family: 'Reglo-Bold';
+  font-size: 3vw;
+  position: fixed;
+  top: 40vw;
+  left: 7vw;
+  color: rgb(214,194,160)
 }
