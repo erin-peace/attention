@@ -1,6 +1,4 @@
-function myFunction() {
-    alert("I am an alert box!");
-}
+
 
 // NAVBAR
 window.onscroll = function() {myFunction()};

@@ -5,12 +5,16 @@
 <link rel="stylesheet" href="public/styles.css">
 <title> (1) dopamine</title>
 
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-
-
+<window onload="popup('popUpDiv')">
 </head>
 
-<body onLoad="popup('popup-test.html', 'ad')">
+<body>
+
+<!-- Popup onload -->
+<div id="blanket" style="display:none;"></div>
+  <div id="popUpDiv" style="display:none;">
+  <a href="#" onclick="popup('popUpDiv')">X</a></div>
+  <a href="#" onclick="popup('popUpDiv')">Click to Open CSS Pop Up</a>
 
 <!-- top nav -->
 <img id="TinyNav" src="public/images/TinyNav.png">
@@ -94,11 +98,7 @@
 </div>
 
 <!--Footer-->
-<div id="footer">
-  <p>Posted by: Hege Refsnes</p>
-  <p>Contact information: <a href="mailto:someone@example.com">
-  someone@example.com</a>.</p>
-</div>
+<img id="footer" src="public/images/footer-placeholder.png">
 
 <!-- Timer -->
 <label id="minutes">00</label><label id="seconds">00</label>
@@ -113,5 +113,8 @@
 window.onload = function() {whackamole.setup("wam-game");
   }
 </script>
+
+<!-- Pop-up On Load -->
+<script type="text/javascript" src="public/css-pop.js"></script>
 
 </body>
