@@ -9,54 +9,27 @@
 
 <body onload="firstPopup()">
 
-  <div id="modal-wrapper">
-    <div id="modal">
-      <h1>Here's an immediate popup</h1>
-      <p>It pops up when the page loads. There's some text inside, and a list which reads as follows:</p>
-      <ul>
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-      </ul>
-      <p>That's about it! Thanks for stopping by. Feel free to close the modal now.</p>
-      <button type="button" name="button" onclick="closePopup()">Close Modal</button>
-    </div>
-  </div>
+
   <div id="modal-wrapper-two">
     <div id="modal">
-      <h1>Here's a timed popup</h1>
-      <p>It pops up after a designated amount of time. There's some text inside, and a list which reads as follows:</p>
-      <ul>
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-      </ul>
-      <p>That's about it! Thanks for stopping by. Feel free to close the modal now.</p>
+      <h3>Here's a timed popup</h3>
+      <h3>It pops up after a designated amount of time. There's some text inside, and a list which reads as follows:</h3>
       <button type="button" name="button" onclick="closePopupTwo()">Close Modal</button>
     </div>
   </div>
-
-<!-- Popup onload -->
-<!-- <div id="blanket" style="display:none;"></div>
-  <div id="popUpDiv" style="display:none;">
-  <a href="#" onclick="popup('popUpDiv')">X</a></div>
-  <a href="#" onclick="popup('popUpDiv')">Click to Open CSS Pop Up</a>-->
-
-<!-- Popup test -->
-<!-- <a class="trigger_popup_fricc">Click here to show the popup</a> -->
-  <div class="hover_bkgr_fricc">
-    <span class="helper"></span>
-    <div>
-        <div class="popupCloseButton">X</div>
-        <p>Add any HTML content<br />inside the popup box!</p>
+  <div id="messagePopup">
+    <div id="modal2">
+      <h3>message</h3>
+      <button type="button" name="button" onclick="closemessagePopup()">Close</button>
     </div>
   </div>
 
+
 <!-- top nav -->
 <img id="TinyNav" src="public/images/TinyNav.png">
-<div id="navbar"><a href="#home"><p>DOPAMINE</p></a></div>
+<div id="navbar"><a href="#home"><h3>DOPAMINE</h3></a></div>
 <img id="MessageIcon" src="public/images/MessageIcon.png">
-<img id=notification-pulse src="public/GIFs/transparent.gif">
+<img id=notification-pulse src="public/GIFs/transparent.gif" onclick="messagePopup()">
 <h6 onclick="window.location.href = '/print?attention=' + totalSeconds">CHECKOUT</h6>
 
 <!-- <div class="popup" onclick="myFunction()">Click me to toggle the popup!
@@ -67,7 +40,7 @@
 <img id="BannerAd" src="public/images/BannerAd-test.png">
 
 <!-- top picks -->
-<img id="TopPicks" src="public/images/TopPicks-old.png">
+<!-- <img id="TopPicks" src="public/images/TopPicks-old.png"> -->
 <img id="TopPicks-pink" src="public/images/TopPicks.png">
 <img id="AngryNewsGIF" src="public/GIFs/AngryNews.gif">
 <img id="QuizGIF" src="public/GIFs/Quiz.gif">
@@ -78,9 +51,39 @@
 <!-- Attention Collection -->
 
 <img id="AttnCollectionTitle" src="public/images/AttnCollectionTitle.png">
-<img id="Items-three" src="public/images/Items-three.png">
-<img id="Items0" src="public/images/Items-test.png">
-<img id="Radio" src="public/GIFs/Content-1.gif">
+<!-- <img id="Items-three" src="public/images/Items-three.png"> -->
+<!-- <img id="Items0" src="public/images/Items-test.png"> -->
+<!-- <img id="Radio" src="public/GIFs/Content-1.gif"> -->
+<img id="Story1" src="public/images/CA.png">
+<img id="Story2" src="public/images/InstaRobot.png">
+<img id="Story3" src="public/images/Eyes.png">
+<img id="Story4" src="public/images/CSM.png">
+<img id="Story5" src="public/images/InstaRobot.png">
+<img id="Story6" src="public/images/AttnStory.png">
+
+<img id="Story7" src="public/images/MarkyMark.png">
+<img id="MarkyMark" src="public/GIFs/MarkyMark.gif">
+
+<img id="Story8" src="public/images/Pay4Social.png">
+<img id="InstaQs" src="public/GIFs/InstaQs.gif">
+
+<img id="Story9" src="public/images/DarkPatterns.png">
+
+<img id="Story10" src="public/images/Eyes.png">
+<img id="Eyes" src="public/GIFs/eyes.gif">
+
+<img id="Story11" src="public/images/CA.png">
+
+<img id="Story12" src="public/images/Eyes.png">
+
+<img id="Story13" src="public/images/Story3.png">
+<img id="Story14" src="public/images/Story1.png">
+<img id="Story15" src="public/images/Story3.png">
+<img id="Story16" src="public/images/Story3.png">
+<img id="Story17" src="public/images/Story1.png">
+<img id="Story18" src="public/images/Story3.png">
+<img id="Story19" src="public/images/Story3.png">
+<img id="Story20" src="public/images/Story1.png">
 
 
 
@@ -89,22 +92,18 @@
 <button class="notification-button"><img id="notification-radio" src="public/GIFs/transparent.gif"></button>
 <button class="notification-button"><img id="notification-tv" src="public/GIFs/transparent.gif"></button> -->
 
-<img id="Items" src="public/images/Items-test.png">
-<img id="Items2" src="public/images/Items-test.png">
-<img id="Items3" src="public/images/Items-test.png">
+<!-- <img id="Items" src="public/images/Items-test.png"> -->
+<!-- <img id="Items2" src="public/images/Items-test.png"> -->
+<!-- <img id="Items3" src="public/images/Items-test.png"> -->
 <img id="SmallBanner1" src="public/images/SmallBanner1.png">
 <img id="PuppyCouch" src="public/images/PuppyCouch.png">
 <button class="notification-button"><img id="notification-PuppyCouch" src="public/GIFs/transparent.gif"></button>
 <img id="SmallBanner2" src="public/images/SmallBanner1.png">
-<img id="Items4" src="public/images/Items-test.png">
-<img id="Items5" src="public/images/Items-test.png">
+<!-- <img id="Items4" src="public/images/Items-test.png"> -->
+<!-- <img id="Items5" src="public/images/Items-test.png"> -->
 <img id="SmallBanner3" src="public/images/SmallBanner1.png">
-<img id="Items6" src="public/images/Items-test.png">
-<img id="Items7" src="public/images/Items-test.png">
-<img id="Items8" src="public/images/Items-test.png">
-<img id="Items9" src="public/images/Items-test.png">
-<img id="Items10" src="public/images/Items-test.png">
-<img id="Items11" src="public/images/Items-test.png">
+<!-- <img id="Items6" src="public/images/Items-test.png"> -->
+<!-- <img id="Items7" src="public/images/Items-test.png"> -->
 
 <!-- iPhones -->
 <!-- <img id="LeftHand1" src="public/images/lefthand-straight.png"> -->
@@ -122,21 +121,6 @@
   <button id="BtnToddler" class="button">Watch this toddler freak out at her surprise party</button>
   <button id="BtnInstaRobot" class="button">You’ll never guess which Instagram model is actually a robot</button> -->
 
-<!-- Modal---->
-<div id="ModalInstaRobot" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h3>InstaRobot</h3>
-  </div>
-    <div class="modal-body">
-      <p>Some text in the Modal Body</p>
-    </div>
-    <div class="modal-footer">
-      <p>Modal Footer</p>
-    </div>
-  </div>
-</div>
 
 <!--Footer-->
 <img id="footer" src="public/images/footer-placeholder.png">

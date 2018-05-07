@@ -18,6 +18,12 @@
   padding: 20px 40px;
   width: 50%;
 }
+#modal2 {
+  background-color: lightgray;
+  border: 2px solid black;
+  padding: 2vw;
+  width: 100%;
+}
 #modal-wrapper {
   align-items: center;
   display: none;
@@ -37,11 +43,21 @@
   z-index: 31;
 }
 #modal button {
+  padding: 1vw 2vw;
+  border: .1vw solid black;
+  transition: background-color .4s ease
+  position:absolute;
+  left: 5vw;
+}
+#modal button:hover {
+  background-color: lightblue;
+}
+#modal2 button {
   padding: 10px 20px;
   border: 2px solid black;
   transition: background-color .4s ease
 }
-#modal button:hover {
+#modal2 button:hover {
   background-color: lightblue;
 }
 
@@ -103,26 +119,6 @@ a{
   left: 42vw;
   width: 15%;
 }
-
-#blanket {
-   background-color:#111;
-   opacity: 0.65;
-   *background:none;
-   position:absolute;
-   z-index: 9001;
-   top:0px;
-   left:0px;
-   width:100%;
-}
-#popUpDiv {
-	position:absolute;
-	background:url(pop-back.jpg) no-repeat;
-	width:400px;
-	height:400px;
-	border:5px solid #000;
-	z-index: 9002;
-}
-#popUpDiv a {position:relative; top:20px; left:20px}
 
 .content {
   padding: 16px;
@@ -250,115 +246,20 @@ a{
 #notification-pulse {
   z-index: 32;
   position: fixed;
+  cursor:pointer;
   top: 1.8vw;
   right: 12vw;
   width: 6%;
 }
-
-
-/* Popup box BEGIN */
-.hover_bkgr_fricc{
-    background:rgba(0,0,0,.4);
-    cursor:pointer;
-    display:none;
-    height:100%;
-    position:fixed;
-    text-align:center;
-    top:0;
-    width:100%;
-    z-index:10000;
-}
-.hover_bkgr_fricc .helper{
-    display:inline-block;
-    height:100%;
-    vertical-align:middle;
-}
-.hover_bkgr_fricc > div {
-    background-color: #fff;
-    box-shadow: 10px 10px 60px #555;
-    display: inline-block;
-    height: auto;
-    max-width: 551px;
-    min-height: 100px;
-    vertical-align: middle;
-    width: 60%;
-    position: relative;
-    border-radius: 8px;
-    padding: 15px 5%;
-}
-.popupCloseButton {
-    background-color: #fff;
-    border: 3px solid #999;
-    border-radius: 50px;
-    cursor: pointer;
-    display: inline-block;
-    font-family: arial;
-    font-weight: bold;
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    font-size: 25px;
-    line-height: 30px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-}
-.popupCloseButton:hover {
-    background-color: #ccc;
-}
-.trigger_popup_fricc {
-    cursor: pointer;
-    font-size: 20px;
-    margin: 20px;
-    display: inline-block;
-    font-weight: bold;
-}
-
-/* Popup box BEGIN */
-/* Popup container - can be anything you want */
-.popup {
-    position: absolute;
-    top: 20vw;
-    right: 10vw;
-    z-index:32;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-/* The actual popup */
-.popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-}
-/* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-/* Toggle this class - hide and show the popup */
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+#messagePopup{
+  align-items: center;
+  display: none;
+  justify-content: right;
+  position: fixed;
+  top: 7vw;
+  right: 2vw;
+  z-index:33;
+  width: 30%;
 }
 
 /* Add animation (fade in the popup) */
@@ -386,16 +287,16 @@ a{
    position: absolute;
    top: 30vw;
    left: -1vw;
-   width: 90%;
+   width: 115%;
 }
-#Items-three {
+/* #Items-three { */
    z-index: 19;
    position: absolute;
    top: 44vw;
    left: 3vw;
    width: 94%;
 }
-#Items0 {
+/* #Items0 { */
    z-index: 19;
    position: absolute;
    top: 74vw;
@@ -409,14 +310,181 @@ a{
   left: 26.9vw;
   width: 22.5%;
 }
+#Story1 {
+  z-index: 19;
+  position: absolute;
+  top: 44vw;
+  left: 38.6vw;
+  width: 22.5%;
+}
+#Story2 {
+  z-index: 19;
+  position: absolute;
+  top: 44vw;
+  left: 63.5vw;
+  width: 22.5%;
+}
+#Story3 {
+  z-index: 19;
+  position: absolute;
+  top: 65vw;
+  left: 13.7vw;
+  width: 22.5%;
+}
+#Story4 {
+  z-index: 19;
+  position: absolute;
+  top: 65vw;
+  left: 38.6vw;
+  width: 22.5%;
+}
+#Story5 {
+  z-index: 19;
+  position: absolute;
+  top: 65vw;
+  left: 64.5vw;
+  width: 22.5%;
+}
+#InstaQs {
+  z-index: 19;
+  position: absolute;
+  top: 62.5vw;
+  left: 64vw;
+  width: 22.5%;
+}
+#Story6 {
+  z-index: 19;
+  position: absolute;
+  top: 86vw;
+  left: 13.7vw;
+  width: 22.5%;
+}
+
+#Story7 {
+  z-index: 19;
+  position: absolute;
+  top: 86vw;
+  left: 38.6vw;
+  width: 22.5%;
+}
+#MarkyMark {
+  z-index: 19;
+  position: absolute;
+  top: 85.8vw;
+  left: 38.45vw;
+  width: 23%;
+  height: 32.15%;
+}
+
+#Story8 {
+  z-index: 19;
+  position: absolute;
+  top: 86vw;
+  left: 63.5vw;
+  width: 22.5%;
+}
+
+#Story9 {
+  z-index: 21;
+  position: absolute;
+  top: 133vw;
+  left: 13.7vw;
+  width: 22.5%;
+}
+
+#Story10 {
+  z-index: 21;
+  position: absolute;
+  top: 133vw;
+  left: 38.6vw;
+  width: 22.5%;
+}
+#Eyes {
+  z-index: 22;
+  position: absolute;
+  top: 133vw;
+  left: 38.6vw;
+  width: 22.5%;
+}
+#Story11 {
+  z-index: 21;
+  position: absolute;
+  top: 133vw;
+  left: 63.5vw;
+  width: 22.5%;
+}
+#Story12 {
+  z-index: 21;
+  position: absolute;
+  top: 155vw;
+  left: 13.7vw;
+  width: 22.5%;
+}
+
+#Story13 {
+  z-index: 21;
+  position: absolute;
+  top: 155vw;
+  left: 38.6vw;
+  width: 22.5%;
+}
+#Story14 {
+  z-index: 21;
+  position: absolute;
+  top: 155vw;
+  left: 63.5vw;
+  width: 22.5%;
+}
+#Story15 {
+  z-index: 21;
+  position: absolute;
+  top: 195vw;
+  left: 13.7vw;
+  width: 22.5%;
+}
+#Story16 {
+  z-index: 21;
+  position: absolute;
+  top: 195vw;
+  left: 38.6vw;
+  width: 22.5%;
+}
+#Story17 {
+  z-index: 21;
+  position: absolute;
+  top: 195vw;
+  left: 63.5vw;
+  width: 22.5%;
+}
+#Story18 {
+  z-index: 21;
+  position: absolute;
+  top: 217vw;
+  left: 13.7vw;
+  width: 22.5%;
+}
+#Story19 {
+  z-index: 21;
+  position: absolute;
+  top: 217vw;
+  left: 38.6vw;
+  width: 22.5%;
+}
+#Story20 {
+  z-index: 21;
+  position: absolute;
+  top: 217vw;
+  left: 63.5vw;
+  width: 22.5%;
+}
 
 /*Top Picks*/
 #TopPicks {
    z-index: 20;
    position: absolute;
    top: 107vw;
-   left: 3vw;
-   width: 94%;
+   left: 11vw;
+   width: 82%;
 }
 #TopPicks-pink {
    z-index: 21;
@@ -477,23 +545,9 @@ a{
   left: 85vw;
   width: 8%;
 }
-#Items {
-  z-index: 20;
-  position: absolute;
-  top: 135vw;
-  left: 3vw;
-  width: 94%;
-}
-#Items2 {
-  z-index: 20;
-  position: absolute;
-  top: 165vw;
-  left: 3vw;
-  width: 94%;
-}
 #PuppyCouch{
-  z-index: 20;
-  position: absolute;
+  z-index: 21;
+  position: relative;
   top: 140vw;
   left: -1vw;
   width: 70%;
@@ -505,83 +559,32 @@ a{
   left: 14.5vw;
   width: 8%;
 }
-#Items3 {
-  z-index: 20;
-  position: absolute;
-  top: 195vw;
-  left: 3vw;
-  width: 94%;
-}
+
+/* ADVERTS */
+
+
 #SmallBanner1 {
    z-index: 20;
    position: absolute;
-   top: 225vw;
-   left: 3vw;
-   width: 94%;
-}
-#Items4 {
-  z-index: 20;
-  position: absolute;
-  top: 240vw;
-  left: 3vw;
-  width: 94%;
-}
-#Items5 {
-  z-index: 20;
-  position: absolute;
-  top: 270vw;
-  left: 3vw;
-  width: 94%;
+   top: 180vw;
+   left: 10vw;
+   width: 80%;
 }
 #SmallBanner2 {
    z-index: 20;
    position: absolute;
-   top: 300vw;
-   left: 3vw;
-   width: 94%;
+   top: 240vw;
+   left: 10vw;
+   width: 80%;
 }
-#Items6 {
-  z-index: 20;
-  position: absolute;
-  top: 315vw;
-  left: 3vw;
-  width: 94%;
+#SmallBanner3 {
+   z-index: 20;
+   position: absolute;
+   top: 350vw;
+   left: 10vw;
+   width: 80%;
 }
-#Items7 {
-  z-index: 20;
-  position: absolute;
-  top: 345vw;
-  left: 3vw;
-  width: 94%;
-}
-#Items8 {
-  z-index: 20;
-  position: absolute;
-  top: 375vw;
-  left: 3vw;
-  width: 94%;
-}
-#Items9 {
-  z-index: 20;
-  position: absolute;
-  top: 405vw;
-  left: 3vw;
-  width: 94%;
-}
-#Items10 {
-  z-index: 20;
-  position: absolute;
-  top: 435vw;
-  left: 3vw;
-  width: 94%;
-}
-#Items11 {
-  z-index: 20;
-  position: absolute;
-  top: 465vw;
-  left: 3vw;
-  width: 94%;
-}
+
 
 /*iPhones*/
 #wam-game {
@@ -589,20 +592,20 @@ a{
 	width: 30%;
 	display: block;
 	position: absolute;
-	top: 335vw;
+	top: 231vw;
 	left: 55vw;
   z-index:30;
 }
 #LeftHand1 {
   position: absolute;
-  top: 400vw;
+  top: 240vw;
   left: 0vw;
   z-index: 21;
   width: 100%;
 }
 #RightHand {
   position: absolute;
-  top: 310vw;
+  top: 250vw;
   right: 0vw;
   z-index: 21;
   width: 100%;
@@ -610,7 +613,7 @@ a{
 #notification-iPhones {
   z-index: 30;
   position: absolute;
-  top: 334.5vw;
+  top: 274.5vw;
   left: 48vw;
   width: 9%;
 }
@@ -659,27 +662,20 @@ a{
   left: 5%;
 	cursor: pointer;
   font-family: 'CothamSans';
-  font-size: 40vw;
+  font-size: 4vw;
   color: yellow;
 	z-index: 1;
 }
 
 
-#SmallBanner3 {
-   z-index: 20;
-   position: absolute;
-   top: 495vw;
-   left: 3vw;
-   width: 94%;
-}
 
 /*Footers*/
 #footer{
   z-index: 29;
   position: absolute;
-  top: 509vw;
-  left: 2vw;
-  width: 97%;
+  top: 360vw;
+  left: 6vw;
+  width: 88%;
 }
 
 
