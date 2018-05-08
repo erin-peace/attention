@@ -1,3 +1,79 @@
+var timer = null;
+var speed = 3; //1 is  slow
+var endTop = 0;
+var endLeft = 0;
+
+//******************************************************
+// Simple little function to get Elements as an object
+//******************************************************
+function getEl(SlideIn)
+{
+	var el = document.getElementById(SlideIn);
+	return el;
+}
+//******************************************************
+// Function to show Elements
+//******************************************************
+function showEl(id)
+{
+	getEl(id).style.display ="flex";
+}
+//******************************************************
+// Function to hide Elements
+//******************************************************
+function hideEl(id)
+{
+	getEl(id).style.display ="none";
+}
+
+//******************************************************
+// Function to move Element
+//******************************************************
+function moveEl(SlideIn)
+{
+	var popup = getEl(SlideIn);
+	var currentTop = parseInt(popup.offsetTop);
+	var currentLeft = parseInt(popup.offsetLeft);
+
+var keepMoving = false;
+
+//Move
+if (currentTop <= endTop)
+{
+	popup.style.top = (currentTop + speed) + "px";
+	keepMoving = true;
+}
+if(currentLeft <= endLeft)
+{
+	popup.style.left = (currentLeft + speed) + "px";
+	keepMoving = true;
+}
+if (keepMoving)
+{
+	startMove(SlideIn);
+}
+else
+{
+	endMove();
+}
+}
+//******************************************************
+// Function to start the move
+//******************************************************
+function startMove(SlideIn)
+{
+	timer = setTimeout("moveEl('"+SlideIn+"')", 1);
+}
+//******************************************************
+// Function to end the move
+//******************************************************
+function endMove()
+{
+	clearTimeout(timer);
+}
+
+
+
 // Code with Pete
 // Lesson 10: Popups, events, and timing with JavaScript
 
@@ -15,7 +91,7 @@ function firstPopup() {
 function timedPopup() {
   setTimeout(function() {
     document.getElementById("modal-wrapper-two").style.display = "flex";
-  }, 1000);
+  }, 4000);
 }
 // This popup will appear after three seconds has elapsed. Try changing the number
 // from 3000 to any other number to see how that affects the timed popup.
@@ -29,7 +105,6 @@ timedPopup();
 function closePopup() {
   document.getElementById("modal-wrapper").style.display = "none";
 }
-
 function closePopupTwo() {
   document.getElementById("modal-wrapper-two").style.display = "none";
 }
@@ -37,11 +112,18 @@ function closePopupTwo() {
 function messagePopup() {
   document.getElementById("messagePopup").style.display = "flex";
 }
-
 function closemessagePopup() {
   document.getElementById("messagePopup").style.display = "none";
 }
 
+function PoemPopup() {
+  document.getElementById("blanket").style.display = "flex";
+  document.getElementById("PoemPopup").style.display = "flex";
+  document.getElementById("PoemPopup").style.overflow = "scroll";
+}
+function closePoemPopup() {
+  document.getElementById("PoemPopup").style.display = "none";
+}
 
 // NAVBAR
 window.onscroll = function() {myFunction()};

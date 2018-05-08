@@ -10,18 +10,36 @@
 <body onload="firstPopup()">
 
 
-  <div id="modal-wrapper-two">
+<div id="modal-wrapper-two">
     <div id="modal">
       <h3>Here's a timed popup</h3>
       <h3>It pops up after a designated amount of time. There's some text inside, and a list which reads as follows:</h3>
       <button type="button" name="button" onclick="closePopupTwo()">Close Modal</button>
     </div>
   </div>
-  <div id="messagePopup">
+<div id="messagePopup">
     <div id="modal2">
       <h3>message</h3>
       <button type="button" name="button" onclick="closemessagePopup()">Close</button>
     </div>
+  </div>
+
+
+<div id="blanket" style="display:none;"></div>
+<div id="PoemPopup">
+    <div id="ContentModal">
+      <h3>Poem</h3>
+      <p>end</p>
+      <p>end</p>
+      <p>end</p>
+      <p>end</p>
+      <button type="button" name="button" onclick="closePoemPopup()">Close</button>
+    </div>
+  </div>
+<div id="SlideIn">
+  <div id="SlideInPopup">
+    <button type="button" name="button" onclick="hideEl('SlideIn');" style="cursor:pointer;">Close</button>
+  </div>
   </div>
 
 
@@ -41,7 +59,7 @@
 
 <!-- top picks -->
 <!-- <img id="TopPicks" src="public/images/TopPicks-old.png"> -->
-<img id="TopPicks-pink" src="public/images/TopPicks.png">
+<img id="TopPicks-new" src="public/images/TopPicks-yellow.png">
 <img id="AngryNewsGIF" src="public/GIFs/AngryNews.gif">
 <img id="QuizGIF" src="public/GIFs/Quiz.gif">
 <img id="DiceGIF" src="public/GIFs/Die.gif">
@@ -50,16 +68,23 @@
 
 <!-- Attention Collection -->
 
-<img id="AttnCollectionTitle" src="public/images/AttnCollectionTitle.png">
+<img id="AttnCollectionTitleNew" src="public/images/CollectionTitle.png">
+<!-- <img id="AttnCollectionTitle" src="public/images/AttnCollectionTitle.png"> -->
 <!-- <img id="Items-three" src="public/images/Items-three.png"> -->
 <!-- <img id="Items0" src="public/images/Items-test.png"> -->
 <!-- <img id="Radio" src="public/GIFs/Content-1.gif"> -->
-<img id="Story1" src="public/images/CA.png">
-<img id="Story2" src="public/images/InstaRobot.png">
-<img id="Story3" src="public/images/Eyes.png">
+<!-- <img id="Story1" src="public/images/Teddy.png"> -->
+<img id="Story2" src="public/images/MediaHistory.png">
+<img id="Radio" src="public/GIFs/Radio.gif">
+
+
+<img id="Story3" src="public/images/HarvestMedia.png">
 <img id="Story4" src="public/images/CSM.png">
 <img id="Story5" src="public/images/InstaRobot.png">
-<img id="Story6" src="public/images/AttnStory.png">
+<img id="TopRated2" src="public/images/TopRatedTilted.png">
+
+
+<img id="Story6" src="public/images/AttnStory.png" onclick="PoemPopup()">
 
 <img id="Story7" src="public/images/MarkyMark.png">
 <img id="MarkyMark" src="public/GIFs/MarkyMark.gif">
@@ -68,17 +93,23 @@
 <img id="InstaQs" src="public/GIFs/InstaQs.gif">
 
 <img id="Story9" src="public/images/DarkPatterns.png">
+<img id="TopRated1" src="public/images/TopRatedTilted.png">
+
 
 <img id="Story10" src="public/images/Eyes.png">
 <img id="Eyes" src="public/GIFs/eyes.gif">
 
 <img id="Story11" src="public/images/CA.png">
 
-<img id="Story12" src="public/images/Eyes.png">
+<img id="Story12" src="public/images/JessAd.png">
+<img id="JessGIF" src="public/GIFs/JessGIF.gif">
 
-<img id="Story13" src="public/images/Story3.png">
-<img id="Story14" src="public/images/Story1.png">
-<img id="Story15" src="public/images/Story3.png">
+<img id="Story13" src="public/images/RikkeAd.png">
+
+<img id="Story14" src="public/images/JulieAd.png">
+<img id="JulieGIF" src="public/GIFs/JulieGIF.gif">
+
+<img id="Story15" src="public/images/Teddy.png">
 <img id="Story16" src="public/images/Story3.png">
 <img id="Story17" src="public/images/Story1.png">
 <img id="Story18" src="public/images/Story3.png">

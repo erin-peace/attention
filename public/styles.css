@@ -14,15 +14,17 @@
 #modal {
   background-color: lightgray;
   border: 2px solid black;
-
   padding: 20px 40px;
   width: 50%;
+  z-index: 34;
+
 }
 #modal2 {
   background-color: lightgray;
   border: 2px solid black;
   padding: 2vw;
   width: 100%;
+  z-index: 34;
 }
 #modal-wrapper {
   align-items: center;
@@ -30,7 +32,7 @@
   justify-content: center;
   position: absolute;
   top: 20vw;
-  z-index:33;
+  z-index:34;
   width:30%;
 }
 #modal-wrapper-two {
@@ -40,7 +42,7 @@
   height: 40vh;
   justify-content: center;
   position: absolute;
-  z-index: 31;
+  z-index: 33;
 }
 #modal button {
   padding: 1vw 2vw;
@@ -60,7 +62,29 @@
 #modal2 button:hover {
   background-color: lightblue;
 }
-
+#ContentModal {
+  background-color: white;
+  border: 2px solid black;
+  padding: 2vw;
+  width: 100%;
+}
+#ContentModal button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  transition: background-color .4s ease
+}
+#ContentModal button:hover {
+  background-color: lightblue;
+}
+#blanket {
+   background-color: #000000;
+   opacity: 0.65;
+   position:absolute;
+   z-index: 35;
+   top:0px;
+   left:0px;
+   width:100%;
+}
 
 h1 {
   font-family: 'Reglo-Bold';
@@ -151,7 +175,6 @@ a{
   cursor: pointer;
   z-index: 20;
 }
-
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -207,6 +230,20 @@ a{
     to {top: 0; opacity: 1}
 }
 
+
+#SlideIn
+{
+	height:5vw;;
+	width:99.5%;
+	background:white;
+  border: 2px solid black;
+	position:absolute;
+  z-index: 34;
+  left: .15vw;
+  top: .15vw;
+}
+
+/*TopMenu*/
 #TinyNav {
   width: 80%;
   right:3vw;
@@ -217,7 +254,7 @@ a{
   overflow: visible;
   width: 100%;
   background-color: #ffffff;
-  z-index: 31;
+  z-index: 32;
 }
 #navbar a {
   float: left;
@@ -227,10 +264,8 @@ a{
   padding-left: 2.5vw;
   padding-top: 1vw;
   text-decoration: none;
-  z-index: 32;
+  z-index: 33;
 }
-
-/*TopMenu*/
 #hello {
   position: right;
   margin-top: 3vw;
@@ -267,18 +302,16 @@ a{
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
 }
 
-
 /*Begin Content*/
 #BannerAd {
-   z-index: 20;
+   z-index: 32;
    position: absolute;
-   top: 10vw;
+   top: 3vw;
    left: 3vw;
    width: 94%;
 }
@@ -288,6 +321,13 @@ a{
    top: 30vw;
    left: -1vw;
    width: 115%;
+}
+#AttnCollectionTitleNew {
+   z-index: 20;
+   position: absolute;
+   top: 30vw;
+   left: 5vw;
+   width: 50%;
 }
 /* #Items-three { */
    z-index: 19;
@@ -303,7 +343,7 @@ a{
    left: 3vw;
    width: 94%;
 }
-#Radio {
+#Radio-old {
   z-index: 19;
   position: absolute;
   top: 44vw;
@@ -313,73 +353,107 @@ a{
 #Story1 {
   z-index: 19;
   position: absolute;
-  top: 44vw;
+  top: 34vw;
   left: 38.6vw;
   width: 22.5%;
 }
+
 #Story2 {
   z-index: 19;
   position: absolute;
-  top: 44vw;
+  top: 34vw;
   left: 63.5vw;
   width: 22.5%;
 }
+#Radio {
+  z-index: 30;
+  position: absolute;
+  top: 33.5vw;
+  left: 66.5vw;
+  width: 16%;
+}
+#TopRated2{
+  z-index: 22;
+  position: absolute;
+  top: 32vw;
+  left: 62vw;
+  width: 5%;
+}
+
 #Story3 {
   z-index: 19;
   position: absolute;
-  top: 65vw;
+  top: 55vw;
   left: 13.7vw;
   width: 22.5%;
 }
+
 #Story4 {
   z-index: 19;
   position: absolute;
-  top: 65vw;
+  top: 55vw;
   left: 38.6vw;
   width: 22.5%;
 }
+
 #Story5 {
   z-index: 19;
   position: absolute;
-  top: 65vw;
-  left: 64.5vw;
+  top: 55vw;
+  left: 63.5vw;
   width: 22.5%;
 }
 #InstaQs {
   z-index: 19;
   position: absolute;
-  top: 62.5vw;
+  top: 52.5vw;
   left: 64vw;
   width: 22.5%;
 }
+
 #Story6 {
   z-index: 19;
   position: absolute;
-  top: 86vw;
+  cursor: pointer;
+  top: 76vw;
   left: 13.7vw;
   width: 22.5%;
+}
+#PoemPopup {
+  display: none;
+  position: fixed;
+  top: 16vh;
+  left: 11.5vw;
+  z-index:33;
+  width: 76%;
+}
+#Poem {
+  z-index:34;
+  width: 99.5%;
+  justify-content: center;
+  left: .2vw;
 }
 
 #Story7 {
   z-index: 19;
   position: absolute;
-  top: 86vw;
+  top: 76vw;
   left: 38.6vw;
   width: 22.5%;
 }
 #MarkyMark {
   z-index: 19;
   position: absolute;
-  top: 85.8vw;
+  top: 75.8vw;
   left: 38.45vw;
   width: 23%;
-  height: 32.15%;
+  height: 30.15%;
 }
 
 #Story8 {
   z-index: 19;
   position: absolute;
-  top: 86vw;
+  top: 76vw;
   left: 63.5vw;
   width: 22.5%;
 }
@@ -387,36 +461,52 @@ a{
 #Story9 {
   z-index: 21;
   position: absolute;
-  top: 133vw;
+  top: 123vw;
   left: 13.7vw;
   width: 22.5%;
+}
+#TopRated1{
+  z-index: 22;
+  position: absolute;
+  top: 121vw;
+  left: 12vw;
+  width: 5%;
 }
 
 #Story10 {
   z-index: 21;
   position: absolute;
-  top: 133vw;
+  top: 123vw;
   left: 38.6vw;
   width: 22.5%;
 }
 #Eyes {
   z-index: 22;
   position: absolute;
-  top: 133vw;
+  top: 123vw;
   left: 38.6vw;
   width: 22.5%;
 }
+
 #Story11 {
   z-index: 21;
   position: absolute;
-  top: 133vw;
+  top: 123vw;
   left: 63.5vw;
   width: 22.5%;
 }
+
 #Story12 {
   z-index: 21;
   position: absolute;
-  top: 155vw;
+  top: 145vw;
+  left: 13.7vw;
+  width: 22.5%;
+}
+#JessGIF {
+  z-index: 21;
+  position: absolute;
+  top: 145vw;
   left: 13.7vw;
   width: 22.5%;
 }
@@ -424,56 +514,77 @@ a{
 #Story13 {
   z-index: 21;
   position: absolute;
-  top: 155vw;
+  top: 145vw;
   left: 38.6vw;
   width: 22.5%;
 }
+#RikkeGIF {
+  z-index: 21;
+  position: absolute;
+  top: 145vw;
+  left: 38.6vw;
+  width: 22.5%;
+}
+
 #Story14 {
   z-index: 21;
   position: absolute;
-  top: 155vw;
+  top: 145vw;
   left: 63.5vw;
   width: 22.5%;
 }
+#JulieGIF{
+  z-index: 21;
+  position: absolute;
+  top: 145vw;
+  left: 63.55vw;
+  width: 22.5%;
+}
+
 #Story15 {
   z-index: 21;
   position: absolute;
-  top: 195vw;
+  top: 185vw;
   left: 13.7vw;
   width: 22.5%;
 }
+
 #Story16 {
   z-index: 21;
   position: absolute;
-  top: 195vw;
+  top: 185vw;
   left: 38.6vw;
   width: 22.5%;
 }
+
 #Story17 {
   z-index: 21;
   position: absolute;
-  top: 195vw;
+  top: 185vw;
   left: 63.5vw;
   width: 22.5%;
 }
+
 #Story18 {
   z-index: 21;
   position: absolute;
-  top: 217vw;
+  top: 207vw;
   left: 13.7vw;
   width: 22.5%;
 }
+
 #Story19 {
   z-index: 21;
   position: absolute;
-  top: 217vw;
+  top: 207vw;
   left: 38.6vw;
   width: 22.5%;
 }
+
 #Story20 {
   z-index: 21;
   position: absolute;
-  top: 217vw;
+  top: 207vw;
   left: 63.5vw;
   width: 22.5%;
 }
@@ -482,42 +593,42 @@ a{
 #TopPicks {
    z-index: 20;
    position: absolute;
-   top: 107vw;
+   top: 97vw;
    left: 11vw;
    width: 82%;
 }
-#TopPicks-pink {
+#TopPicks-new {
    z-index: 21;
    position: absolute;
-   top: 107vw;
+   top: 97vw;
    left: 3vw;
    width: 94%;
 }
 #AngryNewsGIF {
    z-index: 21;
    position: absolute;
-   top: 105vw;
+   top: 95vw;
    left: 14vw;
    width: 22%;
 }
 #QuizGIF {
    z-index: 21;
    position: absolute;
-   top: 113vw;
+   top: 103vw;
    left: 32vw;
    width: 10%;
 }
 #ScarfGirlGIF {
    z-index: 21;
    position: absolute;
-   top: 113.4vw;
+   top: 103.4vw;
    left: 53.7vw;
    width: 15%;
 }
 #DiceGIF {
    z-index: 21;
    position: absolute;
-   top: 112vw;
+   top: 102vw;
    left: 43.4vw;
    width: 11.5%;
 }
@@ -548,25 +659,24 @@ a{
 #PuppyCouch{
   z-index: 21;
   position: relative;
-  top: 140vw;
+  top: 150vw;
   left: -1vw;
   width: 70%;
 }
 #notification-PuppyCouch {
   z-index: 21;
   position: absolute;
-  top: 161.2vw;
-  left: 14.5vw;
+  top: 171.5vw;
+  left: 14.6vw;
   width: 8%;
 }
 
 /* ADVERTS */
 
-
 #SmallBanner1 {
    z-index: 20;
    position: absolute;
-   top: 180vw;
+   top: 168vw;
    left: 10vw;
    width: 80%;
 }
@@ -584,7 +694,6 @@ a{
    left: 10vw;
    width: 80%;
 }
-
 
 /*iPhones*/
 #wam-game {
@@ -667,8 +776,6 @@ a{
 	z-index: 1;
 }
 
-
-
 /*Footers*/
 #footer{
   z-index: 29;
@@ -677,7 +784,6 @@ a{
   left: 6vw;
   width: 88%;
 }
-
 
 /*Timers*/
 #minutes {
