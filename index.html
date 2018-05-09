@@ -9,7 +9,7 @@
 
 <body onload="firstPopup()">
 
-
+<!-- Pop-ups -->
 <div id="modal-wrapper-two">
     <div id="modal">
       <h3>Here's a timed popup</h3>
@@ -23,9 +23,15 @@
       <button type="button" name="button" onclick="closemessagePopup()">Close</button>
     </div>
   </div>
+<div id="SlideIn">
+    <div id="SlideInPopup">
+      <button type="button" name="button" onclick="hideEl('SlideIn');" style="cursor:pointer;">Close</button>
+    </div>
+    </div>
 
 
 <div id="blanket" style="display:none;"></div>
+
 <div id="PoemPopup">
     <div id="ContentModal">
       <h3>Poem</h3>
@@ -36,16 +42,22 @@
       <button type="button" name="button" onclick="closePoemPopup()">Close</button>
     </div>
   </div>
-<div id="SlideIn">
-  <div id="SlideInPopup">
-    <button type="button" name="button" onclick="hideEl('SlideIn');" style="cursor:pointer;">Close</button>
-  </div>
-  </div>
+<div id="InstaPopup">
+      <div id="ContentModal">
+        <h3>Instastory</h3>
+        <p>end</p>
+        <p>end</p>
+        <p>end</p>
+        <p>end</p>
+        <button type="button" name="button" onclick="closeInstaPopup()">Close</button>
+      </div>
+    </div>
+
 
 
 <!-- top nav -->
 <img id="TinyNav" src="public/images/TinyNav.png">
-<div id="navbar"><a href="#home"><h3>DOPAMINE</h3></a></div>
+<div id="navbar"><a href="#home"><h2>DOPAMINE</h2></a></div>
 <img id="MessageIcon" src="public/images/MessageIcon.png">
 <img id=notification-pulse src="public/GIFs/transparent.gif" onclick="messagePopup()">
 <h6 onclick="window.location.href = '/print?attention=' + totalSeconds">CHECKOUT</h6>
@@ -54,68 +66,85 @@
   <span class="popuptext" id="myPopup">A Simple Popup!</span>
 </div>-->
 
-<!-- banner ad -->
-<img id="BannerAd" src="public/images/BannerAd-test.png">
+<!-- banner ads -->
+<img id="BannerAd" src="public/images/SmallBanner1.png">
+<img id="Skyscraper" src="public/images/Skyscraper.png">
+<img id="Skyscraper2" src="public/images/Skyscraper.png">
+
 
 <!-- top picks -->
 <!-- <img id="TopPicks" src="public/images/TopPicks-old.png"> -->
 <img id="TopPicks-new" src="public/images/TopPicks-yellow.png">
 <img id="AngryNewsGIF" src="public/GIFs/AngryNews.gif">
-<img id="QuizGIF" src="public/GIFs/Quiz.gif">
-<img id="DiceGIF" src="public/GIFs/Die.gif">
+<!-- <img id="QuizGIF" src="public/GIFs/Quiz.gif"> -->
+<img id="DiceGIF" src="public/GIFs/Die-Big.gif">
 <img id="ScarfGirlGIF" src="public/GIFs/ScarfGirl.gif">
 
 
 <!-- Attention Collection -->
 
-<img id="AttnCollectionTitleNew" src="public/images/CollectionTitle.png">
+<img id="AttnCollectionTitleNew" src="public/GIFs/HotContent2.gif">
 <!-- <img id="AttnCollectionTitle" src="public/images/AttnCollectionTitle.png"> -->
 <!-- <img id="Items-three" src="public/images/Items-three.png"> -->
 <!-- <img id="Items0" src="public/images/Items-test.png"> -->
 <!-- <img id="Radio" src="public/GIFs/Content-1.gif"> -->
 <!-- <img id="Story1" src="public/images/Teddy.png"> -->
+
+<!-- Story 2: Media History -->
 <img id="Story2" src="public/images/MediaHistory.png">
 <img id="Radio" src="public/GIFs/Radio.gif">
-
-
-<img id="Story3" src="public/images/HarvestMedia.png">
-<img id="Story4" src="public/images/CSM.png">
-<img id="Story5" src="public/images/InstaRobot.png">
 <img id="TopRated2" src="public/images/TopRatedTilted.png">
 
+<!-- Story 3: Cute Puppies -->
+<img id="Story3" src="public/images/Teddy.png">
 
+<!-- Story 4: Central Saint Martins -->
+<img id="Story4" src="public/images/CSM.png">
+
+<!-- Story 5: CGI Models -->
+<img id="Story5" src="public/images/InstaRobot.png" onclick="InstaPopup()">
+<img id="InstaQs" src="public/GIFs/InstaQs.gif" onclick="InstaPopup()">
+
+<!-- Story 6: Attention Manifesto -->
 <img id="Story6" src="public/images/AttnStory.png" onclick="PoemPopup()">
 
+<!-- Story 7: Mark Zuckerberg -->
 <img id="Story7" src="public/images/MarkyMark.png">
 <img id="MarkyMark" src="public/GIFs/MarkyMark.gif">
 
+<!-- Story 8: Paying for Social Media -->
 <img id="Story8" src="public/images/Pay4Social.png">
-<img id="InstaQs" src="public/GIFs/InstaQs.gif">
 
+<!-- Story 9: UX Dark Patterns -->
 <img id="Story9" src="public/images/DarkPatterns.png">
 <img id="TopRated1" src="public/images/TopRatedTilted.png">
 
-
+<!-- Story 10: Time On Screen Tricks -->
 <img id="Story10" src="public/images/Eyes.png">
 <img id="Eyes" src="public/GIFs/eyes.gif">
 
+<!-- Story 11: Cambridge Analytica -->
 <img id="Story11" src="public/images/CA.png">
 
+<!-- Sponsored 1: Jess -->
 <img id="Story12" src="public/images/JessAd.png">
 <img id="JessGIF" src="public/GIFs/JessGIF.gif">
 
+<!-- Sponsored 2: Rikke -->
 <img id="Story13" src="public/images/RikkeAd.png">
 
+<!-- Sponsored 3: Julie -->
 <img id="Story14" src="public/images/JulieAd.png">
 <img id="JulieGIF" src="public/GIFs/JulieGIF.gif">
 
+<!--
 <img id="Story15" src="public/images/Teddy.png">
 <img id="Story16" src="public/images/Story3.png">
 <img id="Story17" src="public/images/Story1.png">
 <img id="Story18" src="public/images/Story3.png">
 <img id="Story19" src="public/images/Story3.png">
 <img id="Story20" src="public/images/Story1.png">
-
+-->
 
 
 <!--
@@ -126,13 +155,13 @@
 <!-- <img id="Items" src="public/images/Items-test.png"> -->
 <!-- <img id="Items2" src="public/images/Items-test.png"> -->
 <!-- <img id="Items3" src="public/images/Items-test.png"> -->
-<img id="SmallBanner1" src="public/images/SmallBanner1.png">
+<!-- <img id="SmallBanner1" src="public/images/SmallBanner1.png"> -->
 <img id="PuppyCouch" src="public/images/PuppyCouch.png">
 <button class="notification-button"><img id="notification-PuppyCouch" src="public/GIFs/transparent.gif"></button>
-<img id="SmallBanner2" src="public/images/SmallBanner1.png">
+<!-- <img id="SmallBanner2" src="public/images/SmallBanner1.png"> -->
 <!-- <img id="Items4" src="public/images/Items-test.png"> -->
 <!-- <img id="Items5" src="public/images/Items-test.png"> -->
-<img id="SmallBanner3" src="public/images/SmallBanner1.png">
+<!-- <img id="SmallBanner3" src="public/images/SmallBanner1.png"> -->
 <!-- <img id="Items6" src="public/images/Items-test.png"> -->
 <!-- <img id="Items7" src="public/images/Items-test.png"> -->
 

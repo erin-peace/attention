@@ -10,6 +10,10 @@
     font-family: CothamSans;
     src: url("fonts/CothamSans.otf") format("opentype");
 }
+@font-face {
+    font-family: LeagueGothic;
+    src: url("fonts/LeagueGothic-Italic.otf") format("opentype");
+}
 
 #modal {
   background-color: lightgray;
@@ -86,15 +90,16 @@
    width:100%;
 }
 
+
 h1 {
   font-family: 'Reglo-Bold';
   font-size: 5vw;
   text-align: center;
 }
 h2 {
-  font-family: 'Reglo-Bold';
-  font-size: 2vw;
-  padding-right: 1vw;
+  font-family: 'LeagueGothic';
+  font-size: 4vw;
+  letter-spacing: .1vw;
 }
 h3 {
   font-family: 'CothamSans';
@@ -145,7 +150,7 @@ a{
 }
 
 .content {
-  padding: 16px;
+  padding: .5vw;
 }
 .sticky {
   position: fixed;
@@ -155,7 +160,7 @@ a{
   z-index: 2;
 }
 .sticky + .content {
-  padding-top: 1vw;
+  padding-top: .5vw;
 }
 .button {
   background-color: yellow;
@@ -230,9 +235,7 @@ a{
     to {top: 0; opacity: 1}
 }
 
-
-#SlideIn
-{
+#SlideIn {
 	height:5vw;;
 	width:99.5%;
 	background:white;
@@ -262,7 +265,7 @@ a{
   color: #000000;
   text-align: center;
   padding-left: 2.5vw;
-  padding-top: 1vw;
+  padding-top: .01vw;
   text-decoration: none;
   z-index: 33;
 }
@@ -307,13 +310,34 @@ a{
     to {opacity:1 ;}
 }
 
+
+#Title {
+  font-family: "LeagueGothic";
+  position: absolute;
+  z-index: 30;
+}
+
 /*Begin Content*/
 #BannerAd {
-   z-index: 32;
+   z-index: 30;
    position: absolute;
-   top: 3vw;
-   left: 3vw;
-   width: 94%;
+   top: 13vw;
+   left: 10vw;
+   width: 80%;
+}
+#Skyscraper {
+   z-index: 30;
+   position: absolute;
+   top: 37vw;
+   right: 5vw;
+   width: 10%;
+}
+#Skyscraper2 {
+   z-index: 30;
+   position: absolute;
+   top: 123vw;
+   right: 5vw;
+   width: 10%;
 }
 #AttnCollectionTitle {
    z-index: 20;
@@ -325,9 +349,9 @@ a{
 #AttnCollectionTitleNew {
    z-index: 20;
    position: absolute;
-   top: 30vw;
-   left: 5vw;
-   width: 50%;
+   top: 18vw;
+   left: -1vw;
+   width: 57%;
 }
 /* #Items-three { */
    z-index: 19;
@@ -354,7 +378,7 @@ a{
   z-index: 19;
   position: absolute;
   top: 34vw;
-  left: 38.6vw;
+  left: 43.6vw;
   width: 22.5%;
 }
 
@@ -362,21 +386,21 @@ a{
   z-index: 19;
   position: absolute;
   top: 34vw;
-  left: 63.5vw;
+  left: 57.5vw;
   width: 22.5%;
 }
 #Radio {
   z-index: 30;
   position: absolute;
   top: 33.5vw;
-  left: 66.5vw;
+  left: 60.5vw;
   width: 16%;
 }
 #TopRated2{
   z-index: 22;
   position: absolute;
   top: 32vw;
-  left: 62vw;
+  left: 56vw;
   width: 5%;
 }
 
@@ -384,7 +408,7 @@ a{
   z-index: 19;
   position: absolute;
   top: 55vw;
-  left: 13.7vw;
+  left: 7.7vw;
   width: 22.5%;
 }
 
@@ -392,23 +416,39 @@ a{
   z-index: 19;
   position: absolute;
   top: 55vw;
-  left: 38.6vw;
+  left: 32.6vw;
   width: 22.5%;
 }
 
 #Story5 {
   z-index: 19;
   position: absolute;
+  cursor: pointer;
   top: 55vw;
-  left: 63.5vw;
+  left: 57.5vw;
   width: 22.5%;
 }
 #InstaQs {
   z-index: 19;
   position: absolute;
+  cursor: pointer;
   top: 52.5vw;
-  left: 64vw;
+  left: 58vw;
   width: 22.5%;
+}
+#InstaPopup {
+  display: none;
+  position: fixed;
+  top: 16vh;
+  left: 5.5vw;
+  z-index:33;
+  width: 76%;
+}
+#InstaStory {
+  z-index:34;
+  width: 99.5%;
+  justify-content: center;
+  left: 3.2vw;
 }
 
 #Story6 {
@@ -416,14 +456,14 @@ a{
   position: absolute;
   cursor: pointer;
   top: 76vw;
-  left: 13.7vw;
+  left: 7.7vw;
   width: 22.5%;
 }
 #PoemPopup {
   display: none;
   position: fixed;
   top: 16vh;
-  left: 11.5vw;
+  left: 5.5vw;
   z-index:33;
   width: 76%;
 }
@@ -431,21 +471,21 @@ a{
   z-index:34;
   width: 99.5%;
   justify-content: center;
-  left: .2vw;
+  left: 3.2vw;
 }
 
 #Story7 {
   z-index: 19;
   position: absolute;
   top: 76vw;
-  left: 38.6vw;
+  left: 32.6vw;
   width: 22.5%;
 }
 #MarkyMark {
   z-index: 19;
   position: absolute;
   top: 75.8vw;
-  left: 38.45vw;
+  left: 32.45vw;
   width: 23%;
   height: 30.15%;
 }
@@ -454,7 +494,7 @@ a{
   z-index: 19;
   position: absolute;
   top: 76vw;
-  left: 63.5vw;
+  left: 57.5vw;
   width: 22.5%;
 }
 
@@ -462,14 +502,14 @@ a{
   z-index: 21;
   position: absolute;
   top: 123vw;
-  left: 13.7vw;
+  left: 7.7vw;
   width: 22.5%;
 }
 #TopRated1{
   z-index: 22;
   position: absolute;
   top: 121vw;
-  left: 12vw;
+  left: 6vw;
   width: 5%;
 }
 
@@ -477,14 +517,14 @@ a{
   z-index: 21;
   position: absolute;
   top: 123vw;
-  left: 38.6vw;
+  left: 32.6vw;
   width: 22.5%;
 }
 #Eyes {
   z-index: 22;
   position: absolute;
   top: 123vw;
-  left: 38.6vw;
+  left: 32.6vw;
   width: 22.5%;
 }
 
@@ -492,7 +532,7 @@ a{
   z-index: 21;
   position: absolute;
   top: 123vw;
-  left: 63.5vw;
+  left: 57.5vw;
   width: 22.5%;
 }
 
@@ -500,14 +540,14 @@ a{
   z-index: 21;
   position: absolute;
   top: 145vw;
-  left: 13.7vw;
+  left: 7.7vw;
   width: 22.5%;
 }
 #JessGIF {
   z-index: 21;
   position: absolute;
   top: 145vw;
-  left: 13.7vw;
+  left: 7.7vw;
   width: 22.5%;
 }
 
@@ -515,14 +555,14 @@ a{
   z-index: 21;
   position: absolute;
   top: 145vw;
-  left: 38.6vw;
+  left: 32.6vw;
   width: 22.5%;
 }
 #RikkeGIF {
   z-index: 21;
   position: absolute;
   top: 145vw;
-  left: 38.6vw;
+  left: 32.6vw;
   width: 22.5%;
 }
 
@@ -530,14 +570,14 @@ a{
   z-index: 21;
   position: absolute;
   top: 145vw;
-  left: 63.5vw;
+  left: 57.5vw;
   width: 22.5%;
 }
 #JulieGIF{
   z-index: 21;
   position: absolute;
   top: 145vw;
-  left: 63.55vw;
+  left: 57.55vw;
   width: 22.5%;
 }
 
@@ -594,44 +634,45 @@ a{
    z-index: 20;
    position: absolute;
    top: 97vw;
-   left: 11vw;
+   left: 13vw;
    width: 82%;
 }
 #TopPicks-new {
    z-index: 21;
    position: absolute;
    top: 97vw;
-   left: 3vw;
+   left: 5.5vw;
    width: 94%;
 }
 #AngryNewsGIF {
    z-index: 21;
    position: absolute;
    top: 95vw;
-   left: 14vw;
+   left: 16.5vw;
    width: 22%;
 }
 #QuizGIF {
    z-index: 21;
    position: absolute;
    top: 103vw;
-   left: 32vw;
+   left: 34.5vw;
    width: 10%;
+}
+#DiceGIF {
+   z-index: 21;
+   position: absolute;
+   top: 95.3vw;
+   left: 39vw;
+   width: 25%;
 }
 #ScarfGirlGIF {
    z-index: 21;
    position: absolute;
    top: 103.4vw;
-   left: 53.7vw;
+   left: 56.2vw;
    width: 15%;
 }
-#DiceGIF {
-   z-index: 21;
-   position: absolute;
-   top: 102vw;
-   left: 43.4vw;
-   width: 11.5%;
-}
+
 
 /*Attention Collection*/
 
@@ -780,9 +821,9 @@ a{
 #footer{
   z-index: 29;
   position: absolute;
-  top: 360vw;
-  left: 6vw;
-  width: 88%;
+  top: 312vw;
+  left: 5vw;
+  width: 90%;
 }
 
 /*Timers*/
