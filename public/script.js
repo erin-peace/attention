@@ -41,12 +41,6 @@ function endMove(){
 }
 
 //Body Popups
-function firstPopup() {
-  document.getElementById("modal-wrapper").style.display = "flex";
-}
-function closePopup() {
-  document.getElementById("modal-wrapper").style.display = "none";
-}
 
 function timedPopup() {
   setTimeout(function() {
@@ -58,6 +52,7 @@ function closePopupTwo() {
   document.getElementById("modal-wrapper-two").style.display = "none";
 }
 
+
 function messagePopup() {
   document.getElementById("messagePopup").style.display = "flex";
 }
@@ -66,19 +61,21 @@ function closemessagePopup() {
 }
 
 //Story Popups
-
 function PoemPopup() {
-  document.getElementById("blanket").style.display = "flex";
   document.getElementById("PoemPopup").style.display = "flex";
-  document.getElementById("PoemPopup").style.overflow = "scroll";
+	document.getElementById("body").style.position = "fixed";
+	document.getElementById("WholePage").classList.add("Blanket");
 }
 function closePoemPopup() {
   document.getElementById("PoemPopup").style.display = "none";
+	document.getElementById("body").style.position = "relative";
+	document.getElementById("WholePage").classList.remove("Blanket");
 }
 
 function InstaPopup() {
   document.getElementById("InstaPopup").style.display = "flex";
-  document.getElementById("InstaPopup").style.overflow = "scroll";
+	document.getElementById("body").style.position = "fixed";
+	console.log("InstaPopup Clicked");
 }
 function closeInstaPopup() {
   document.getElementById("InstaPopup").style.display = "none";

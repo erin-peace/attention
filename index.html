@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+  <html>
 <head lang="en">
     <meta charset="UTF-8">
-<link rel="stylesheet" href="public/styles.css">
-<title> (1) dopamine</title>
+  <link rel="stylesheet" href="public/styles.css">
+  <title> (1) dopamine</title>
 
 </head>
+<body id="body" onload="firstPopup()">
 
-<body onload="firstPopup()">
+<a name="top"></a>
 
-<!-- Pop-ups -->
+<!-- General Pop-ups -->
 <div id="modal-wrapper-two">
     <div id="modal">
       <h3>Here's a timed popup</h3>
@@ -24,14 +25,13 @@
     </div>
   </div>
 <div id="SlideIn">
-    <div id="SlideInPopup">
-      <button type="button" name="button" onclick="hideEl('SlideIn');" style="cursor:pointer;">Close</button>
-    </div>
-    </div>
-
+      <h4>Here's a cookie popup</h4>
+      <button type="button" name="button" onclick="hideEl('SlideIn')">Okay</button>
+</div>
 
 <div id="blanket" style="display:none;"></div>
 
+<!-- Story Pop-ups -->
 <div id="PoemPopup">
     <div id="ContentModal">
       <h3>Poem</h3>
@@ -53,8 +53,6 @@
       </div>
     </div>
 
-
-
 <!-- top nav -->
 <img id="TinyNav" src="public/images/TinyNav.png">
 <div id="navbar"><a href="#home"><h2>DOPAMINE</h2></a></div>
@@ -72,28 +70,28 @@
 <img id="Skyscraper2" src="public/images/Skyscraper.png">
 
 
+
 <!-- top picks -->
-<!-- <img id="TopPicks" src="public/images/TopPicks-old.png"> -->
 <img id="TopPicks-new" src="public/images/TopPicks-yellow.png">
 <img id="AngryNewsGIF" src="public/GIFs/AngryNews.gif">
 <!-- <img id="QuizGIF" src="public/GIFs/Quiz.gif"> -->
 <img id="DiceGIF" src="public/GIFs/Die-Big.gif">
 <img id="ScarfGirlGIF" src="public/GIFs/ScarfGirl.gif">
 
-
-<!-- Attention Collection -->
-
+<!-- Title -->
 <img id="AttnCollectionTitleNew" src="public/GIFs/HotContent2.gif">
-<!-- <img id="AttnCollectionTitle" src="public/images/AttnCollectionTitle.png"> -->
-<!-- <img id="Items-three" src="public/images/Items-three.png"> -->
-<!-- <img id="Items0" src="public/images/Items-test.png"> -->
-<!-- <img id="Radio" src="public/GIFs/Content-1.gif"> -->
-<!-- <img id="Story1" src="public/images/Teddy.png"> -->
 
 <!-- Story 2: Media History -->
 <img id="Story2" src="public/images/MediaHistory.png">
-<img id="Radio" src="public/GIFs/Radio.gif">
+<img id="Radio" src="public/GIFs/Radio.gif" onclick="window.scrollTo(0,2550)">
 <img id="TopRated2" src="public/images/TopRatedTilted.png">
+<img id="BlackLine2" src="public/images/BlackLine.png">
+<sub id="DateTime2">8:15 am | Today</sub>
+<h2 id="Title2">WHAT DO FAKE MOON LANDINGS,<br>THE REAL WORLD, AND AMAZON<br>ALEXA HAVE IN COMMON?</h2>
+<sub id="Subtitle2"><big>A (very) brief history of attention</big></sub>
+<img id="SquareAd2" src="public/images/SquareAd.png">
+<sub id="AuthorTime">BY <b>ERIN PEACE</b>&nbsp;&nbsp;&nbsp;&nbsp;3 MINUTE READ</sub>
+<p id="BodyCopy2">LOOOOOOOOTS OF WORDS HERE.</p>
 
 <!-- Story 3: Cute Puppies -->
 <img id="Story3" src="public/images/Teddy.png">
@@ -124,11 +122,11 @@
 <img id="Eyes" src="public/GIFs/eyes.gif">
 
 <!-- Story 11: Cambridge Analytica -->
-<img id="Story11" src="public/images/CA.png">
+<img id="Story11" src="public/images/CA.png" onclick="window.scrollBy(0,3000)">
 
 <!-- Sponsored 1: Jess -->
-<img id="Story12" src="public/images/JessAd.png">
-<img id="JessGIF" src="public/GIFs/JessGIF.gif">
+<img id="Story12" src="public/images/JessAd.png" onclick="window.scrollBy(0,3000)">
+<img id="JessGIF" src="public/GIFs/JessGIF.gif" onclick="window.scrollBy(0,3000)">
 
 <!-- Sponsored 2: Rikke -->
 <img id="Story13" src="public/images/RikkeAd.png">
@@ -137,56 +135,24 @@
 <img id="Story14" src="public/images/JulieAd.png">
 <img id="JulieGIF" src="public/GIFs/JulieGIF.gif">
 
-<!--
-<img id="Story15" src="public/images/Teddy.png">
-<img id="Story16" src="public/images/Story3.png">
-<img id="Story17" src="public/images/Story1.png">
-<img id="Story18" src="public/images/Story3.png">
-<img id="Story19" src="public/images/Story3.png">
-<img id="Story20" src="public/images/Story1.png">
--->
 
-
-<!--
-<img id="AttnCollection" src="public/images/AttnCollection2.png">
-<button class="notification-button"><img id="notification-radio" src="public/GIFs/transparent.gif"></button>
-<button class="notification-button"><img id="notification-tv" src="public/GIFs/transparent.gif"></button> -->
-
-<!-- <img id="Items" src="public/images/Items-test.png"> -->
-<!-- <img id="Items2" src="public/images/Items-test.png"> -->
-<!-- <img id="Items3" src="public/images/Items-test.png"> -->
-<!-- <img id="SmallBanner1" src="public/images/SmallBanner1.png"> -->
 <img id="PuppyCouch" src="public/images/PuppyCouch.png">
 <button class="notification-button"><img id="notification-PuppyCouch" src="public/GIFs/transparent.gif"></button>
-<!-- <img id="SmallBanner2" src="public/images/SmallBanner1.png"> -->
-<!-- <img id="Items4" src="public/images/Items-test.png"> -->
-<!-- <img id="Items5" src="public/images/Items-test.png"> -->
-<!-- <img id="SmallBanner3" src="public/images/SmallBanner1.png"> -->
-<!-- <img id="Items6" src="public/images/Items-test.png"> -->
-<!-- <img id="Items7" src="public/images/Items-test.png"> -->
+
+
 
 <!-- iPhones -->
-<!-- <img id="LeftHand1" src="public/images/lefthand-straight.png"> -->
 <img id="RightHand" src="public/images/righthand-straight.png">
 <img id="notification-iPhones" src="public/GIFs/transparent.gif">
 
 <div id="wam-game"></div>
-
-<!-- Clickbait
-  <button id="BtnCEO" class="button">You’ll never guess which CEOs are covered in Tattoos</button>
-  <button id="BtnGIFs" class="button">11 perfect GIFs that are too real</button>
-  <button id="BtnSushi" class="button">Why you're eating sushi wrong</button>
-  <button id="BtnStalker" class="button">Watch this mum punch her daughter’s stalker on CCTV</button>
-  <button id="BtnKFC" class="button">KFC unveiled rainbow chicken for Pride week and it’s causing a hilarious controversy</button>
-  <button id="BtnToddler" class="button">Watch this toddler freak out at her surprise party</button>
-  <button id="BtnInstaRobot" class="button">You’ll never guess which Instagram model is actually a robot</button> -->
-
 
 <!--Footer-->
 <img id="footer" src="public/images/footer-placeholder.png">
 
 <!-- Timer -->
 <label id="minutes">00</label><label id="seconds">00</label>
+
 
 
 <!-- javascript -->
@@ -199,7 +165,14 @@ window.onload = function() {whackamole.setup("wam-game");
   }
 </script>
 
-<!-- Pop-up On Load -->
-<!-- <script type="text/javascript" src="public/css-pop.js"></script> -->
+<!-- google adsense -->
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4182567318969298",
+    enable_page_level_ads: true
+  });
+</script>
 
 </body>

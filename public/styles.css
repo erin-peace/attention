@@ -14,6 +14,26 @@
     font-family: LeagueGothic;
     src: url("fonts/LeagueGothic-Italic.otf") format("opentype");
 }
+@font-face {
+    font-family: SFProText;
+    src: url("fonts/SF-Pro-Text-Regular.otf") format("opentype");
+}
+
+#WholePage {
+  position: relative;
+}
+#WholePage::before{
+  content: "";
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 32;
+}
+#WholePage.Blanket::before{
+  background-color: rgba(255, 255, 255, .8);
+  height: 100vh;
+}
 
 #modal {
   background-color: lightgray;
@@ -66,28 +86,23 @@
 #modal2 button:hover {
   background-color: lightblue;
 }
-#ContentModal {
-  background-color: white;
+#SlideIn {
+	height:10vw;;
+	width:100%;
+	background: white;
   border: 2px solid black;
-  padding: 2vw;
-  width: 100%;
+	position:absolute;
+  z-index: 34;
+
 }
-#ContentModal button {
+#SlideIn button {
   padding: 10px 20px;
   border: 2px solid black;
   transition: background-color .4s ease
+
 }
-#ContentModal button:hover {
+#SlideIn button:hover {
   background-color: lightblue;
-}
-#blanket {
-   background-color: #000000;
-   opacity: 0.65;
-   position:absolute;
-   z-index: 35;
-   top:0px;
-   left:0px;
-   width:100%;
 }
 
 
@@ -117,11 +132,6 @@ h4 {
   line-height: 1.2vw;
   color: gray;
 }
-h5 {
-  font-family: 'Reglo-Bold';
-  font-size: 3vw;
-  padding-right: 2vw;
-}
 h6 {
   font-family: 'Reglo-Bold';
   font-size: 2vw;
@@ -130,10 +140,16 @@ h6 {
   position: fixed;
   z-index: 32;
 }
-p {
-  font-family: 'Reglo-Bold';
-  font-size: 3vw;
+sub {
+  font-family: 'SFProText';
+  font-size: 1vw;
 }
+p {
+  font-family: 'SFProText';
+  font-size: 1.3vw;
+}
+
+
 img{
     position:absolute;
 }
@@ -235,16 +251,6 @@ a{
     to {top: 0; opacity: 1}
 }
 
-#SlideIn {
-	height:5vw;;
-	width:99.5%;
-	background:white;
-  border: 2px solid black;
-	position:absolute;
-  z-index: 34;
-  left: .15vw;
-  top: .15vw;
-}
 
 /*TopMenu*/
 #TinyNav {
@@ -353,27 +359,8 @@ a{
    left: -1vw;
    width: 57%;
 }
-/* #Items-three { */
-   z-index: 19;
-   position: absolute;
-   top: 44vw;
-   left: 3vw;
-   width: 94%;
-}
-/* #Items0 { */
-   z-index: 19;
-   position: absolute;
-   top: 74vw;
-   left: 3vw;
-   width: 94%;
-}
-#Radio-old {
-  z-index: 19;
-  position: absolute;
-  top: 44vw;
-  left: 26.9vw;
-  width: 22.5%;
-}
+
+
 #Story1 {
   z-index: 19;
   position: absolute;
@@ -382,6 +369,7 @@ a{
   width: 22.5%;
 }
 
+/* Media History */
 #Story2 {
   z-index: 19;
   position: absolute;
@@ -402,6 +390,44 @@ a{
   top: 32vw;
   left: 56vw;
   width: 5%;
+}
+#BlackLine2 {
+  position: absolute;
+  top: 191vw;
+  left: 7.5vw;
+  width: 85%;
+}
+#DateTime2 {
+  position: absolute;
+  top: 196vw;
+  left: 18.2vw;
+  color: gray;
+}
+#Title2 {
+  position: absolute;
+  top: 195vw;
+  left: 18vw;
+}
+#SquareAd2 {
+  position: absolute;
+  top: 195vw;
+  left: 60vw;
+}
+#Subtitle2 {
+  position: absolute;
+  top: 213.5vw;
+  left: 18.5vw;
+}
+#AuthorTime {
+  position: absolute;
+  top: 213.6vw;
+  left: 39vw;
+  color: gray;
+}
+#BodyCopy2 {
+  position: absolute;
+  top: 222vw;
+  left: 30vw;
 }
 
 #Story3 {
@@ -487,7 +513,6 @@ a{
   top: 75.8vw;
   left: 32.45vw;
   width: 23%;
-  height: 30.15%;
 }
 
 #Story8 {
@@ -539,14 +564,14 @@ a{
 #Story12 {
   z-index: 21;
   position: absolute;
-  top: 145vw;
+  top: 165vw;
   left: 7.7vw;
   width: 22.5%;
 }
 #JessGIF {
   z-index: 21;
   position: absolute;
-  top: 145vw;
+  top: 165vw;
   left: 7.7vw;
   width: 22.5%;
 }
@@ -554,14 +579,14 @@ a{
 #Story13 {
   z-index: 21;
   position: absolute;
-  top: 145vw;
+  top: 165vw;
   left: 32.6vw;
   width: 22.5%;
 }
 #RikkeGIF {
   z-index: 21;
   position: absolute;
-  top: 145vw;
+  top: 165vw;
   left: 32.6vw;
   width: 22.5%;
 }
@@ -569,65 +594,18 @@ a{
 #Story14 {
   z-index: 21;
   position: absolute;
-  top: 145vw;
+  top: 165vw;
   left: 57.5vw;
   width: 22.5%;
 }
 #JulieGIF{
   z-index: 21;
   position: absolute;
-  top: 145vw;
+  top: 165vw;
   left: 57.55vw;
   width: 22.5%;
 }
 
-#Story15 {
-  z-index: 21;
-  position: absolute;
-  top: 185vw;
-  left: 13.7vw;
-  width: 22.5%;
-}
-
-#Story16 {
-  z-index: 21;
-  position: absolute;
-  top: 185vw;
-  left: 38.6vw;
-  width: 22.5%;
-}
-
-#Story17 {
-  z-index: 21;
-  position: absolute;
-  top: 185vw;
-  left: 63.5vw;
-  width: 22.5%;
-}
-
-#Story18 {
-  z-index: 21;
-  position: absolute;
-  top: 207vw;
-  left: 13.7vw;
-  width: 22.5%;
-}
-
-#Story19 {
-  z-index: 21;
-  position: absolute;
-  top: 207vw;
-  left: 38.6vw;
-  width: 22.5%;
-}
-
-#Story20 {
-  z-index: 21;
-  position: absolute;
-  top: 207vw;
-  left: 63.5vw;
-  width: 22.5%;
-}
 
 /*Top Picks*/
 #TopPicks {
@@ -674,6 +652,9 @@ a{
 }
 
 
+
+
+
 /*Attention Collection*/
 
 #AttnCollection {
@@ -682,20 +663,6 @@ a{
    top: 60vw;
    right: 0vw;
    width: 100%;
-}
-#notification-radio {
-  z-index: 20;
-  position: absolute;
-  top: 67vw;
-  left: 67vw;
-  width: 8%;
-}
-#notification-tv {
-  z-index: 20;
-  position: absolute;
-  top: 88.5vw;
-  left: 85vw;
-  width: 8%;
 }
 #PuppyCouch{
   z-index: 21;
