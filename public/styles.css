@@ -436,7 +436,7 @@ a{
   top: 213.5vw;
   left: 18.5vw;
 }
-#AuthorTime {
+#AuthorTime2 {
   position: absolute;
   top: 213.6vw;
   left: 39vw;
@@ -507,6 +507,11 @@ a{
   line-height: 1.4em;
   color: gray;
 }
+#Article2End {
+  position: absolute;
+  top: 472vw;
+  width: 100%;
+}
 
 /* Story 3: Dark Patterns */
 #Story3 {
@@ -516,8 +521,157 @@ a{
   left: 7.7vw;
   width: 22.5%;
 }
+#BlackLine3 {
+  position: absolute;
+  top: 492vw;
+  left: 7.5vw;
+  width: 85%;
+}
+#DateTime3 {
+  position: absolute;
+  top: 497vw;
+  left: 18.2vw;
+  color: gray;
+}
+#Title3 {
+  position: absolute;
+  top: 496vw;
+  left: 18vw;
+}
+#SquareAd3 {
+  position: absolute;
+  top: 496vw;
+  left: 60vw;
+}
+#Subtitle3 {
+  position: absolute;
+  top: 514.5vw;
+  left: 18.5vw;
+}
+#AuthorTime3 {
+  position: absolute;
+  top: 514.6vw;
+  left: 39vw;
+  color: gray;
+}
+#BodyCopy3A {
+  position: absolute;
+  top: 516vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#Dark1 {
+  position: absolute;
+  top: 540vw;
+  left: 30vw;
+  right: 27vw;
+  width: 35%;
+}
+#BodyCopy3B {
+  position: absolute;
+  top: 570vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#Dark2 {
+  position: absolute;
+  left: 33vw;
+  top: 580vw;
+  width: 30%;
+}
+#BodyCopy3C {
+  position: absolute;
+  top: 620vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#Dark3 {
+  position: absolute;
+  top: 630vw;
+  left: 27vw;
+  right: 27vw;
+  width: 44%;
+}
+#Dark4 {
+  position: absolute;
+  top: 670vw;
+  left: 27vw;
+  right: 27vw;
+  width: 44%;
+}
+#BodyCopy3D {
+  position: absolute;
+  top: 700vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#Dark5 {
+  position: absolute;
+  top: 710vw;
+  left: 27vw;
+  right: 27vw;
+  width: 44%;
+}
+#Dark6 {
+  position: absolute;
+  top: 745vw;
+  left: 27vw;
+  right: 27vw;
+  width: 44%;
+}
+#BodyCopy3E {
+  position: absolute;
+  top: 790vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#Dark7 {
+  position: absolute;
+  top: 805vw;
+  left: 27vw;
+  right: 27vw;
+  width: 44%;
+}
+#Dark8 {
+  position: absolute;
+  top: 820vw;
+  left: 27vw;
+  right: 27vw;
+  width: 44%;
+}
+#BodyCopy3F {
+  position: absolute;
+  top: 890vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#Dark9 {
+  position: absolute;
+  top: 902.5vw;
+  left: 27vw;
+  right: 27vw;
+  width: 44%;
+}
+#BodyCopy3G {
+  position: absolute;
+  top: 952vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#Article3End {
+  position: absolute;
+  top: 985vw;
+  width: 100%;
+}
 
-/* Story 4:  */
+/* Story 4: Attention Quiz */
 #Story4 {
   z-index: 19;
   position: absolute;
@@ -558,7 +712,7 @@ a{
   left: 3.2vw;
 }
 
-/* Story 6: Manifesto */
+/* Story 6: CSM */
 #Story6 {
   z-index: 19;
   position: absolute;
@@ -598,9 +752,16 @@ a{
   width: 23%;
 }
 
-/* Story 8: Pay4Social */
+/* Story 8: Smartphone Addiction */
 #Story8 {
   z-index: 19;
+  position: absolute;
+  top: 76vw;
+  left: 57.5vw;
+  width: 22.5%;
+}
+#Eyes {
+  z-index: 22;
   position: absolute;
   top: 76vw;
   left: 57.5vw;
@@ -667,7 +828,7 @@ a{
   width: 5%;
 }
 
-/* Story 10: Smartphone Addiction */
+/* Story 10: Cambridge Analytica */
 #Story10 {
   z-index: 21;
   position: absolute;
@@ -675,15 +836,8 @@ a{
   left: 32.6vw;
   width: 22.5%;
 }
-#Eyes {
-  z-index: 22;
-  position: absolute;
-  top: 123vw;
-  left: 32.6vw;
-  width: 22.5%;
-}
 
-/* Story 11: Cambridge Analytica */
+/* Story 11: Pay4Social */
 #Story11 {
   z-index: 21;
   position: absolute;
@@ -692,8 +846,35 @@ a{
   width: 22.5%;
 }
 
-/* Sponsored 1: Jess */
+/* Story 12: Poem */
 #Story12 {
+  z-index: 21;
+  position: absolute;
+  top: 144vw;
+  left: 7.7vw;
+  width: 22.5%;
+}
+
+/* Story 13: Big 5 Personality Quiz */
+#Story13 {
+  z-index: 21;
+  position: absolute;
+  top: 144vw;
+  left: 32.6vw;
+  width: 22.5%;
+}
+
+/* Story 14: Ad-blocking evil? */
+#Story14 {
+  z-index: 21;
+  position: absolute;
+  top: 144vw;
+  left: 57.5vw;
+  width: 22.5%;
+}
+
+/* Sponsored 1: Jess */
+#Sponsored1 {
   z-index: 21;
   position: absolute;
   top: 165vw;
@@ -709,7 +890,7 @@ a{
 }
 
 /* Sponsored 2: Rikke */
-#Story13 {
+#Sponsored2 {
   z-index: 21;
   position: absolute;
   top: 165vw;
@@ -725,7 +906,7 @@ a{
 }
 
 /* Sponsored 3: Julie */
-#Story14 {
+#Sponsored3 {
   z-index: 21;
   position: absolute;
   top: 165vw;
