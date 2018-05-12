@@ -1,3 +1,13 @@
+
+/* start.html */
+#RedStar {
+  z-index: -1;
+  top: 28vw;
+  left: 42vw;
+  width: 15%;
+}
+
+/* Fonts */
 @font-face {
     font-family: Reglo-Bold;
     src: url("fonts/Reglo-Bold.otf") format("opentype");
@@ -18,7 +28,57 @@
     font-family: SFProText;
     src: url("fonts/SF-Pro-Text-Regular.otf") format("opentype");
 }
+h1 {
+  font-family: 'Reglo-Bold';
+  font-size: 5vw;
+  text-align: center;
+}
+h2 {
+  font-family: 'LeagueGothic';
+  font-size: 4vw;
+  letter-spacing: .1vw;
+}
+h3 {
+  font-family: 'CothamSans';
+  font-size: 3vw;
+  line-height: 4vw;
+  text-align: center;
+}
+h4 {
+  font-family: "Helvetica";
+  font-weight: lighter;
+  font-size: .925vw;
+  text-align: justify;
+  margin-left: 29vw;
+  margin-right: 29vw;
+  line-height: 1.2vw;
+  color: gray;
+}
+h6 {
+  font-family: 'Reglo-Bold';
+  font-size: 2vw;
+  top: 0vw;
+  right: 3.6vw;
+  position: fixed;
+  z-index: 32;
+}
+sub {
+  font-family: 'SFProText';
+  font-size: 1vw;
+}
+p {
+  font-family: 'SFProText';
+  font-size: 1.3vw;
+}
+img{
+    position:absolute;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
 
+/* Popups*/
 #WholePage {
   position: relative;
 }
@@ -34,7 +94,6 @@
   background-color: rgba(255, 255, 255, .8);
   height: 100vh;
 }
-
 #modal {
   background-color: lightgray;
   border: 2px solid black;
@@ -105,66 +164,7 @@
   background-color: lightblue;
 }
 
-
-h1 {
-  font-family: 'Reglo-Bold';
-  font-size: 5vw;
-  text-align: center;
-}
-h2 {
-  font-family: 'LeagueGothic';
-  font-size: 4vw;
-  letter-spacing: .1vw;
-}
-h3 {
-  font-family: 'CothamSans';
-  font-size: 3vw;
-  line-height: 4vw;
-  text-align: center;
-}
-h4 {
-  font-family: "Helvetica";
-  font-weight: lighter;
-  font-size: .925vw;
-  text-align: justify;
-  margin-left: 29vw;
-  margin-right: 29vw;
-  line-height: 1.2vw;
-  color: gray;
-}
-h6 {
-  font-family: 'Reglo-Bold';
-  font-size: 2vw;
-  top: 0vw;
-  right: 3.6vw;
-  position: fixed;
-  z-index: 32;
-}
-sub {
-  font-family: 'SFProText';
-  font-size: 1vw;
-}
-p {
-  font-family: 'SFProText';
-  font-size: 1.3vw;
-}
-
-
-img{
-    position:absolute;
-}
-a{
-  text-decoration: none;
-  color: black;
-}
-
-#RedStar {
-  z-index: -1;
-  top: 28vw;
-  left: 42vw;
-  width: 15%;
-}
-
+/* Other popup stuff */
 .content {
   padding: .5vw;
 }
@@ -250,9 +250,16 @@ a{
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
 }
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
 
-
-/*TopMenu*/
+/* TopMenu */
 #TinyNav {
   width: 80%;
   right:3vw;
@@ -306,24 +313,28 @@ a{
   width: 30%;
 }
 
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
-
-
+/* Title. */
 #Title {
   font-family: "LeagueGothic";
   position: absolute;
   z-index: 30;
 }
+#AttnCollectionTitle {
+   z-index: 20;
+   position: absolute;
+   top: 30vw;
+   left: -1vw;
+   width: 115%;
+}
+#AttnCollectionTitleNew {
+   z-index: 20;
+   position: absolute;
+   top: 18vw;
+   left: -1vw;
+   width: 57%;
+}
 
-/*Begin Content*/
+/* Ads */
 #BannerAd {
    z-index: 30;
    position: absolute;
@@ -345,22 +356,29 @@ a{
    right: 5vw;
    width: 10%;
 }
-#AttnCollectionTitle {
+#SmallBanner1 {
    z-index: 20;
    position: absolute;
-   top: 30vw;
-   left: -1vw;
-   width: 115%;
+   top: 168vw;
+   left: 10vw;
+   width: 80%;
 }
-#AttnCollectionTitleNew {
+#SmallBanner2 {
    z-index: 20;
    position: absolute;
-   top: 18vw;
-   left: -1vw;
-   width: 57%;
+   top: 240vw;
+   left: 10vw;
+   width: 80%;
+}
+#SmallBanner3 {
+   z-index: 20;
+   position: absolute;
+   top: 350vw;
+   left: 10vw;
+   width: 80%;
 }
 
-
+/* Story 1: Deleted */
 #Story1 {
   z-index: 19;
   position: absolute;
@@ -369,7 +387,7 @@ a{
   width: 22.5%;
 }
 
-/* Media History */
+/* Story 2: Media History */
 #Story2 {
   z-index: 19;
   position: absolute;
@@ -424,12 +442,73 @@ a{
   left: 39vw;
   color: gray;
 }
-#BodyCopy2 {
+#BodyCopy2A {
   position: absolute;
-  top: 222vw;
+  top: 215vw;
   left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#NoRadioAds {
+  position: absolute;
+  top: 248vw;
+  left: 18vw;
+  right: 27vw;
+}
+#NoRadioAdsSub {
+  position: absolute;
+  top: 275vw;
+  left: 18vw;
+  right: 27vw;
+  line-height: 1.4em;
+  color: gray;
+}
+#BodyCopy2B {
+  position: absolute;
+  top: 278vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#MoonHoax {
+  position: absolute;
+  top: 352vw;
+  left: 18vw;
+  right: 27vw;
+  width: 48%;
+}
+#MoonHoaxSub {
+  position: absolute;
+  top: 388vw;
+  left: 18vw;
+  right: 30vw;
+  line-height: 1.4em;
+  color: gray;
+}
+#BodyCopy2C {
+  position: absolute;
+  top: 395vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#NoAlexaAds {
+  position: absolute;
+  top: 426vw;
+  left: 18vw;
+  right: 27vw;
+  width: 50%;
+}
+#NoAlexaAdsSub {
+  position: absolute;
+  top: 462.5vw;
+  left: 18vw;
+  right: 30vw;
+  line-height: 1.4em;
+  color: gray;
 }
 
+/* Story 3: Dark Patterns */
 #Story3 {
   z-index: 19;
   position: absolute;
@@ -438,6 +517,7 @@ a{
   width: 22.5%;
 }
 
+/* Story 4:  */
 #Story4 {
   z-index: 19;
   position: absolute;
@@ -446,6 +526,7 @@ a{
   width: 22.5%;
 }
 
+/* Story 5: Lil Miqueala */
 #Story5 {
   z-index: 19;
   position: absolute;
@@ -477,6 +558,7 @@ a{
   left: 3.2vw;
 }
 
+/* Story 6: Manifesto */
 #Story6 {
   z-index: 19;
   position: absolute;
@@ -500,6 +582,7 @@ a{
   left: 3.2vw;
 }
 
+/* Story 7: Zuck */
 #Story7 {
   z-index: 19;
   position: absolute;
@@ -515,6 +598,7 @@ a{
   width: 23%;
 }
 
+/* Story 8: Pay4Social */
 #Story8 {
   z-index: 19;
   position: absolute;
@@ -523,91 +607,7 @@ a{
   width: 22.5%;
 }
 
-#Story9 {
-  z-index: 21;
-  position: absolute;
-  top: 123vw;
-  left: 7.7vw;
-  width: 22.5%;
-}
-#TopRated1{
-  z-index: 22;
-  position: absolute;
-  top: 121vw;
-  left: 6vw;
-  width: 5%;
-}
-
-#Story10 {
-  z-index: 21;
-  position: absolute;
-  top: 123vw;
-  left: 32.6vw;
-  width: 22.5%;
-}
-#Eyes {
-  z-index: 22;
-  position: absolute;
-  top: 123vw;
-  left: 32.6vw;
-  width: 22.5%;
-}
-
-#Story11 {
-  z-index: 21;
-  position: absolute;
-  top: 123vw;
-  left: 57.5vw;
-  width: 22.5%;
-}
-
-#Story12 {
-  z-index: 21;
-  position: absolute;
-  top: 165vw;
-  left: 7.7vw;
-  width: 22.5%;
-}
-#JessGIF {
-  z-index: 21;
-  position: absolute;
-  top: 165vw;
-  left: 7.7vw;
-  width: 22.5%;
-}
-
-#Story13 {
-  z-index: 21;
-  position: absolute;
-  top: 165vw;
-  left: 32.6vw;
-  width: 22.5%;
-}
-#RikkeGIF {
-  z-index: 21;
-  position: absolute;
-  top: 165vw;
-  left: 32.6vw;
-  width: 22.5%;
-}
-
-#Story14 {
-  z-index: 21;
-  position: absolute;
-  top: 165vw;
-  left: 57.5vw;
-  width: 22.5%;
-}
-#JulieGIF{
-  z-index: 21;
-  position: absolute;
-  top: 165vw;
-  left: 57.55vw;
-  width: 22.5%;
-}
-
-
-/*Top Picks*/
+/* Trending now */
 #TopPicks {
    z-index: 20;
    position: absolute;
@@ -651,19 +651,96 @@ a{
    width: 15%;
 }
 
-
-
-
-
-/*Attention Collection*/
-
-#AttnCollection {
-   z-index: 20;
-   position: absolute;
-   top: 60vw;
-   right: 0vw;
-   width: 100%;
+/* Story 9: Teddy */
+#Story9 {
+  z-index: 21;
+  position: absolute;
+  top: 123vw;
+  left: 7.7vw;
+  width: 22.5%;
 }
+#TopRated1{
+  z-index: 22;
+  position: absolute;
+  top: 121vw;
+  left: 6vw;
+  width: 5%;
+}
+
+/* Story 10: Smartphone Addiction */
+#Story10 {
+  z-index: 21;
+  position: absolute;
+  top: 123vw;
+  left: 32.6vw;
+  width: 22.5%;
+}
+#Eyes {
+  z-index: 22;
+  position: absolute;
+  top: 123vw;
+  left: 32.6vw;
+  width: 22.5%;
+}
+
+/* Story 11: Cambridge Analytica */
+#Story11 {
+  z-index: 21;
+  position: absolute;
+  top: 123vw;
+  left: 57.5vw;
+  width: 22.5%;
+}
+
+/* Sponsored 1: Jess */
+#Story12 {
+  z-index: 21;
+  position: absolute;
+  top: 165vw;
+  left: 7.7vw;
+  width: 22.5%;
+}
+#JessGIF {
+  z-index: 21;
+  position: absolute;
+  top: 165vw;
+  left: 7.7vw;
+  width: 22.5%;
+}
+
+/* Sponsored 2: Rikke */
+#Story13 {
+  z-index: 21;
+  position: absolute;
+  top: 165vw;
+  left: 32.6vw;
+  width: 22.5%;
+}
+#RikkeGIF {
+  z-index: 21;
+  position: absolute;
+  top: 165vw;
+  left: 32.6vw;
+  width: 22.5%;
+}
+
+/* Sponsored 3: Julie */
+#Story14 {
+  z-index: 21;
+  position: absolute;
+  top: 165vw;
+  left: 57.5vw;
+  width: 22.5%;
+}
+#JulieGIF{
+  z-index: 21;
+  position: absolute;
+  top: 165vw;
+  left: 57.55vw;
+  width: 22.5%;
+}
+
+/* Dog */
 #PuppyCouch{
   z-index: 21;
   position: relative;
@@ -679,31 +756,7 @@ a{
   width: 8%;
 }
 
-/* ADVERTS */
-
-#SmallBanner1 {
-   z-index: 20;
-   position: absolute;
-   top: 168vw;
-   left: 10vw;
-   width: 80%;
-}
-#SmallBanner2 {
-   z-index: 20;
-   position: absolute;
-   top: 240vw;
-   left: 10vw;
-   width: 80%;
-}
-#SmallBanner3 {
-   z-index: 20;
-   position: absolute;
-   top: 350vw;
-   left: 10vw;
-   width: 80%;
-}
-
-/*iPhones*/
+/* iPhone */
 #wam-game {
 	height: 15vw;
 	width: 30%;
@@ -784,16 +837,16 @@ a{
 	z-index: 1;
 }
 
-/*Footers*/
+/* Footer */
 #footer{
   z-index: 29;
   position: absolute;
-  top: 312vw;
+  top: 1000vw;
   left: 5vw;
   width: 90%;
 }
 
-/*Timers*/
+/* Timers */
 #minutes {
   z-index: 31;
   font-family: 'Reglo-Bold';
