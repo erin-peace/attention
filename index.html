@@ -18,6 +18,13 @@
       <button type="button" name="button" onclick="closePopupTwo()">Close Modal</button>
     </div>
   </div>
+<div id="modal-wrapper-three">
+      <div id="modal3">
+        <h3>Here's a timed popup</h3>
+        <h3>It pops up after a designated amount of time. There's some text inside, and a list which reads as follows:</h3>
+        <button type="button" name="button" onclick="closePopupThree()">Close Modal</button>
+      </div>
+  </div>
 <div id="messagePopup">
     <div id="modal2">
       <h3>message</h3>
@@ -25,7 +32,7 @@
     </div>
   </div>
 <div id="SlideIn">
-      <h4>Here's a cookie popup</h4>
+      <h6>Here's a cookie popup</h6>
       <button type="button" name="button" onclick="hideEl('SlideIn')">Okay</button>
 </div>
 <div id="blanket" style="display:none;"></div>
@@ -41,16 +48,6 @@
       <button type="button" name="button" onclick="closePoemPopup()">Close</button>
     </div>
   </div>
-<div id="InstaPopup">
-      <div id="ContentModal">
-        <h3>Instastory</h3>
-        <p>end</p>
-        <p>end</p>
-        <p>end</p>
-        <p>end</p>
-        <button type="button" name="button" onclick="closeInstaPopup()">Close</button>
-      </div>
-    </div>
 
 <!-- top nav -->
 <img id="TinyNav" src="public/images/TinyNav.png">
@@ -71,17 +68,19 @@
 <!-- top picks -->
 <img id="TopPicks-new" src="public/images/TopPicks-yellow.png">
   <img id="AngryNewsGIF" src="public/GIFs/AngryNews.gif">
-  <!-- <img id="QuizGIF" src="public/GIFs/Quiz.gif"> -->
+  <img id="QuizGIF" src="public/GIFs/PersonalityQuiz.gif">
   <img id="DiceGIF" src="public/GIFs/Die-Big.gif">
   <img id="ScarfGirlGIF" src="public/GIFs/ScarfGirl.gif">
+  <img id="PornGIF" src="public/GIFs/PornGIF2.gif">
 
 <!-- Title -->
 <img id="AttnCollectionTitleNew" src="public/GIFs/HotContent2.gif">
 
 <!-- Story 2: Media History -->
 <img id="Story2" src="public/images/MediaHistory.png">
-  <img id="Radio" src="public/GIFs/Radio.gif" onclick="window.scrollTo(0,2550)">
+  <img id="Radio" src="public/GIFs/Radio.gif" onclick="ScrollStory2 (true);">
   <img id="TopRated2" src="public/images/TopRatedTilted.png">
+  <p id="HiddenTop2">.</p>
   <img id="BlackLine2" src="public/images/BlackLine.png">
   <sub id="DateTime2">8:15 am | Today</sub>
   <h2 id="Title2">WHAT DO FAKE MOON PEOPLE,<br>THE REAL WORLD, AND AMAZON<br>ALEXA HAVE IN COMMON?</h2>
@@ -111,7 +110,8 @@
   <img id="Article2End" src="public/images/ArticleEndPlaceholder2.png">
 
 <!-- Story 3: UX Dark Patterns -->
-<img id="Story3" src="public/images/DarkPatterns.png">
+<img id="Story3" src="public/images/DarkPatterns.png" onclick="ScrollStory3 (true);">
+  <p id="HiddenTop3">.</p>
   <img id="BlackLine3" src="public/images/BlackLine.png">
   <sub id="DateTime3">7:45 am | Today</sub>
   <h2 id="Title3">WHAT IS CONFIRMSHAMING,<br>AND ARE YOU A VICTIM?</h2>
@@ -153,8 +153,24 @@
 <img id="Story4" src="public/images/AttentionQuiz.png">
 
 <!-- Story 5: CGI Models -->
-<img id="Story5" src="public/images/InstaRobot.png">
-  <img id="InstaQs" src="public/GIFs/InstaQs.gif" onclick="InstaPopup()">
+<img id="Story5" src="public/images/InstaRobot.png" onclick="ScrollStory5 (true);">
+  <p id="HiddenTop5">.</p>
+  <img id="InstaQs" src="public/GIFs/InstaQs.gif" onclick="ScrollStory5 (true);">
+  <img id="BlackLine5" src="public/images/BlackLine.png">
+  <sub id="DateTime5">5:45 am | Today</sub>
+  <h2 id="Title5">YOU'LL NEVER GUESS<br>WHICH INSTAGRAM MODEL<br>IS ACTUALLY A ROBOT</h2>
+  <sub id="Subtitle5"><big>And what this means for... politics?</big></sub>
+  <img id="SquareAd5" src="public/images/SquareAd.png">
+  <sub id="AuthorTime5">BY <b>ERIN PEACE</b>&nbsp;&nbsp;&nbsp;&nbsp;2 MINUTE READ</sub>
+  <p id="BodyCopy5A">
+    <br><br>By the looks of it, Lil Miquela is just like any other trendy AF Instagram influencer. She wears Supreme and Vans, listens to Cardi B and receives free perks from brands. She’s not afraid to share her views (“#DefendDACA”), and she lets everyone know what she’s into at the moment (“110% obsessed with @fuckupayus, an all black-femme punk band based in LA”). Oh, and she’s also a singer on Spotify.
+    <br><br>But for those who had doubts about her too-perfect skin, their suspicions were confirmed in a recent text post:</p>
+  <img id="RobotConfession" src="public/images/RobotConfession.png">
+  <p id="BodyCopy5B">
+    <br><br>But not being human doesn’t prohibit Lil Miquela from accepting donations to her favourite charity, blackgirlscode, and it doesn’t stop her from doing interviews and taking on modelling gigs with <i>Novembre</i>, <i>Interview</i> and <i>V Magazine</i>. She gets free stuff from her brands, and definitely makes money through her releases on Spotify and iTunes.
+    <br><br>How many influential Instagram robots are there out there in the world? We at least know of two others — Ronnie Blawko, a <i>very cool</i> male robot, and Bermuda, a female, pro-Trump climate change denier who hacked Lil Miquela’s account in May and pushed her to out herself as non-human.
+    <br><br>The best theories behind this drama trace all three of these techno-people back to a company called Cain Intelligence, who claim to be "leaders in machine learning and artificial intelligence.” Maybe it’s just a graphic designer hungry for attention, mused Beatrice Hazlehurst in an article for <i>Paper Magazine</i>. Or maybe it’s the work of marketing geniuses who are “constructing a spectacular scam to bring attention to both the pages of Lil Miquela and Bermuda, all the while analyzing how we react online to racially ambiguous, beautiful, stylish, 'Black Lives Matter' supporter versus a pro-gun, Tomi Lahren-loving, Aryan Republican.”</p>
+  <img id="Article5End" src="public/images/ArticleEndPlaceholder2.png">
 
 <!-- Story 6: CSM -->
 <img id="Story6" src="public/images/CSM.png">
@@ -170,6 +186,21 @@
 <!-- Story 9: Cute Puppies -->
 <img id="Story9" src="public/images/Teddy.png">
   <img id="TopRated1" src="public/images/TopRatedTilted.png">
+  <!-- Quiz Container -->
+  <!-- <div id="quiz"> -->
+    <!-- Question 1 -->
+    <!-- <div class="card quizlib-question"> -->
+        <!-- <div class="quizlib-question-title">This puppy is...</div> -->
+          <!-- <div class="quizlib-question-answers"> -->
+            <!-- <ul> -->
+              <!-- <li><label><input type="radio" name="q2" value="a">really really cute</label></li> -->
+              <!-- <li><label><input type="radio" name="q2" value="b">super duper cute</label></li> -->
+            <!-- </ul> -->
+          <!-- </div> -->
+        <!-- </div> -->
+    <!-- Answer Button -->
+    <!-- <button type="button" onclick="showResults();">Check Answers</button> -->
+  <!-- </div> -->
 
 <!-- Story 10: Cambridge Analytica -->
 <img id="Story10" src="public/images/CA.png">
@@ -231,5 +262,32 @@
     enable_page_level_ads: true
   });
 </script>
+
+<!-- Scroll to Stories -->
+<!-- Scroll to Story 2 -->
+  <script type="text/javascript">
+    function ScrollStory2 (alignToTop) {
+        var Story2 = document.getElementById ("HiddenTop2");
+        Story2.scrollIntoView (alignToTop);
+        }
+    </script>
+<!-- Scroll to Story 3 -->
+  <script type="text/javascript">
+        function ScrollStory3 (alignToTop) {
+            var Story3 = document.getElementById ("HiddenTop3");
+            Story3.scrollIntoView (alignToTop);
+            }
+        </script>
+<!-- Scroll to Story 5 -->
+  <script type="text/javascript">
+                function ScrollStory5 (alignToTop) {
+                    var Story5 = document.getElementById ("HiddenTop5");
+                    Story5.scrollIntoView (alignToTop);
+                    }
+                </script>
+
+
+
+
 
 </body>

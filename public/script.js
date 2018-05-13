@@ -18,7 +18,7 @@ function moveEl(SlideIn){
 	var popup = getEl(SlideIn);
 	var currentTop = parseInt(popup.offsetTop);
 	var currentLeft = parseInt(popup.offsetLeft);
-var keepMoving = false;
+var keepMoving = true;
 if (currentTop <= endTop){
 	popup.style.top = (currentTop + speed) + "px";
 	keepMoving = true;
@@ -37,10 +37,10 @@ function startMove(SlideIn){
 	timer = setTimeout("moveEl('"+SlideIn+"')", 1);
 }
 function endMove(){
-	clearTimeout(timer);
+	clearTimeout(4000);
 }
 
-//Body Popups
+//Timed Popups
 
 function timedPopup() {
   setTimeout(function() {
@@ -50,6 +50,16 @@ function timedPopup() {
 timedPopup();
 function closePopupTwo() {
   document.getElementById("modal-wrapper-two").style.display = "none";
+}
+
+function timedPopup3() {
+  setTimeout(function() {
+    document.getElementById("modal-wrapper-three").style.display = "flex";
+  }, 3000);
+}
+timedPopup3();
+function closePopupThree() {
+  document.getElementById("modal-wrapper-three").style.display = "none";
 }
 
 
@@ -72,20 +82,11 @@ function closePoemPopup() {
 	document.getElementById("WholePage").classList.remove("Blanket");
 }
 
-function InstaPopup() {
-  document.getElementById("InstaPopup").style.display = "flex";
-	document.getElementById("body").style.position = "fixed";
-	console.log("InstaPopup Clicked");
-}
-function closeInstaPopup() {
-  document.getElementById("InstaPopup").style.display = "none";
-}
-
 // NAVBAR
 window.onscroll = function() {myFunction()};
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-function myFunction() {
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+	function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
@@ -95,10 +96,10 @@ function myFunction() {
 
 // TIMER
 var minutesLabel = document.getElementById("minutes");
-var secondsLabel = document.getElementById("seconds");
-var totalSeconds = 0;
-setInterval(setTime, 1000);
-function setTime() {
+	var secondsLabel = document.getElementById("seconds");
+	var totalSeconds = 0;
+	setInterval(setTime, 1000);
+	function setTime() {
   ++totalSeconds;
   secondsLabel.innerHTML = pad(totalSeconds % 60);
   minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
