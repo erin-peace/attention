@@ -203,12 +203,118 @@ input {
 #RandomPopup1Style button {
   padding: 1vw 2vw;
   border: .1vw solid black;
-  transition: background-color .4s ease
+  transition: background-color .4s ease;
   position:absolute;
   left: 5vw;
 }
 #RandomPopup1Style button:hover {
   background-color: lightblue;
+}
+
+#RandomPopup2 {
+  height: 50vw;
+  display: none;
+  width: 70vw;
+  left: 15vw;
+  position: fixed;
+  z-index: 33;
+}
+#RandomPopup2Style {
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px 40px;
+  top: 0vw;
+  left: 0vw;
+  width: 100%;
+  height: 100%;
+  z-index: 33;
+}
+#RandomPopup2Style button {
+  padding: 1vw 2vw;
+  border: .1vw solid black;
+  transition: background-color .4s ease;
+  position: fixed;
+  top:20vw;
+  left: 20vw;
+  z-index: 34;
+}
+#RandomPopup2Style button:hover {
+  background-color: lightblue;
+}
+
+/* iPhone */
+#wam-game {
+	height: 15vw;
+	width: 30%;
+  top: 27.5vw;
+  left: 23.5vw;
+	display: block;
+	position: fixed;
+  z-index:31;
+}
+#RightHand {
+  right:0vw;
+  position:fixed
+  top: -10vw;
+  width: 140%;
+  z-index:30;
+}
+#notification-iPhones {
+  z-index: 30;
+  top: 26.3vw;
+  left: 33.8vw;
+  position: fixed;
+  width: 9%;
+}
+.wam-pesky-mole,
+.wam-pesky-mole-dead {
+	width: 10vw;
+	height: 10vw;
+	background: url('GIFs/notification-transparent.gif') no-repeat;
+  background-size: 8vw 8vw;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 10;
+}
+.wam-pesky-mole-dead {
+	background: url('images/mole-dead8.png') no-repeat;
+}
+.wam-scoreboard {
+	width: 60vw;
+	line-height: 3vw;
+	position: fixed;
+	top: 4vw;
+	left: 18.5vw;
+	font-size: 5vw;
+  line-height: 1.2em;
+	text-transform: uppercase;
+	color: red;
+	font-family: Reglo-Bold;
+	z-index: 30;
+}
+.wam-startScreen {
+  position: absolute;
+  top: -1.5vw;
+  left: -3.5vw;
+	cursor: pointer;
+  font-family: 'CothamSans';
+  font-size: 4vw;
+  color: red;
+	z-index: 28;
+
+}
+.wam-endScreen {
+  height: 300px;
+	width: 300px;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+	cursor: pointer;
+  font-family: 'CothamSans';
+  font-size: 4vw;
+  color: yellow;
+	z-index: 1;
 }
 
 /* onClick Popups */
@@ -1324,86 +1430,7 @@ input {
   width: 8%;
 }
 
-/* iPhone */
-#wam-game {
-	height: 15vw;
-	width: 30%;
-	display: block;
-	position: absolute;
-	top: 231vw;
-	left: 55vw;
-  z-index:30;
-}
-#LeftHand1 {
-  position: absolute;
-  top: 240vw;
-  left: 0vw;
-  z-index: 21;
-  width: 100%;
-}
-#RightHand {
-  position: absolute;
-  top: 250vw;
-  right: 0vw;
-  z-index: 21;
-  width: 100%;
-}
-#notification-iPhones {
-  z-index: 30;
-  position: absolute;
-  top: 274.5vw;
-  left: 48vw;
-  width: 9%;
-}
-.wam-pesky-mole,
-.wam-pesky-mole-dead {
-	width: 10vw;
-	height: 10vw;
-	background: url('GIFs/notification-transparent.gif') no-repeat;
-  background-size: 8vw 8vw;
-	position: absolute;
-	display: block;
-	cursor: pointer;
-	z-index: 10;
-}
-.wam-pesky-mole-dead {
-	background: url('images/mole-dead8.png') no-repeat;
-}
-.wam-scoreboard {
-	width: 60vw;
-	line-height: 3vw;
-	position: fixed;
-	top: 10vw;
-	left: 2vw;
-	font-size: 3vw;
-	text-transform: uppercase;
-	color: red;
-	font-family: Reglo-Bold;
-	z-index: 30;
-}
-.wam-startScreen {
-  position: absolute;
-  top: -1.5vw;
-  left: -3.5vw;
-	cursor: pointer;
-  font-family: 'CothamSans';
-  font-size: 4vw;
-  color: red;
-	z-index: 28;
 
-}
-.wam-endScreen {
-  height: 300px;
-	width: 300px;
-  position: absolute;
-  top: 40%;
-  left: 5%;
-	cursor: pointer;
-  font-family: 'CothamSans';
-  font-size: 4vw;
-  color: yellow;
-	z-index: 1;
-}
 
 /* Footer */
 #footer{

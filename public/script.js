@@ -72,6 +72,16 @@ function closePopupFour() {
   document.getElementById("RandomPopup1").style.display = "none";
 }
 
+function timedRandomPopup2() {
+  setTimeout(function() {
+    document.getElementById("RandomPopup2").style.display = "flex";
+  }, 1000);
+}
+timedRandomPopup2();
+function closeRandomPopup2() {
+  document.getElementById("RandomPopup2").style.display = "none";
+}
+
 //onClick Popups
 function MessagePopup() {
   document.getElementById("MessagePopup").style.display = "flex";
