@@ -430,6 +430,7 @@ a{
   position: absolute;
   top: 180vw;
   z-index: 0;
+  color: white;
 }
 #BlackLine2 {
   position: absolute;
@@ -547,6 +548,7 @@ a{
   position: absolute;
   top: 481vw;
   z-index: 0;
+  color: white;
 }
 #BlackLine3 {
   position: absolute;
@@ -728,6 +730,7 @@ a{
   position: absolute;
   top: 994vw;
   z-index: 0;
+  color: white;
 }
 #BlackLine5 {
   position: absolute;
@@ -802,6 +805,7 @@ a{
   position: absolute;
   top: 1145vw;
   z-index: 0;
+  color: white;
 }
 #BlackLine6 {
   position: absolute;
@@ -913,7 +917,7 @@ a{
   right: 25vw;
   line-height: 1.4em;
 }
-#Article3End {
+#Article6End {
   position: absolute;
   top: 1443vw;
   width: 100%;
@@ -949,6 +953,58 @@ a{
   top: 76vw;
   left: 57.5vw;
   width: 22.5%;
+}
+#HiddenTop8 {
+  position: absolute;
+  top: 1454vw;
+  z-index: 0;
+  color: white;
+}
+#BlackLine8 {
+  position: absolute;
+  top: 1463vw;
+  left: 7.5vw;
+  width: 85%;
+}
+#DateTime8 {
+  position: absolute;
+  top: 1468vw;
+  left: 18.2vw;
+  color: gray;
+}
+#Title8 {
+  position: absolute;
+  top: 1467vw;
+  left: 18vw;
+}
+#SquareAd8 {
+  position: absolute;
+  top: 1467vw;
+  left: 60vw;
+}
+#Subtitle8 {
+  position: absolute;
+  top: 1485.5vw;
+  left: 18.5vw;
+  right: 47vw;
+}
+#AuthorTime8 {
+  position: absolute;
+  top: 1485.6vw;
+  left: 39vw;
+  color: gray;
+}
+#BodyCopy8A {
+  position: absolute;
+  top: 1487vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#Article8End {
+  position: absolute;
+  top: 1595vw;
+  width: 100%;
 }
 
 /* Trending now */
