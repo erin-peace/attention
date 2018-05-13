@@ -78,92 +78,8 @@ a{
   color: black;
 }
 
-/* Popups*/
-#WholePage {
-  position: relative;
-}
-#WholePage::before{
-  content: "";
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0);
-  z-index: 32;
-}
-#WholePage.Blanket::before{
-  background-color: rgba(255, 255, 255, .8);
-  height: 100vh;
-}
-#modal {
-  background-color: lightgray;
-  border: 2px solid black;
-  padding: 20px 40px;
-  width: 50%;
-  z-index: 34;
-
-}
-#modal2 {
-  background-color: lightgray;
-  border: 2px solid black;
-  padding: 2vw;
-  width: 100%;
-  z-index: 34;
-}
-#modal-wrapper {
-  align-items: center;
-  display: none;
-  justify-content: center;
-  position: absolute;
-  top: 20vw;
-  z-index:34;
-  width:30%;
-}
-#modal-wrapper-two {
-  align-items: center;
-  display: none;
-  top: 20vw;
-  height: 40vh;
-  justify-content: center;
-  position: absolute;
-  z-index: 33;
-}
-#modal button {
-  padding: 1vw 2vw;
-  border: .1vw solid black;
-  transition: background-color .4s ease
-  position:absolute;
-  left: 5vw;
-}
-#modal button:hover {
-  background-color: lightblue;
-}
-#modal2 button {
-  padding: 10px 20px;
-  border: 2px solid black;
-  transition: background-color .4s ease
-}
-#modal2 button:hover {
-  background-color: lightblue;
-}
-#SlideIn {
-	height:10vw;;
-	width:100%;
-	background: white;
-  border: 2px solid black;
-	position:absolute;
-  z-index: 34;
-
-}
-#SlideIn button {
-  padding: 10px 20px;
-  border: 2px solid black;
-  transition: background-color .4s ease
-
-}
-#SlideIn button:hover {
-  background-color: lightblue;
-}
-#modal-wrapper-three {
+/* Top-level Popups*/
+#CookiePopup {
   align-items: center;
   display: none;
   top: 10vw;
@@ -172,14 +88,104 @@ a{
   position: absolute;
   z-index: 33;
 }
-#modal3 button {
+#CookiePopupStyle {
+  background-color: lightgray;
+  border: 2px solid black;
+  padding: 20px 40px;
+  width: 50%;
+  z-index: 34;
+
+}
+#CookiePopupStyle button {
   padding: 1vw 2vw;
   border: .1vw solid black;
   transition: background-color .4s ease
   position:absolute;
   left: 5vw;
 }
-#modal3 button:hover {
+#CookiePopupStyle button:hover {
+  background-color: lightblue;
+}
+
+#WelcomePopup {
+  align-items: center;
+  display: none;
+  top: 20vw;
+  height: 40vh;
+  justify-content: center;
+  position: absolute;
+  z-index: 33;
+}
+#WelcomePopupStyle {
+  background-color: lightgray;
+  border: 2px solid black;
+  padding: 20px 40px;
+  width: 50%;
+  z-index: 34;
+
+}
+#WelcomePopupStyle button {
+  padding: 1vw 2vw;
+  border: .1vw solid black;
+  transition: background-color .4s ease
+  position:absolute;
+  left: 5vw;
+}
+#WelcomePopupStyle button:hover {
+  background-color: lightblue;
+}
+
+#MessagePopup{
+  align-items: center;
+  display: none;
+  justify-content: right;
+  position: fixed;
+  top: 7vw;
+  right: 2vw;
+  z-index:33;
+  width: 30%;
+}
+#MessagePopupStyle {
+  background-color: lightgray;
+  border: 2px solid black;
+  padding: 2vw;
+  width: 100%;
+  z-index: 34;
+}
+#MessagePopupStyle button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  transition: background-color .4s ease
+}
+#MessagePopupStyle button:hover {
+  background-color: lightblue;
+}
+
+#RandomPopup1 {
+  align-items: center;
+  display: none;
+  top: 1030vw;
+  height: 40vw;
+  width: 50vw;
+  justify-content: center;
+  position: absolute;
+  z-index: 33;
+}
+#RandomPopup1Style {
+  background-color: lightgray;
+  border: 2px solid black;
+  padding: 20px 40px;
+  width: 50%;
+  z-index: 34;
+}
+#RandomPopup1Style button {
+  padding: 1vw 2vw;
+  border: .1vw solid black;
+  transition: background-color .4s ease
+  position:absolute;
+  left: 5vw;
+}
+#RandomPopup1Style button:hover {
   background-color: lightblue;
 }
 
@@ -321,16 +327,7 @@ a{
   right: 12vw;
   width: 6%;
 }
-#messagePopup{
-  align-items: center;
-  display: none;
-  justify-content: right;
-  position: fixed;
-  top: 7vw;
-  right: 2vw;
-  z-index:33;
-  width: 30%;
-}
+
 
 /* Title. */
 #Title {
@@ -801,19 +798,125 @@ a{
   left: 7.7vw;
   width: 22.5%;
 }
-#PoemPopup {
-  display: none;
-  position: fixed;
-  top: 16vh;
-  left: 5.5vw;
-  z-index:33;
-  width: 76%;
+#HiddenTop6 {
+  position: absolute;
+  top: 1145vw;
+  z-index: 0;
 }
-#Poem {
-  z-index:34;
-  width: 99.5%;
-  justify-content: center;
-  left: 3.2vw;
+#BlackLine6 {
+  position: absolute;
+  top: 1154vw;
+  left: 7.5vw;
+  width: 85%;
+}
+#DateTime6 {
+  position: absolute;
+  top: 1159vw;
+  left: 18.2vw;
+  color: gray;
+}
+#Title6 {
+  position: absolute;
+  top: 1158vw;
+  left: 18vw;
+}
+#SquareAd6 {
+  position: absolute;
+  top: 1158vw;
+  left: 60vw;
+}
+#Subtitle6 {
+  position: absolute;
+  top: 1176.5vw;
+  left: 18.5vw;
+  right: 47vw;
+}
+#AuthorTime6 {
+  position: absolute;
+  top: 1176.6vw;
+  left: 39vw;
+  color: gray;
+}
+#BodyCopy6A {
+  position: absolute;
+  top: 1178vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#CSM1 {
+  position: absolute;
+  top: 1196vw;
+  left: 33vw;
+  right: 27vw;
+  width: 35%;
+}
+#BodyCopy6B {
+  position: absolute;
+  top: 1241vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#CSM2 {
+  position: absolute;
+  left: 33vw;
+  top: 1250vw;
+  width: 30%;
+}
+#BodyCopy6C {
+  position: absolute;
+  top: 1280vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#CSM3 {
+  position: absolute;
+  top: 1289vw;
+  left: 33vw;
+  right: 27vw;
+  width: 44%;
+}
+#BodyCopy6D {
+  position: absolute;
+  top: 1333vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#CSM4 {
+  position: absolute;
+  top: 1344vw;
+  left: 33vw;
+  right: 27vw;
+  width: 35%;
+}
+#BodyCopy6E {
+  position: absolute;
+  top: 1379vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#CSM5 {
+  position: absolute;
+  top: 1390vw;
+  left: 33vw;
+  right: 27vw;
+  width: 40%;
+}
+#BodyCopy6F {
+  position: absolute;
+  top: 1429vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#Article3End {
+  position: absolute;
+  top: 1443vw;
+  width: 100%;
 }
 
 /* Story 7: Zuck */
@@ -940,6 +1043,20 @@ a{
   top: 144vw;
   left: 7.7vw;
   width: 22.5%;
+}
+#PoemPopup {
+  display: none;
+  position: fixed;
+  top: 16vh;
+  left: 5.5vw;
+  z-index:33;
+  width: 76%;
+}
+#Poem {
+  z-index:34;
+  width: 99.5%;
+  justify-content: center;
+  left: 3.2vw;
 }
 
 /* Story 13: Big 5 Personality Quiz */

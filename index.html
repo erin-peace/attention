@@ -7,35 +7,36 @@
   <title> (1) dopamine</title>
 
 </head>
-<body id="body" onload="firstPopup()">
+<body id="body">
 <a name="top"></a>
 
 <!-- General Pop-ups -->
-<div id="modal-wrapper-two">
-    <div id="modal">
+<div id="WelcomePopup">
+    <div id="WelcomePopupStyle">
       <h3>Here's a timed popup</h3>
       <h3>It pops up after a designated amount of time. There's some text inside, and a list which reads as follows:</h3>
       <button type="button" name="button" onclick="closePopupTwo()">Close Modal</button>
     </div>
   </div>
-<div id="modal-wrapper-three">
-      <div id="modal3">
-        <h3>Here's a timed popup</h3>
-        <h3>It pops up after a designated amount of time. There's some text inside, and a list which reads as follows:</h3>
+<div id="CookiePopup">
+      <div id="CookiePopupStyle">
+        <h3>Here's a cookie popup</h3>
         <button type="button" name="button" onclick="closePopupThree()">Close Modal</button>
       </div>
   </div>
-<div id="messagePopup">
-    <div id="modal2">
+<div id="MessagePopup">
+    <div id="MessagePopupStyle">
       <h3>message</h3>
       <button type="button" name="button" onclick="closemessagePopup()">Close</button>
     </div>
   </div>
-<div id="SlideIn">
-      <h6>Here's a cookie popup</h6>
-      <button type="button" name="button" onclick="hideEl('SlideIn')">Okay</button>
-</div>
 <div id="blanket" style="display:none;"></div>
+<div id="RandomPopup1">
+    <div id="RandomPopup1Style">
+      <h3>message</h3>
+      <button type="button" name="button" onclick="closePopupFour()">Close</button>
+    </div>
+  </div>
 
 <!-- Story Pop-ups -->
 <div id="PoemPopup">
@@ -174,6 +175,32 @@
 
 <!-- Story 6: CSM -->
 <img id="Story6" src="public/images/CSM.png">
+<p id="HiddenTop6">.</p>
+<img id="BlackLine6" src="public/images/BlackLine.png">
+<sub id="DateTime6">2:45 am | Today</sub>
+<h2 id="Title6">YOU KNOW YOU WENT TO CSM<br>WHEN YOU CAN RELATE TO<br>EVERY ONE OF THESE PHOTOS</h2>
+<sub id="Subtitle6"><big>We're so glad you survived.</big></sub>
+<img id="SquareAd6" src="public/images/SquareAd.png">
+<sub id="AuthorTime6">BY <b>ERIN PEACE</b>&nbsp;&nbsp;&nbsp;&nbsp;2 MINUTE READ</sub>
+<p id="BodyCopy6A">
+  <br><br>If you went to UAL: Central Saint Martins, you probably didn’t bat an eye when you saw any of these sights on the daily (expertly captured by @thats_so_CSM):
+  <br><br><br>1. Random mannequins making their appearances in strange places:</p>
+  <img id="CSM1" src="public/images/Leg.png">
+<p id="BodyCopy6B">
+  <br><br>2. Self expression anywhere and everywhere:</p>
+  <img id="CSM2" src="public/images/Fab.png">
+<p id="BodyCopy6C">
+  <br><br>3. Misery in Magenta:</p>
+  <img id="CSM3" src="public/images/Pink.png">
+<p id="BodyCopy6D">
+  <br><br>4. Existential crises as the demand for handmade IKEA backpacks skyrockets:</p>
+  <img id="CSM4" src="public/images/IKEA.png">
+<p id="BodyCopy6E">
+  <br><br>But you were rightly <i>very confused</i> to see this oddly dressed specimen<br> in the halls:</p>
+  <img id="CSM5" src="public/images/Suit.png">
+<p id="BodyCopy6F">
+  <br><br><i>Honestly, what was he even doing here?</i></p>
+<img id="Article6End" src="public/images/ArticleEndPlaceholder2.png">
 
 <!-- Story 7: Mark Zuckerberg -->
 <img id="Story7" src="public/images/MarkyMark.png" onclick="PoemPopup()">

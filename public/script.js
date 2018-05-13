@@ -1,65 +1,33 @@
-// Cookie Popup
-var timer = null;
-var speed = 3; //1 is  slow
-var endTop = 0;
-var endLeft = 0;
-
-function getEl(SlideIn){
-	var el = document.getElementById(SlideIn);
-	return el;
-}
-function showEl(id){
-	getEl(id).style.display ="flex";
-}
-function hideEl(id){
-	getEl(id).style.display ="none";
-}
-function moveEl(SlideIn){
-	var popup = getEl(SlideIn);
-	var currentTop = parseInt(popup.offsetTop);
-	var currentLeft = parseInt(popup.offsetLeft);
-var keepMoving = true;
-if (currentTop <= endTop){
-	popup.style.top = (currentTop + speed) + "px";
-	keepMoving = true;
-}
-if(currentLeft <= endLeft){
-	popup.style.left = (currentLeft + speed) + "px";
-	keepMoving = true;
-}
-if (keepMoving){
-	startMove(SlideIn);
-}
-else{
-	endMove();
-}}
-function startMove(SlideIn){
-	timer = setTimeout("moveEl('"+SlideIn+"')", 1);
-}
-function endMove(){
-	clearTimeout(4000);
-}
-
 //Timed Popups
 
 function timedPopup() {
   setTimeout(function() {
-    document.getElementById("modal-wrapper-two").style.display = "flex";
+    document.getElementById("WelcomePopup").style.display = "flex";
   }, 4000);
 }
 timedPopup();
 function closePopupTwo() {
-  document.getElementById("modal-wrapper-two").style.display = "none";
+  document.getElementById("WelcomePopup").style.display = "none";
 }
 
 function timedPopup3() {
   setTimeout(function() {
-    document.getElementById("modal-wrapper-three").style.display = "flex";
-  }, 3000);
+    document.getElementById("CookiePopup").style.display = "flex";
+  }, 1000);
 }
 timedPopup3();
 function closePopupThree() {
-  document.getElementById("modal-wrapper-three").style.display = "none";
+  document.getElementById("CookiePopup").style.display = "none";
+}
+
+function timedPopup4() {
+  setTimeout(function() {
+    document.getElementById("RandomPopup1").style.display = "flex";
+  }, 1000);
+}
+timedPopup4();
+function closePopupFour() {
+  document.getElementById("RandomPopup1").style.display = "none";
 }
 
 
