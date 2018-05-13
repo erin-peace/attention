@@ -1082,6 +1082,58 @@ a{
   left: 32.6vw;
   width: 22.5%;
 }
+#HiddenTop10 {
+  position: absolute;
+  top: 1604vw;
+  z-index: 0;
+  color: white;
+}
+#BlackLine10 {
+  position: absolute;
+  top: 1615vw;
+  left: 7.5vw;
+  width: 85%;
+}
+#DateTime10 {
+  position: absolute;
+  top: 1620vw;
+  left: 18.2vw;
+  color: gray;
+}
+#Title10 {
+  position: absolute;
+  top: 1619vw;
+  left: 18vw;
+}
+#SquareAd10 {
+  position: absolute;
+  top: 1619vw;
+  left: 60vw;
+}
+#Subtitle10 {
+  position: absolute;
+  top: 1637.5vw;
+  left: 18.5vw;
+  right: 47vw;
+}
+#AuthorTime10 {
+  position: absolute;
+  top: 1637.6vw;
+  left: 39vw;
+  color: gray;
+}
+#BodyCopy10A {
+  position: absolute;
+  top: 1639vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#Article10End {
+  position: absolute;
+  top: 1755vw;
+  width: 100%;
+}
 
 /* Story 11: Pay4Social */
 #Story11 {

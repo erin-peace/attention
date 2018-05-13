@@ -31,11 +31,11 @@ function closePopupFour() {
 }
 
 
-function messagePopup() {
-  document.getElementById("messagePopup").style.display = "flex";
+function MessagePopup() {
+  document.getElementById("MessagePopup").style.display = "flex";
 }
-function closemessagePopup() {
-  document.getElementById("messagePopup").style.display = "none";
+function closeMessagePopup() {
+  document.getElementById("MessagePopup").style.display = "none";
 }
 
 //Story Popups
