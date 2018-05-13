@@ -78,33 +78,81 @@ a{
   color: black;
 }
 
-/* Top-level Popups*/
+/* Quiz */
+#quiz {
+	margin-left: 10vw;;
+	background: none;
+	padding: 1vw;;
+	width: 100%;
+	float: center;
+}
+input {
+	margin-bottom: 20px;
+	display: block;
+}
+#textbox {
+	height: 25px;
+	font-size: 16px;
+	border: none;
+	padding-left: 5px;
+}
+#quizdone {
+	background: white;
+	border: 1px black;
+	padding: 1vw;
+	color: black;
+	font-size: 16px;
+	transition-duration: .2s;
+	margin-top: 15px;
+}
+#quizdone:hover {
+	background: lightgray;
+  border: 1px black;
+	color: black;
+	cursor: pointer;
+
+}
+#after_submit {
+	visibility: hidden;
+	background: #ff5459;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	border-radius: 20px;
+	float: left;
+	margin-left: 20px;
+	font-size: 30px;
+}
+#picture {
+	width: 375px;
+	height: 245px;
+}
+#mc {
+	display: inline;
+}
+
+/* Timed Popups*/
 #CookiePopup {
-  align-items: center;
-  display: none;
-  top: 10vw;
-  height: 40vh;
-  justify-content: center;
-  position: absolute;
+  position: fixed;
+  top: 0vw;
+  left:0vw;
+  width: 100%;
   z-index: 33;
 }
 #CookiePopupStyle {
-  background-color: lightgray;
-  border: 2px solid black;
-  padding: 20px 40px;
-  width: 50%;
+  background-color: yellow;
+  width: 100%;
   z-index: 34;
-
+  color: black;
+  line-height: .4vw;
 }
 #CookiePopupStyle button {
-  padding: 1vw 2vw;
   border: .1vw solid black;
+  padding: .15vw;
   transition: background-color .4s ease
-  position:absolute;
-  left: 5vw;
+  position: fixed;
 }
 #CookiePopupStyle button:hover {
-  background-color: lightblue;
+  background-color: lightgray;
 }
 
 #WelcomePopup {
@@ -135,6 +183,35 @@ a{
   background-color: lightblue;
 }
 
+#RandomPopup1 {
+  align-items: center;
+  display: none;
+  top: 1030vw;
+  height: 40vw;
+  width: 50vw;
+  justify-content: center;
+  position: absolute;
+  z-index: 33;
+}
+#RandomPopup1Style {
+  background-color: lightgray;
+  border: 2px solid black;
+  padding: 20px 40px;
+  width: 50%;
+  z-index: 34;
+}
+#RandomPopup1Style button {
+  padding: 1vw 2vw;
+  border: .1vw solid black;
+  transition: background-color .4s ease
+  position:absolute;
+  left: 5vw;
+}
+#RandomPopup1Style button:hover {
+  background-color: lightblue;
+}
+
+/* onClick Popups */
 #MessagePopup{
   align-items: center;
   display: none;
@@ -161,31 +238,29 @@ a{
   background-color: lightblue;
 }
 
-#RandomPopup1 {
+#AttnQuizPopup{
   align-items: center;
   display: none;
-  top: 1030vw;
-  height: 40vw;
-  width: 50vw;
   justify-content: center;
-  position: absolute;
-  z-index: 33;
-}
-#RandomPopup1Style {
-  background-color: lightgray;
-  border: 2px solid black;
-  padding: 20px 40px;
-  width: 50%;
-  z-index: 34;
-}
-#RandomPopup1Style button {
-  padding: 1vw 2vw;
-  border: .1vw solid black;
-  transition: background-color .4s ease
-  position:absolute;
+  position: fixed;
+  z-index:33;
+  width: 90%;
+  top: 5vw;
   left: 5vw;
 }
-#RandomPopup1Style button:hover {
+#AttnQuizPopupStyle {
+  background-color: lightgray;
+  border: 2px solid black;
+  padding: 2vw;
+  width: 100%;
+  z-index: 34;
+}
+#AttnQuizPopupStyle button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  transition: background-color .4s ease
+}
+#AttnQuizPopupStyle button:hover {
   background-color: lightblue;
 }
 
@@ -1334,7 +1409,7 @@ a{
 #footer{
   z-index: 29;
   position: absolute;
-  top: 3000vw;
+  top: 2000vw;
   left: 5vw;
   width: 90%;
 }

@@ -20,8 +20,9 @@
   </div>
 <div id="CookiePopup">
       <div id="CookiePopupStyle">
-        <h3>Here's a cookie popup</h3>
-        <button type="button" name="button" onclick="closePopupThree()">Close Modal</button>
+        <br><sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          We're using cookies to track and monetise your attention. And you can't do anything about it, k? #sorrynotsorry&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" name="button" onclick="closePopupThree()"><font-family="SFProText"><b>OK</b></font></button><br><br></sub>
       </div>
   </div>
 <div id="MessagePopup">
@@ -31,12 +32,32 @@
     </div>
   </div>
 <div id="blanket" style="display:none;"></div>
+<div id="AttnQuizPopup">
+    <div id="AttnQuizPopupStyle">
+      <h2>WHAT KIND OF ATTENTION<br>DO YOU USE MOST?</h2>
+      <form id="quiz" name="How Well Do You Know Your Attention?">
+          <p>What is the capital of Rhode Island?</p>
+            <input id="textbox" type="text" name="question1">
+          <p>What is the Captial of Connecticut?</p>
+            <input id="mc" type="radio" name="question2" value="Hartford"><br>
+            <input id="mc" type="radio" name="question2" value="Heartford"><br>
+          <input id="quizdone" type="button" value="I'm Finished!" onclick="check();">
+      </form>
+      <div id="after_submit">
+          <p id="number_correct"></p>
+          <p id="message"></p>
+          <img id="picture">
+      </div>
+      <button type="button" name="button" onclick="closeAttnQuizPopup()">Close</button>
+    </div>
+  </div>
 <div id="RandomPopup1">
     <div id="RandomPopup1Style">
-      <h3>message</h3>
       <button type="button" name="button" onclick="closePopupFour()">Close</button>
     </div>
   </div>
+
+<!-- Quizzes -->
 
 <!-- Story Pop-ups -->
 <div id="PoemPopup">
@@ -151,7 +172,7 @@
   <img id="Article3End" src="public/images/ArticleEndPlaceholder2.png">
 
 <!-- Story 4: Attention Quiz -->
-<img id="Story4" src="public/images/AttentionQuiz.png">
+<img id="Story4" src="public/images/AttentionQuiz.png" onclick="AttnQuizPopup()">
 
 <!-- Story 5: CGI Models -->
 <img id="Story5" src="public/images/InstaRobot.png" onclick="ScrollStory5 (true);">
