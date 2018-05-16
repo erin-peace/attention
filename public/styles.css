@@ -1,3 +1,62 @@
+/* back to top */
+@media only screen and (min-width: 1024px) {
+  main p {
+    font-size: 2rem;
+  }
+}
+.cd-top {
+  display: inline-block;
+  height: 4vw;
+  width: 4vw;
+  position: fixed;
+  bottom: 4vw;
+  right: 4vw;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.8) url(cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+  transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+}
+.cd-top.cd-top--show,
+.cd-top.cd-top--fade-out,
+.cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+}
+.cd-top.cd-top--show {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-top--fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .3;
+  z-index: 33;
+}
+.cd-top:hover {
+  background-color: #000000;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    bottom: 4vw;
+    right: 4vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 4vw;
+    width: 4vw;
+    bottom: 4vw;
+    right: 4vw;
+  }
+}
 
 /* start.html */
 #RedStar {
@@ -80,21 +139,17 @@ a{
 
 /* Quiz */
 #quiz {
-	margin-left: 10vw;;
+	margin-left: 3vw;
+  margin-right: 3vw;
 	background: none;
-	padding: 1vw;;
-	width: 100%;
+	padding: 2vw;;
+	width: 90%;
+  columns: 2;
 	float: center;
 }
 input {
-	margin-bottom: 20px;
+	margin-bottom: 1vw;
 	display: block;
-}
-#textbox {
-	height: 25px;
-	font-size: 16px;
-	border: none;
-	padding-left: 5px;
 }
 #quizdone {
 	background: white;
@@ -128,6 +183,10 @@ input {
 }
 #mc {
 	display: inline;
+  height: 1vw;
+  font-size: 1.2em;
+  border: none;
+  padding-left: .5vw;;
 }
 
 /* Timed Popups*/
@@ -351,7 +410,7 @@ input {
   position: fixed;
   z-index:33;
   width: 90%;
-  top: 5vw;
+  top: 3vw;
   left: 5vw;
 }
 #AttnQuizPopupStyle {
@@ -635,6 +694,12 @@ input {
   top: 195vw;
   left: 60vw;
 }
+#SkyscraperStory2 {
+  position: absolute;
+  top: 290vw;
+  left: 10vw;
+  width: 10%;
+}
 #Subtitle2 {
   position: absolute;
   top: 213.5vw;
@@ -752,6 +817,18 @@ input {
   position: absolute;
   top: 496vw;
   left: 60vw;
+}
+#SkyscraperStory3A {
+  position: absolute;
+  top: 523vw;
+  left: 10vw;
+  width: 10%;
+}
+#SkyscraperStory3B {
+  position: absolute;
+  top: 630vw;
+  left: 10vw;
+  width: 10%;
 }
 #Subtitle3 {
   position: absolute;
@@ -1010,6 +1087,12 @@ input {
   top: 1158vw;
   left: 60vw;
 }
+#SkyscraperStory6 {
+  position: absolute;
+  top: 1250vw;
+  left: 10vw;
+  width: 10%;
+}
 #Subtitle6 {
   position: absolute;
   top: 1176.5vw;
@@ -1163,6 +1246,12 @@ input {
   top: 1467vw;
   left: 60vw;
 }
+#SkyscraperStory8 {
+  position: absolute;
+  top: 1520vw;
+  left: 10vw;
+  width: 10%;
+}
 #Subtitle8 {
   position: absolute;
   top: 1485.5vw;
@@ -1238,6 +1327,13 @@ input {
    left: 69vw;
    width: 14%;
 }
+#TrueStoryGIF {
+  z-index: 21;
+  position: absolute;
+  top: 103vw;
+  left: 82.1vw;
+  width: 11.25%;
+}
 
 /* Story 9: Teddy */
 #Story9 {
@@ -1290,6 +1386,12 @@ input {
   position: absolute;
   top: 1619vw;
   left: 60vw;
+}
+#SkyscraperStory10 {
+  position: absolute;
+  top: 1680vw;
+  left: 10vw;
+  width: 10%;
 }
 #Subtitle10 {
   position: absolute;

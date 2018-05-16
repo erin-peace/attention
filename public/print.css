@@ -1,7 +1,74 @@
+/* Fonts */
 @font-face {
     font-family: Reglo-Bold;
     src: url("fonts/Reglo-Bold.otf") format("opentype");
 }
+@font-face {
+    font-family: LibreBaskerville-Regular;
+    src: url("fonts/LibreBaskerville-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: CothamSans;
+    src: url("fonts/CothamSans.otf") format("opentype");
+}
+@font-face {
+    font-family: LeagueGothic;
+    src: url("fonts/LeagueGothic-Italic.otf") format("opentype");
+}
+@font-face {
+    font-family: SFProText;
+    src: url("fonts/SF-Pro-Text-Regular.otf") format("opentype");
+}
+h1 {
+  font-family: 'Reglo-Bold';
+  font-size: 5vw;
+  text-align: center;
+}
+h2 {
+  font-family: 'LeagueGothic';
+  font-size: 4vw;
+  letter-spacing: .1vw;
+}
+h3 {
+  font-family: 'CothamSans';
+  font-size: 3vw;
+  line-height: 4vw;
+  text-align: center;
+}
+h4 {
+  font-family: "Helvetica";
+  font-weight: lighter;
+  font-size: .925vw;
+  text-align: justify;
+  margin-left: 29vw;
+  margin-right: 29vw;
+  line-height: 1.2vw;
+  color: gray;
+}
+h6 {
+  font-family: 'Reglo-Bold';
+  font-size: 2vw;
+  top: 0vw;
+  right: 3.6vw;
+  position: fixed;
+  z-index: 32;
+}
+sub {
+  font-family: 'SFProText';
+  font-size: 1vw;
+}
+p {
+  font-family: 'SFProText';
+  font-size: 1.3vw;
+}
+img{
+    position:absolute;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
 
 body {
   margin: 0;
@@ -9,7 +76,6 @@ body {
   background-color: white; }
   body .controls {
     display: none;}
-
 body.preview {
   background-color: grey; }
   body.preview .controls {
@@ -24,10 +90,8 @@ body.preview {
     padding-bottom: 50px;
     margin: 20px auto;
 }
-
 body.preview .content {
     -webkit-font-smoothing: antialiased; }
-
 body .content {
   -webkit-font-smoothing: none;
   width: 384px;
@@ -35,27 +99,9 @@ body .content {
   margin: 0 auto;
   background-color: white; }
 
-h1 {
-    font-family: 'Reglo-Bold', monospace;
-    font-size: 55px;
-    text-align: center;
-
-      }
-
-h2 {
-    font-family: 'Reglo-Bold', monospace;
-    font-size: 30px;
-    text-align: center;
-
-      }
-
-p {
-    font-family: 'Reglo-Bold', monospace;
-    font-size: 25px;
-    text-align: center;
-    }
-
-a {
-  text-decoration: none;
-  color: white;
-}
+#RedStar {
+    z-index: 2;
+    top: 40vw;
+    left: 50vw;
+    width: 15%;
+  }
