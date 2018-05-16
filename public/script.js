@@ -92,7 +92,7 @@ function closeMessagePopup() {
 }
 
 function AttnQuizPopup() {
-  document.getElementById("AttnQuizPopup").style.display = "flex";
+  document.getElementById("AttnQuizPopup").style.display = "block";
 }
 function closeAttnQuizPopup() {
   document.getElementById("AttnQuizPopup").style.display = "none";

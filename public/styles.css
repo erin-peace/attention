@@ -10,23 +10,23 @@
 /* Fonts */
 @font-face {
     font-family: Reglo-Bold;
-    src: url("/Users/Erin1/Desktop/attention/public/fonts/Reglo-Bold.otf") format("opentype");
+    src: url("fonts/Reglo-Bold.otf") format("opentype");
 }
 @font-face {
     font-family: LibreBaskerville-Regular;
-    src: url("/Users/Erin1/Desktop/attention/public/fonts/LibreBaskerville-Regular.otf") format("opentype");
+    src: url("fonts/LibreBaskerville-Regular.otf") format("opentype");
 }
 @font-face {
     font-family: CothamSans;
-    src: url("/Users/Erin1/Desktop/attention/public/fonts/CothamSans.otf") format("opentype");
+    src: url("fonts/CothamSans.otf") format("opentype");
 }
 @font-face {
     font-family: LeagueGothic;
-    src: url("/Users/Erin1/Desktop/attention/public/fonts/LeagueGothic-Italic.otf") format("opentype");
+    src: url("fonts/LeagueGothic-Italic.otf") format("opentype");
 }
 @font-face {
     font-family: SFProText;
-    src: url("/Users/Erin1/Desktop/attention/public/fonts/SF-Pro-Text-Regular.otf") format("opentype");
+    src: url("fonts/SF-Pro-Text-Regular.otf") format("opentype");
 }
 h1 {
   font-family: 'Reglo-Bold';
@@ -194,7 +194,7 @@ input {
   overflow: hidden;
 }
 #RandomPopup1Style {
-  background-image: url("/Users/Erin1/Desktop/attention/public/images/wave.jpg");
+  background-image: url("images/wave.jpg");
   text-align: center;
   border: 2px solid black;
   padding: 20px 40px;
@@ -370,17 +370,20 @@ input {
   display: none;
   justify-content: center;
   position: fixed;
-  z-index:33;
+  z-index: 33;
   width: 90%;
-  top: 3vw;
-  left: 5vw;
-}
-#AttnQuizPopupStyle {
+  top: 5vh;
+  left: 50%;
+  height: 80vh;
+  transform: translateX(-50%);
+  overflow-y: scroll;
   background-color: lightgray;
   border: 2px solid black;
-  padding: 2vw;
+}
+#AttnQuizPopupStyle {
+  /* padding: 2vw;
   width: 100%;
-  z-index: 34;
+  z-index: 34; */
 }
 #AttnQuizPopupStyle button {
   padding: 10px 20px;
