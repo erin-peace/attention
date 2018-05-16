@@ -55,7 +55,7 @@ h4 {
   color: gray;
 }
 h6 {
-  font-family: 'Reglo-Bold';
+  font-family: 'CothamSans';
   font-size: 2vw;
   top: 0vw;
   right: 3.6vw;
@@ -184,45 +184,56 @@ input {
 }
 
 #RandomPopup1 {
-  align-items: center;
+  position: fixed;
   display: none;
-  top: 1030vw;
+  top: 10vw;
+  width: 60vw;
   height: 40vw;
-  width: 50vw;
-  justify-content: center;
-  position: absolute;
+  left: 20vw;
   z-index: 33;
+  overflow: hidden;
 }
 #RandomPopup1Style {
-  background-color: lightgray;
+  background-image: url("/Users/Erin1/Desktop/attention/public/images/wave.jpg");
+  text-align: center;
   border: 2px solid black;
   padding: 20px 40px;
-  width: 50%;
+  width: 100%;
   z-index: 34;
+  overflow: hidden;
 }
 #RandomPopup1Style button {
-  padding: 1vw 2vw;
+  padding: .5vw .7vw;
   border: .1vw solid black;
   transition: background-color .4s ease;
   position:absolute;
-  left: 5vw;
+  top: 1vw;
+  right: 1vw;
+  font-size: 1em;
 }
 #RandomPopup1Style button:hover {
   background-color: lightblue;
 }
+#wave {
+  top: 1vw;
+  left: 1vw;
+  width: 100%;
+  overflow: hidden;
+
+}
 
 #RandomPopup2 {
-  height: 50vw;
+  width: 70%;
+  height: 70%;
+  right: 0vw;
+  top: -15vw;
   display: none;
-  width: 70vw;
-  left: 15vw;
   position: fixed;
   z-index: 33;
 }
 #RandomPopup2Style {
-  background-color: white;
-  border: 2px solid black;
-  padding: 20px 40px;
+  background-color: none;
+  border: 0px solid black;
   top: 0vw;
   left: 0vw;
   width: 100%;
@@ -230,13 +241,14 @@ input {
   z-index: 33;
 }
 #RandomPopup2Style button {
-  padding: 1vw 2vw;
+  padding: .5vw .7vw;
   border: .1vw solid black;
   transition: background-color .4s ease;
   position: fixed;
-  top:20vw;
-  left: 20vw;
+  top:13vw;
+  right: 1vw;
   z-index: 34;
+  font-size: 1em;
 }
 #RandomPopup2Style button:hover {
   background-color: lightblue;
@@ -246,23 +258,23 @@ input {
 #wam-game {
 	height: 15vw;
 	width: 30%;
-  top: 27.5vw;
-  left: 23.5vw;
+  top: 35.5vw;
+  left: 27.5vw;
 	display: block;
 	position: fixed;
   z-index:31;
 }
 #RightHand {
-  right:0vw;
+  right:-10vw;
   position:fixed
-  top: -10vw;
-  width: 140%;
+  top: 0vw;
+  width: 170%;
   z-index:30;
 }
 #notification-iPhones {
   z-index: 30;
-  top: 26.3vw;
-  left: 33.8vw;
+  top: 15.6vw;
+  left: 48.8vw;
   position: fixed;
   width: 9%;
 }
@@ -284,8 +296,8 @@ input {
 	width: 60vw;
 	line-height: 3vw;
 	position: fixed;
-	top: 4vw;
-	left: 18.5vw;
+	top: 3vw;
+	left: 30vw;
 	font-size: 5vw;
   line-height: 1.2em;
 	text-transform: uppercase;
@@ -295,53 +307,62 @@ input {
 }
 .wam-startScreen {
   position: absolute;
-  top: -1.5vw;
-  left: -3.5vw;
+  top: -5vw;
+  left: -5vw;
 	cursor: pointer;
   font-family: 'CothamSans';
-  font-size: 4vw;
+  font-size: 7vw;
   color: red;
-	z-index: 28;
+	z-index: 35;
 
 }
 .wam-endScreen {
   height: 300px;
 	width: 300px;
   position: absolute;
-  top: 40%;
-  left: 5%;
+  top: 10%;
+  left: 10%;
 	cursor: pointer;
-  font-family: 'CothamSans';
-  font-size: 4vw;
-  color: yellow;
-	z-index: 1;
+  font-family: 'LeagueGothic';
+  font-size: 7.5vw;
+  line-height: 1em;
+  color: red;
+	z-index: 34;
 }
 
 /* onClick Popups */
 #MessagePopup{
   align-items: center;
   display: none;
-  justify-content: right;
   position: fixed;
+  justify-content: left;
   top: 7vw;
-  right: 2vw;
+  right: 4vw;
   z-index:33;
-  width: 30%;
+  width: 25%;
 }
 #MessagePopupStyle {
-  background-color: lightgray;
+  background-color: white;
   border: 2px solid black;
-  padding: 2vw;
+  padding: 1.5vw;
   width: 100%;
   z-index: 34;
 }
 #MessagePopupStyle button {
-  padding: 10px 20px;
-  border: 2px solid black;
+  top: 1vw;
+  padding-left: 13vw;
+  font-size: 1em;
+  border: 0px solid black;
   transition: background-color .4s ease
 }
 #MessagePopupStyle button:hover {
-  background-color: lightblue;
+  color: lightgray;
+  cursor: pointer;
+}
+#BlueNew {
+  font-size: 3em;
+  line-height: 1em;
+  color: blue;
 }
 
 #AttnQuizPopup{

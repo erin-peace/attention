@@ -25,9 +25,9 @@ var whackamole = whackamole || (function(window, undefined) {
 	// TODO: make game configurable, by passing in options object like jquery plugin
 	var	liveClass = "wam-pesky-mole",
 		deadClass = "wam-pesky-mole-dead",
-		hidingInterval = 300,
-		poppingInterval = 1000,
-		moleLimit = 30;
+		hidingInterval = 780,
+		poppingInterval = 700,
+		moleLimit = 15;
 
 	// utility function to get computed style
 	// copied from a google search ;)
@@ -106,8 +106,10 @@ var whackamole = whackamole || (function(window, undefined) {
 		sb = game.scoreboard = document.createElement("div");
 		sb.className = "wam-scoreboard";
 		sb.update = function() {
-			this.innerHTML = "Social score: " + score + "<br />Mark: " + hits + " / " + moles;
+			this.innerHTML = "Social score: " + score;
 		}
+
+		// + "<br />Hits: " + hits + " / " + moles
 
 		// the start screen
 		ss = game.startScreen = document.createElement("div");
@@ -124,7 +126,7 @@ var whackamole = whackamole || (function(window, undefined) {
 		es = game.endScreen = document.createElement("div");
 		es.className = "wam-endScreen";
 		es.style.display = "none";
-		es.innerHTML = "Nice!";
+		es.innerHTML = "PLAY AGAIN?";
 		es.onclick = function() {
 			game.reset();
 			game.mode = "main"
@@ -176,11 +178,13 @@ var whackamole = whackamole || (function(window, undefined) {
 				break;
 			case "end":
 			default:
-				game.scoreboard.innerHTML = "Social score: " + score + "<br />Mark:" + hits + " / " + moles;
+				game.scoreboard.innerHTML = "Social score: " + score;
 				game.endScreen.style.display = "block";
 				break;
 		}
 	}
+
+	// + "<br />Hits:" + hits + " / " + moles
 
 	// public interface
 	// not really sure I need anything but "setup"
