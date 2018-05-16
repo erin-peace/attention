@@ -67,7 +67,7 @@ sub {
   font-size: 1vw;
 }
 p {
-  font-family: 'SFProText';
+  font-family: 'CothamSans';
   font-size: 1.3vw;
 }
 img{
@@ -575,7 +575,7 @@ input {
 #Skyscraper2 {
    z-index: 30;
    position: absolute;
-   top: 123vw;
+   top: 130vw;
    right: 5vw;
    width: 10%;
 }
@@ -752,7 +752,7 @@ input {
 #Story3 {
   z-index: 19;
   position: absolute;
-  top: 55vw;
+  top: 56vw;
   left: 7.7vw;
   width: 22.5%;
 }
@@ -928,7 +928,7 @@ input {
 #Story4 {
   z-index: 19;
   position: absolute;
-  top: 55vw;
+  top: 56vw;
   left: 32.6vw;
   width: 22.5%;
 }
@@ -938,7 +938,7 @@ input {
   z-index: 19;
   position: absolute;
   cursor: pointer;
-  top: 55vw;
+  top: 56vw;
   left: 57.5vw;
   width: 22.5%;
 }
@@ -946,7 +946,7 @@ input {
   z-index: 19;
   position: absolute;
   cursor: pointer;
-  top: 52.5vw;
+  top: 53.5vw;
   left: 58vw;
   width: 22.5%;
 }
@@ -1021,7 +1021,7 @@ input {
   z-index: 19;
   position: absolute;
   cursor: pointer;
-  top: 76vw;
+  top: 78vw;
   left: 7.7vw;
   width: 22.5%;
 }
@@ -1157,14 +1157,14 @@ input {
 #Story7 {
   z-index: 19;
   position: absolute;
-  top: 76vw;
+  top: 78vw;
   left: 32.6vw;
   width: 22.5%;
 }
 #MarkyMark {
   z-index: 19;
   position: absolute;
-  top: 75.8vw;
+  top: 77.8vw;
   left: 32.45vw;
   width: 23%;
 }
@@ -1173,14 +1173,14 @@ input {
 #Story8 {
   z-index: 19;
   position: absolute;
-  top: 76vw;
+  top: 78vw;
   left: 57.5vw;
   width: 22.5%;
 }
 #Eyes {
   z-index: 22;
   position: absolute;
-  top: 76vw;
+  top: 78vw;
   left: 57.5vw;
   width: 22.5%;
 }
@@ -1244,59 +1244,66 @@ input {
 }
 
 /* Trending now */
-#TopPicks {
-   z-index: 20;
-   position: absolute;
-   top: 97vw;
-   left: 13vw;
-   width: 82%;
+#Rectangle {
+  z-index: 20;
+  position: absolute;
+  top: 100vw;
+  left: 0vw;
+  width: 100%;
 }
 #TopPicks-new {
    z-index: 21;
    position: absolute;
-   top: 97vw;
+   top: 102vw;
    left: 5.5vw;
    width: 94%;
+}
+#LOLGIF {
+  z-index: 21;
+  position: absolute;
+  top: 108.6vw;
+  left: 11.5vw;
+  width: 8%;
 }
 #AngryNewsGIF {
    z-index: 21;
    position: absolute;
-   top: 95vw;
+   top: 100.1vw;
    left: 16.5vw;
    width: 22%;
 }
 #QuizGIF {
    z-index: 21;
    position: absolute;
-   top: 102vw;
+   top: 107vw;
    left: 34vw;
    width: 11.5%;
 }
 #DiceGIF {
    z-index: 21;
    position: absolute;
-   top: 95.3vw;
+   top: 100.3vw;
    left: 39vw;
    width: 25%;
 }
 #ScarfGirlGIF {
    z-index: 21;
    position: absolute;
-   top: 103.4vw;
-   left: 56.2vw;
+   top: 108.4vw;
+   left: 56vw;
    width: 15%;
 }
 #PornGIF {
    z-index: 21;
    position: absolute;
-   top: 102.5vw;
+   top: 107.5vw;
    left: 69vw;
    width: 14%;
 }
 #TrueStoryGIF {
   z-index: 21;
   position: absolute;
-  top: 103vw;
+  top: 108vw;
   left: 82.1vw;
   width: 11.25%;
 }
@@ -1305,14 +1312,14 @@ input {
 #Story9 {
   z-index: 21;
   position: absolute;
-  top: 123vw;
+  top: 130vw;
   left: 7.7vw;
   width: 22.5%;
 }
 #TopRated1{
   z-index: 22;
   position: absolute;
-  top: 121vw;
+  top: 128vw;
   left: 6vw;
   width: 5%;
 }
@@ -1321,7 +1328,7 @@ input {
 #Story10 {
   z-index: 21;
   position: absolute;
-  top: 123vw;
+  top: 130vw;
   left: 32.6vw;
   width: 22.5%;
 }
@@ -1388,7 +1395,7 @@ input {
 #Story11 {
   z-index: 21;
   position: absolute;
-  top: 123vw;
+  top: 130vw;
   left: 57.5vw;
   width: 22.5%;
 }
