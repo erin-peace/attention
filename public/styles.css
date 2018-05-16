@@ -747,7 +747,60 @@ input {
   top: 472vw;
   width: 100%;
 }
-
+#BlackLineRelatedTop2 {
+  position: absolute;
+  top: 472vw;
+  left: 20vw;
+  width: 60%;
+}
+#RelatedArticles2 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 473vw;
+  left: 20vw;
+}
+#RelatedTopLeft2{
+  position: absolute;
+  font-size: 1.5em;
+  top: 476vw;
+  left: 22vw;
+}
+#RelatedBottomLeft2{
+  position: absolute;
+  font-size: 1.5em;
+  top: 481vw;
+  left: 22vw;
+}
+#RelatedTopMiddle2{
+  position: absolute;
+  font-size: 1.5em;
+  top: 476vw;
+  left: 41vw;
+}
+#RelatedBottomMiddle2{
+  position: absolute;
+  font-size: 1.5em;
+  top: 481vw;
+  left: 41vw;
+}
+#RelatedTopRight2{
+  position: absolute;
+  font-size: 1.5em;
+  top: 476vw;
+  left: 60vw;
+}
+#RelatedBottomRight2{
+  position: absolute;
+  font-size: 1.5em;
+  top: 481vw;
+  left: 60vw;
+}
+#BlackLineRelatedBottom2 {
+  position: absolute;
+  top: 487vw;
+  left: 20vw;
+  width: 60%;
+}
 /* Story 3: Dark Patterns */
 #Story3 {
   z-index: 19;
