@@ -36,8 +36,9 @@ h1 {
 }
 h2 {
   font-family: 'LeagueGothic';
-  font-size: 4vw;
+  font-size: 4.3vw;
   letter-spacing: .1vw;
+  line-height: 1.1em;
 }
 h3 {
   font-family: 'Sintony', sans-serif;
@@ -586,6 +587,14 @@ input {
    width: 57%;
 }
 
+#BlackLineSponsored {
+  z-index: 20;
+  position: absolute;
+  top: 158vw;
+  left: 8vw;
+  width: 72%;
+}
+
 /* Ads */
 #BannerAd {
    z-index: 30;
@@ -795,36 +804,42 @@ input {
   font-size: 1.5em;
   top: 476vw;
   left: 22vw;
+  width: 18.5%;
 }
 #RelatedBottomLeft2{
   position: absolute;
   font-size: 1.5em;
   top: 481vw;
   left: 22vw;
+  width: 18.5%;
 }
 #RelatedTopMiddle2{
   position: absolute;
   font-size: 1.5em;
   top: 476vw;
   left: 41vw;
+  width: 18.5%;
 }
 #RelatedBottomMiddle2{
   position: absolute;
   font-size: 1.5em;
   top: 481vw;
   left: 41vw;
+  width: 18.5%;
 }
 #RelatedTopRight2{
   position: absolute;
   font-size: 1.5em;
   top: 476vw;
   left: 60vw;
+  width: 18.5%;
 }
 #RelatedBottomRight2{
   position: absolute;
   font-size: 1.5em;
   top: 481vw;
   left: 60vw;
+  width: 18.5%;
 }
 #BlackLineRelatedBottom2 {
   position: absolute;
@@ -1020,42 +1035,49 @@ input {
   font-size: 1em;
   top: 986vw;
   left: 20vw;
+  width: 18.5%;
 }
 #RelatedTopLeft3{
   position: absolute;
   font-size: 1.5em;
   top: 989vw;
   left: 22vw;
+  width: 18.5%;
 }
 #RelatedBottomLeft3{
   position: absolute;
   font-size: 1.5em;
   top: 994vw;
   left: 22vw;
+  width: 18.5%;
 }
 #RelatedTopMiddle3{
   position: absolute;
   font-size: 1.5em;
   top: 989vw;
   left: 41vw;
+  width: 18.5%;
 }
 #RelatedBottomMiddle3{
   position: absolute;
   font-size: 1.5em;
   top: 994vw;
   left: 41vw;
+  width: 18.5%;
 }
 #RelatedTopRight3{
   position: absolute;
   font-size: 1.5em;
   top: 989vw;
   left: 60vw;
+  width: 18.5%;
 }
 #RelatedBottomRight3{
   position: absolute;
   font-size: 1.5em;
   top: 994vw;
   left: 60vw;
+  width: 18.5%;
 }
 #BlackLineRelatedBottom3 {
   position: absolute;
@@ -1154,6 +1176,67 @@ input {
   position: absolute;
   top: 1134vw;
   width: 100%;
+}
+#BlackLineRelatedTop5 {
+  position: absolute;
+  top: 1134vw;
+  left: 20vw;
+  width: 60%;
+}
+#RelatedArticles5 {
+  position: absolute;
+  font-size: 1em;
+  top: 1135vw;
+  left: 20vw;
+  width: 18.5%;
+}
+#RelatedTopLeft5 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1138vw;
+  left: 22vw;
+  width: 18.5%;
+}
+#RelatedBottomLeft5 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1143vw;
+  left: 22vw;
+  width: 18.5%;
+}
+#RelatedTopMiddle5 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1138vw;
+  left: 41vw;
+  width: 18.5%;
+}
+#RelatedBottomMiddle5 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1143vw;
+  left: 41vw;
+  width: 18.5%;
+}
+#RelatedTopRight5 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1138vw;
+  left: 60vw;
+  width: 18.5%;
+}
+#RelatedBottomRight5 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1143vw;
+  left: 60vw;
+  width: 18.5%;
+}
+#BlackLineRelatedBottom5 {
+  position: absolute;
+  top: 1149vw;
+  left: 20vw;
+  width: 60%;
 }
 
 
@@ -1294,6 +1377,67 @@ input {
   top: 1443vw;
   width: 100%;
 }
+#BlackLineRelatedTop6 {
+  position: absolute;
+  top: 1443vw;
+  left: 20vw;
+  width: 60%;
+}
+#RelatedArticles6 {
+  position: absolute;
+  font-size: 1em;
+  top: 1444vw;
+  left: 20vw;
+  width: 18.5%;
+}
+#RelatedTopLeft6 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1447vw;
+  left: 22vw;
+  width: 18.5%;
+}
+#RelatedBottomLeft6 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1452vw;
+  left: 22vw;
+  width: 18.5%;
+}
+#RelatedTopMiddle6 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1447vw;
+  left: 41vw;
+  width: 18.5%;
+}
+#RelatedBottomMiddle6 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1452vw;
+  left: 41vw;
+  width: 18.5%;
+}
+#RelatedTopRight6 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1447vw;
+  left: 60vw;
+  width: 18.5%;
+}
+#RelatedBottomRight6 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1452vw;
+  left: 60vw;
+  width: 18.5%;
+}
+#BlackLineRelatedBottom6 {
+  position: absolute;
+  top: 1458vw;
+  left: 20vw;
+  width: 60%;
+}
 
 /* Story 7: Zuck */
 #Story7 {
@@ -1385,68 +1529,129 @@ input {
   top: 1595vw;
   width: 100%;
 }
+#BlackLineRelatedTop8 {
+  position: absolute;
+  top: 1595vw;
+  left: 20vw;
+  width: 60%;
+}
+#RelatedArticles8 {
+  position: absolute;
+  font-size: 1em;
+  top: 1596vw;
+  left: 20vw;
+  width: 18.5%;
+}
+#RelatedTopLeft8 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1599vw;
+  left: 22vw;
+  width: 18.5%;
+}
+#RelatedBottomLeft8 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1604vw;
+  left: 22vw;
+  width: 18.5%;
+}
+#RelatedTopMiddle8 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1599vw;
+  left: 41vw;
+  width: 18.5%;
+}
+#RelatedBottomMiddle8 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1604vw;
+  left: 41vw;
+  width: 18.5%;
+}
+#RelatedTopRight8 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1599vw;
+  left: 60vw;
+  width: 18.5%;
+}
+#RelatedBottomRight8 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1604vw;
+  left: 60vw;
+  width: 18.5%;
+}
+#BlackLineRelatedBottom8 {
+  position: absolute;
+  top: 1610vw;
+  left: 20vw;
+  width: 60%;
+}
 
 /* Trending now */
 #Rectangle {
   z-index: 20;
   position: absolute;
-  top: 100vw;
+  top: 102vw;
   left: 0vw;
   width: 100%;
 }
 #TopPicks-new {
    z-index: 21;
    position: absolute;
-   top: 102vw;
+   top: 104vw;
    left: 5.5vw;
    width: 94%;
 }
 #LOLGIF {
   z-index: 21;
   position: absolute;
-  top: 108.6vw;
+  top: 110.6vw;
   left: 11.5vw;
   width: 8%;
 }
 #AngryNewsGIF {
    z-index: 21;
    position: absolute;
-   top: 100.1vw;
+   top: 102.1vw;
    left: 16.5vw;
    width: 22%;
 }
 #QuizGIF {
    z-index: 21;
    position: absolute;
-   top: 107vw;
+   top: 109vw;
    left: 34vw;
    width: 11.5%;
 }
 #DiceGIF {
    z-index: 21;
    position: absolute;
-   top: 100.3vw;
+   top: 102.3vw;
    left: 39vw;
    width: 25%;
 }
 #ScarfGirlGIF {
    z-index: 21;
    position: absolute;
-   top: 108.4vw;
+   top: 110.4vw;
    left: 56vw;
    width: 15%;
 }
 #PornGIF {
    z-index: 21;
    position: absolute;
-   top: 107.5vw;
+   top: 109.5vw;
    left: 69vw;
    width: 14%;
 }
 #TrueStoryGIF {
   z-index: 21;
   position: absolute;
-  top: 108vw;
+  top: 110vw;
   left: 82.1vw;
   width: 11.25%;
 }
@@ -1455,14 +1660,14 @@ input {
 #Story9 {
   z-index: 21;
   position: absolute;
-  top: 130vw;
+  top: 133vw;
   left: 7.7vw;
   width: 22.5%;
 }
 #TopRated1{
   z-index: 22;
   position: absolute;
-  top: 128vw;
+  top: 131vw;
   left: 6vw;
   width: 5%;
 }
@@ -1471,7 +1676,7 @@ input {
 #Story10 {
   z-index: 21;
   position: absolute;
-  top: 130vw;
+  top: 133vw;
   left: 32.6vw;
   width: 22.5%;
 }
@@ -1534,15 +1739,197 @@ input {
   top: 1755vw;
   width: 100%;
 }
+#BlackLineRelatedTop10 {
+  position: absolute;
+  top: 1755vw;
+  left: 20vw;
+  width: 60%;
+}
+#RelatedArticles10 {
+  position: absolute;
+  font-size: 1em;
+  top: 1756vw;
+  left: 20vw;
+  width: 18.5%;
+}
+#RelatedTopLeft10 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1759vw;
+  left: 22vw;
+  width: 18.5%;
+}
+#RelatedBottomLeft10 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1764vw;
+  left: 22vw;
+  width: 18.5%;
+}
+#RelatedTopMiddle10 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1759vw;
+  left: 41vw;
+  width: 18.5%;
+}
+#RelatedBottomMiddle10 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1764vw;
+  left: 41vw;
+  width: 18.5%;
+}
+#RelatedTopRight10 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1759vw;
+  left: 60vw;
+  width: 18.5%;
+}
+#RelatedBottomRight10 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 1764vw;
+  left: 60vw;
+  width: 18.5%;
+}
+#BlackLineRelatedBottom10 {
+  position: absolute;
+  top: 1770vw;
+  left: 20vw;
+  width: 60%;
+}
 
-/* Story 11: Pay4Social */
+/* Story 11: Tools */
 #Story11 {
   z-index: 21;
   position: absolute;
-  top: 130vw;
+  top: 133vw;
   left: 57.5vw;
   width: 22.5%;
 }
+#HiddenTop11 {
+  position: absolute;
+  top: 1604vw;
+  z-index: 0;
+  color: white;
+}
+#BlackLine11 {
+  position: absolute;
+  top: 1615vw;
+  left: 7.5vw;
+  width: 85%;
+}
+#DateTime11 {
+  position: absolute;
+  top: 1620vw;
+  left: 18.2vw;
+  color: gray;
+}
+#Title11 {
+  position: absolute;
+  top: 1619vw;
+  left: 18vw;
+}
+#SquareAd11 {
+  position: absolute;
+  top: 1619vw;
+  left: 60vw;
+  width: 22%;
+}
+#SkyscraperStory11 {
+  position: absolute;
+  top: 1680vw;
+  left: 10vw;
+  width: 10%;
+}
+#Subtitle11 {
+  position: absolute;
+  top: 1637.5vw;
+  left: 18.5vw;
+  right: 47vw;
+}
+#AuthorTime11 {
+  position: absolute;
+  top: 1637.6vw;
+  left: 39vw;
+  color: gray;
+}
+#BodyCopy11A {
+  position: absolute;
+  top: 1639vw;
+  left: 30vw;
+  right: 25vw;
+  line-height: 1.4em;
+}
+#Article11End {
+  position: absolute;
+  top: 1755vw;
+  width: 100%;
+}
+#BlackLineRelatedTop11 {
+  position: absolute;
+  top: 985vw;
+  left: 20vw;
+  width: 60%;
+}
+#RelatedArticles11 {
+  position: absolute;
+  font-size: 1em;
+  top: 986vw;
+  left: 20vw;
+  width: 18.5%;
+}
+#RelatedTopLeft11 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 989vw;
+  left: 22vw;
+  width: 18.5%;
+}
+#RelatedBottomLeft11 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 994vw;
+  left: 22vw;
+  width: 18.5%;
+}
+#RelatedTopMiddle11 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 989vw;
+  left: 41vw;
+  width: 18.5%;
+}
+#RelatedBottomMiddle11 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 994vw;
+  left: 41vw;
+  width: 18.5%;
+}
+#RelatedTopRight11 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 989vw;
+  left: 60vw;
+  width: 18.5%;
+}
+#RelatedBottomRight11 {
+  position: absolute;
+  font-size: 1.5em;
+  top: 994vw;
+  left: 60vw;
+  width: 18.5%;
+}
+#BlackLineRelatedBottom11 {
+  position: absolute;
+  top: 1000vw;
+  left: 20vw;
+  width: 60%;
+}
+
 
 /* Story 12: Poem */
 #Story12 {
@@ -1566,7 +1953,6 @@ input {
   justify-content: center;
   left: 3.2vw;
 }
-
 /* Story 13: Big 5 Personality Quiz */
 #Story13 {
   z-index: 21;
@@ -1575,7 +1961,6 @@ input {
   left: 32.6vw;
   width: 22.5%;
 }
-
 /* Story 14: Ad-blocking evil? */
 #Story14 {
   z-index: 21;
@@ -1589,14 +1974,14 @@ input {
 #Sponsored1 {
   z-index: 21;
   position: absolute;
-  top: 165vw;
+  top: 167vw;
   left: 7.7vw;
   width: 22.5%;
 }
 #JessGIF {
   z-index: 21;
   position: absolute;
-  top: 165vw;
+  top: 167vw;
   left: 7.7vw;
   width: 22.5%;
 }
@@ -1605,14 +1990,14 @@ input {
 #Sponsored2 {
   z-index: 21;
   position: absolute;
-  top: 165vw;
+  top: 167vw;
   left: 32.6vw;
   width: 22.5%;
 }
 #RikkeGIF {
   z-index: 21;
   position: absolute;
-  top: 165vw;
+  top: 167vw;
   left: 32.6vw;
   width: 22.5%;
 }
@@ -1621,14 +2006,14 @@ input {
 #Sponsored3 {
   z-index: 21;
   position: absolute;
-  top: 165vw;
+  top: 167vw;
   left: 57.5vw;
   width: 22.5%;
 }
 #JulieGIF{
   z-index: 21;
   position: absolute;
-  top: 165vw;
+  top: 167vw;
   left: 57.55vw;
   width: 22.5%;
 }
