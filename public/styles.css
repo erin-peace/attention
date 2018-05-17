@@ -8,6 +8,7 @@
 }
 
 /* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Archivo|Average+Sans|Harmattan|Pavanam');
 @font-face {
     font-family: Reglo-Bold;
     src: url("fonts/Reglo-Bold.otf") format("opentype");
@@ -29,7 +30,7 @@
     src: url("fonts/SF-Pro-Text-Regular.otf") format("opentype");
 }
 h1 {
-  font-family: 'Reglo-Bold';
+  font-family: 'News Cycle';
   font-size: 5vw;
   text-align: center;
 }
@@ -39,13 +40,13 @@ h2 {
   letter-spacing: .1vw;
 }
 h3 {
-  font-family: 'CothamSans';
+  font-family: 'Sintony', sans-serif;
   font-size: 3vw;
   line-height: 4vw;
   text-align: center;
 }
 h4 {
-  font-family: "Helvetica";
+  font-family: 'Sintony', sans-serif;
   font-weight: lighter;
   font-size: .925vw;
   text-align: justify;
@@ -55,7 +56,7 @@ h4 {
   color: gray;
 }
 h6 {
-  font-family: 'CothamSans';
+  font-family: 'Sintony', sans-serif;
   font-size: 2vw;
   top: 0vw;
   right: 3.6vw;
@@ -63,12 +64,12 @@ h6 {
   z-index: 32;
 }
 sub {
-  font-family: 'SFProText';
+  font-family: 'Sintony', sans-serif;
   font-size: 1vw;
 }
 p {
-  font-family: 'CothamSans';
-  font-size: 1.3vw;
+  font-family: 'Sintony', sans-serif;
+  font-size: 1.25vw;
 }
 img{
     position:absolute;
@@ -394,6 +395,35 @@ input {
   background-color: lightblue;
 }
 
+#TeddyPopup{
+  align-items: center;
+  display: none;
+  justify-content: center;
+  position: fixed;
+  z-index: 33;
+  width: 90%;
+  top: 5vh;
+  left: 50%;
+  height: 80vh;
+  transform: translateX(-50%);
+  overflow-y: scroll;
+  background-color: lightgray;
+  border: 2px solid black;
+}
+#TeddyPopupStyle {
+  /* padding: 2vw;
+  width: 100%;
+  z-index: 34; */
+}
+#TeddyPopupStyle button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  transition: background-color .4s ease
+}
+#TeddyPopupStyle button:hover {
+  background-color: lightblue;
+}
+
 /* Other popup stuff */
 .content {
   padding: .5vw;
@@ -659,6 +689,7 @@ input {
   position: absolute;
   top: 195vw;
   left: 60vw;
+  width: 22%;
 }
 #SkyscraperStory2 {
   position: absolute;
@@ -755,7 +786,7 @@ input {
 }
 #RelatedArticles2 {
   position: absolute;
-  font-size: 1.5em;
+  font-size: 1em;
   top: 473vw;
   left: 20vw;
 }
@@ -801,6 +832,7 @@ input {
   left: 20vw;
   width: 60%;
 }
+
 /* Story 3: Dark Patterns */
 #Story3 {
   z-index: 19;
@@ -836,6 +868,7 @@ input {
   position: absolute;
   top: 496vw;
   left: 60vw;
+  width: 22%;
 }
 #SkyscraperStory3A {
   position: absolute;
@@ -976,6 +1009,60 @@ input {
   top: 985vw;
   width: 100%;
 }
+#BlackLineRelatedTop3 {
+  position: absolute;
+  top: 985vw;
+  left: 20vw;
+  width: 60%;
+}
+#RelatedArticles3 {
+  position: absolute;
+  font-size: 1em;
+  top: 986vw;
+  left: 20vw;
+}
+#RelatedTopLeft3{
+  position: absolute;
+  font-size: 1.5em;
+  top: 989vw;
+  left: 22vw;
+}
+#RelatedBottomLeft3{
+  position: absolute;
+  font-size: 1.5em;
+  top: 994vw;
+  left: 22vw;
+}
+#RelatedTopMiddle3{
+  position: absolute;
+  font-size: 1.5em;
+  top: 989vw;
+  left: 41vw;
+}
+#RelatedBottomMiddle3{
+  position: absolute;
+  font-size: 1.5em;
+  top: 994vw;
+  left: 41vw;
+}
+#RelatedTopRight3{
+  position: absolute;
+  font-size: 1.5em;
+  top: 989vw;
+  left: 60vw;
+}
+#RelatedBottomRight3{
+  position: absolute;
+  font-size: 1.5em;
+  top: 994vw;
+  left: 60vw;
+}
+#BlackLineRelatedBottom3 {
+  position: absolute;
+  top: 1000vw;
+  left: 20vw;
+  width: 60%;
+}
 
 /* Story 4: Attention Quiz */
 #Story4 {
@@ -1030,6 +1117,7 @@ input {
   position: absolute;
   top: 1009vw;
   left: 60vw;
+  width: 22%;
 }
 #Subtitle5 {
   position: absolute;
@@ -1105,6 +1193,7 @@ input {
   position: absolute;
   top: 1158vw;
   left: 60vw;
+  width: 22%;
 }
 #SkyscraperStory6 {
   position: absolute;
@@ -1264,6 +1353,7 @@ input {
   position: absolute;
   top: 1467vw;
   left: 60vw;
+  width: 22%;
 }
 #SkyscraperStory8 {
   position: absolute;
@@ -1412,6 +1502,7 @@ input {
   position: absolute;
   top: 1619vw;
   left: 60vw;
+  width: 22%;
 }
 #SkyscraperStory10 {
   position: absolute;

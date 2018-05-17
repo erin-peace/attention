@@ -98,6 +98,13 @@ function closeAttnQuizPopup() {
   document.getElementById("AttnQuizPopup").style.display = "none";
 }
 
+function TeddyPopup() {
+  document.getElementById("TeddyPopup").style.display = "block";
+}
+function closeTeddyPopup() {
+  document.getElementById("TeddyPopup").style.display = "none";
+}
+
 //Story Popups
 function PoemPopup() {
   document.getElementById("PoemPopup").style.display = "flex";

@@ -1,14 +1,19 @@
-<!DOCTYPE html>
+RelatedArticle1SintonySintony<!DOCTYPE html>
   <html>
 <head lang="en">
     <meta charset="UTF-8">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="images/static-notification.png">
+<link href="https://fonts.googleapis.com/css?family=Sintony|Istok+Web|News+Cycle" rel="stylesheet">
   <title> (1) dopamine</title>
 
 </head>
 <body id="body">
 <a name="top"></a>
+
+<!-- poll -->
+
+
 
 <!-- General Pop-ups -->
 <div id="WelcomePopup">
@@ -86,6 +91,22 @@
       <button type="button" name="button" onclick="closeRandomPopup2()">X</button>
     </div>
   </div>
+<div id="TeddyPopup">
+    <div id="TeddPopupStyle">
+      <h3 align="center">Poll</h3>
+      <div id="poll">
+        <h3>Do you like PHP and AJAX so far?</h3>
+          <form>
+          Yes:
+            <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+          <br>
+          No:
+            <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+          </form>
+        </div>
+      <button type="button" name="button" onclick="closeTeddyPopup()">Close</button>
+    </div>
+</div>
 
 <!-- Quizzes -->
 
@@ -167,12 +188,12 @@
   <!-- <img id="Article2End" src="images/ArticleEndPlaceholder2.png"> -->
   <img id="BlackLineRelatedTop2" src="images/BlackLine.png">
   <sub id="RelatedArticles2"><b>RELATED ARTICLES</b></sub>
-  <img id="RelatedTopLeft2" src="images/RelatedArticle1.png">
-  <img id="RelatedBottomLeft2" src="images/RelatedArticle1.png">
-  <img id="RelatedTopMiddle2" src="images/RelatedArticle1.png">
-  <img id="RelatedBottomMiddle2" src="images/RelatedArticle1.png">
-  <img id="RelatedTopRight2" src="images/RelatedArticle1.png">
-  <img id="RelatedBottomRight2" src="images/RelatedArticle1.png">
+  <img id="RelatedTopLeft2" src="images/RelatedArticle1Sintony.png">
+  <img id="RelatedBottomLeft2" src="images/RelatedArticle1Sintony.png">
+  <img id="RelatedTopMiddle2" src="images/RelatedArticle1Sintony.png">
+  <img id="RelatedBottomMiddle2" src="images/RelatedArticle1Sintony.png">
+  <img id="RelatedTopRight2" src="images/RelatedArticle1Sintony.png">
+  <img id="RelatedBottomRight2" src="images/RelatedArticle1Sintony.png">
   <img id="BlackLineRelatedBottom2" src="images/BlackLine.png">
 
 <!-- Story 3: UX Dark Patterns -->
@@ -213,13 +234,22 @@
     <br><br>These ads may be ugly, but they’re not badly designed. In fact, they’re proof of highly effective problem-solving on the part of the designers. That is, if their problem is that not enough people are clicking on the client’s ads.
     <br><br>And unfortunately, click-through rates matter. But Harry Brignull, founder of the Dark Patterns “Hall of Shame” (where the photos above were sourced from), says the first step to combating them is simply to complain. Because the best way to eradicate them is to name them and shame them.
     <br><br>Oh, and stop falling for them.</p>
-  <img id="Article3End" src="images/ArticleEndPlaceholder2.png">
+  <!-- <img id="Article3End" src="images/ArticleEndPlaceholder2.png"> -->
+  <img id="BlackLineRelatedTop3" src="images/BlackLine.png">
+  <sub id="RelatedArticles3"><b>RELATED ARTICLES</b></sub>
+  <img id="RelatedTopLeft3" src="images/RelatedArticle1Sintony.png">
+  <img id="RelatedBottomLeft3" src="images/RelatedArticle1Sintony.png">
+  <img id="RelatedTopMiddle3" src="images/RelatedArticle1Sintony.png">
+  <img id="RelatedBottomMiddle3" src="images/RelatedArticle1Sintony.png">
+  <img id="RelatedTopRight3" src="images/RelatedArticle1Sintony.png">
+  <img id="RelatedBottomRight3" src="images/RelatedArticle1.png">
+  <img id="BlackLineRelatedBottom3" src="images/BlackLine.png">
 
 <!-- Story 4: Attention Quiz -->
 <img id="Story4" src="images/QuizTitle.png" onclick="AttnQuizPopup()">
 
 <!-- Story 5: CGI Models -->
-<img id="Story5" src="images/InstaRobot.png" onclick="ScrollStory5 (true);">
+<img id="Story5" src="images/InstaRobotSintony.png" onclick="ScrollStory5 (true);">
   <p id="HiddenTop5">.</p>
   <img id="InstaQs" src="GIFs/InstaQs.gif" onclick="ScrollStory5 (true);">
   <img id="BlackLine5" src="images/BlackLine.png">
@@ -297,23 +327,8 @@
   <img id="Article8End" src="images/ArticleEndPlaceholder2.png">
 
 <!-- Story 9: Cute Puppies -->
-<img id="Story9" src="images/Teddy.png">
+<img id="Story9" src="images/Teddy.png" onclick="TeddyPopup()">
   <img id="TopRated1" src="images/TopRatedTilted.png">
-  <!-- Quiz Container -->
-  <!-- <div id="quiz"> -->
-    <!-- Question 1 -->
-    <!-- <div class="card quizlib-question"> -->
-        <!-- <div class="quizlib-question-title">This puppy is...</div> -->
-          <!-- <div class="quizlib-question-answers"> -->
-            <!-- <ul> -->
-              <!-- <li><label><input type="radio" name="q2" value="a">really really cute</label></li> -->
-              <!-- <li><label><input type="radio" name="q2" value="b">super duper cute</label></li> -->
-            <!-- </ul> -->
-          <!-- </div> -->
-        <!-- </div> -->
-    <!-- Answer Button -->
-    <!-- <button type="button" onclick="showResults();">Check Answers</button> -->
-  <!-- </div> -->
 
 <!-- Story 10: Cambridge Analytica -->
 <img id="Story10" src="images/CA.png" onclick= "ScrollStory10 (true);">
@@ -438,6 +453,24 @@
       }
     </script>
 
+<!-- poll -->
+    <script>
+    function getVote(int) {
+      if (window.XMLHttpRequest) {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+      } else {  // code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xmlhttp.onreadystatechange=function() {
+        if (this.readyState==4 && this.status==200) {
+          document.getElementById("poll").innerHTML=this.responseText;
+        }
+      }
+      xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+      xmlhttp.send();
+    }
+    </script>
 
 
 </body>
