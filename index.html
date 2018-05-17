@@ -44,25 +44,25 @@
       <h3 align="center">Quiz: Can You Guess Which Type Of Attention<br>You Need In Each Of These Situations?</h3>
       <form id="quiz" name="How Well Do You Know Your Attention?">
           <p>1. You're at a loud party but you can easily have a conversation with the person next to you</p>
-            <input id="mc" type="radio" name="question1" value="Selective"><p>Selective</p><br>
-            <input id="mc" type="radio" name="question1" value="Alternating"><p>Alternating</p><br>
-            <input id="mc" type="radio" name="question1" value="Divided"><p>Divided</p><br>
-            <input id="mc" type="radio" name="question1" value="Sustained"><p>Sustained</p><br>
+            <input id="mc" type="radio" name="question1" value="Selective">&nbsp;Selective<br>
+            <input id="mc" type="radio" name="question1" value="Alternating">&nbsp;Alternating<br>
+            <input id="mc" type="radio" name="question1" value="Divided">&nbsp;Divided<br>
+            <input id="mc" type="radio" name="question1" value="Sustained">&nbsp;Sustained<br>
           <p>2. You read from a recipe while cooking</p>
-            <input id="mc" type="radio" name="question2" value="Selective"><p>Selective</p><br>
-            <input id="mc" type="radio" name="question2" value="Alternating"><p>Alternating</p><br>
-            <input id="mc" type="radio" name="question2" value="Divided"><p>Divided</p><br>
-            <input id="mc" type="radio" name="question2" value="Sustained"><p>Sustained</p><br>
+            <input id="mc" type="radio" name="question2" value="Selective">&nbsp;Selective<br>
+            <input id="mc" type="radio" name="question2" value="Alternating">&nbsp;Alternating<br>
+            <input id="mc" type="radio" name="question2" value="Divided">&nbsp;Divided<br>
+            <input id="mc" type="radio" name="question2" value="Sustained">&nbsp;Sustained<br>
           <p>3. You listen to a lecture for a full two hours</p>
-            <input id="mc" type="radio" name="question1" value="Selective"><p>Selective</p><br>
-            <input id="mc" type="radio" name="question1" value="Alternating"><p>Alternating</p><br>
-            <input id="mc" type="radio" name="question1" value="Divided"><p>Divided</p><br>
-            <input id="mc" type="radio" name="question1" value="Sustained"><p>Sustained</p><br>
+            <input id="mc" type="radio" name="question3" value="Selective">&nbsp;Selective<br>
+            <input id="mc" type="radio" name="question3" value="Alternating">&nbsp;Alternating<br>
+            <input id="mc" type="radio" name="question3" value="Divided">&nbsp;Divided<br>
+            <input id="mc" type="radio" name="question3" value="Sustained">&nbsp;Sustained<br>
           <p>4. You check an important email while listening in a meeting</p>
-            <input id="mc" type="radio" name="question2" value="Selective"><p>Selective</p><br>
-            <input id="mc" type="radio" name="question2" value="Alternating"><p>Alternating</p><br>
-            <input id="mc" type="radio" name="question2" value="Divided"><p>Divided</p><br>
-            <input id="mc" type="radio" name="question2" value="Sustained"><p>Sustained</p><br>
+            <input id="mc" type="radio" name="question4" value="Selective">&nbsp;Selective<br>
+            <input id="mc" type="radio" name="question4" value="Alternating">&nbsp;Alternating<br>
+            <input id="mc" type="radio" name="question4" value="Divided">&nbsp;Divided<br>
+            <input id="mc" type="radio" name="question4" value="Sustained">&nbsp;Sustained<br>
           <input id="quizdone" type="button" value="I'm Finished!" onclick="check();">
       </form>
       <div id="after_submit">
@@ -70,7 +70,7 @@
           <p id="message"></p>
           <img id="picture">
       </div>
-      <button type="button" name="button" onclick="closeAttnQuizPopup()">Close</button>
+      <!-- <button type="button" name="button" onclick="closeAttnQuizPopup()">Close</button> -->
     </div>
   </div>
 <div id="RandomPopup1">
@@ -106,6 +106,15 @@
         </div>
       <button type="button" name="button" onclick="closeTeddyPopup()">Close</button>
     </div>
+</div>
+<div id="MarkyMarkPopup">
+    <!-- <div id="MarkyMarkPopupStyle"> -->
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/CwugYa3t2Qk?autoplay=0&amp;loop=0&amp;rel=0&amp;controls=0&amp;showinfo=0"
+      frameborder="0" allowfullscreen></iframe>
+      <p align="center">Source: Loop'n'Mix</p>
+      <button type="button" name="button" onclick="closeMarkyMarkPopup()">Close</button>
+    <!-- </div> -->
 </div>
 
 <!-- Quizzes -->
@@ -316,8 +325,8 @@
   <img id="BlackLineRelatedBottom6" src="images/BlackLine.png">
 
 <!-- Story 7: Mark Zuckerberg -->
-<img id="Story7" src="images/MarkyMark.png" onclick="PoemPopup()">
-  <img id="MarkyMark" src="GIFs/MarkyMark.gif">
+<img id="Story7" src="images/MarkyMark.png" onclick="MarkyMarkPopup()">
+  <img id="MarkyMark" src="GIFs/MarkyMark.gif" onclick="MarkyMarkPopup()">
 
 <!-- Story 8: Smartphone Addiction -->
 <img id="Story8" src="images/PhoneAddict1.png" onclick= "ScrollStory8 (true);">

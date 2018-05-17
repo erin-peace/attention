@@ -18,7 +18,7 @@ function check(){
 	if (question4 == "Divided") {
 	correct++;}
 
-	var pictures = ["img/win.gif", "img/meh.jpeg", "img/lose.gif"];
+	var pictures = ["GIFs/win.gif", "images/meh.jpeg", "GIFs/lose.gif"];
 	var messages = ["Great job!", "That's just okay", "You really need to do better"];
 	var score;
 
@@ -104,6 +104,14 @@ function TeddyPopup() {
 function closeTeddyPopup() {
   document.getElementById("TeddyPopup").style.display = "none";
 }
+
+function MarkyMarkPopup() {
+  document.getElementById("MarkyMarkPopup").style.display = "block";
+}
+function closeMarkyMarkPopup() {
+  document.getElementById("MarkyMarkPopup").style.display = "none";
+}
+
 
 //Story Popups
 function PoemPopup() {
