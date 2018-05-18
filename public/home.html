@@ -16,13 +16,11 @@
 
 
 <!-- General Pop-ups -->
-<div id="WelcomePopup">
-    <div id="WelcomePopupStyle">
-      <h3>Here's a timed popup</h3>
-      <h3>It pops up after a designated amount of time. There's some text inside, and a list which reads as follows:</h3>
-      <button type="button" name="button" onclick="closePopupTwo()">Close Modal</button>
-    </div>
-  </div>
+<div id="CheckoutPopup">
+      <!-- <img id="RedStarCheckout" src="GIFs/RedStar.gif"> -->
+      <p><br><b>DON'T FORGET TO<br>CHECK OUT WHEN<br>YOU'RE DONE!</b></p>
+      <button type="button" name="button" onclick="closePopupTwo()"><b>OK</b></button>
+</div>
 <div id="CookiePopup">
       <div id="CookiePopupStyle">
         <br><sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -73,15 +71,17 @@
       <!-- <button type="button" name="button" onclick="closeAttnQuizPopup()">Close</button> -->
     </div>
   </div>
-<div id="RandomPopup1">
+  <!-- ocean popup -->
+<!-- <div id="RandomPopup1">
     <div id="RandomPopup1Style">
       <sub>Based on your browsing history, we think you'd like to take this really fun quiz:<sub>
       <h3>What's Your O.C.E.A.N. Personality?</h3>
-      <!-- <img id="wave" src="/Users/Erin1/Desktop/attention/images/wave.jpg"> -->
+    <img id="wave" src="/Users/Erin1/Desktop/attention/images/wave.jpg">
       <button type="button" name="button" onclick="closePopupFour()">X</button>
-      <!-- <button type="button" name="button" onclick="openOceanQuizPopup()">Take Quiz</button> -->
+   <button type="button" name="button" onclick="openOceanQuizPopup()">Take Quiz</button>
     </div>
-  </div>
+  </div> -->
+  <!-- notification game popup -->
 <div id="RandomPopup2">
     <div id="RandomPopup2Style">
       <!-- iPhone Game -->
@@ -396,18 +396,50 @@
   <img id="RelatedBottomRight10" src="images/RelatedArticle7Sintony.png">
   <img id="BlackLineRelatedBottom10" src="images/BlackLine.png">
 
-<!-- Story 11: Pay4Social -->
-<img id="Story11" src="images/OnlineTools.png" onclick="window.scrollBy(0,3000)">
-
-<img id="BlackLineRelatedTop11" src="images/BlackLine.png">
-<sub id="RelatedArticles11"><b>RELATED ARTICLES</b></sub>
-<img id="RelatedTopLeft11" src="images/RelatedArticle3Sintony.png">
-<img id="RelatedBottomLeft11" src="images/RelatedArticle4Sintony.png">
-<img id="RelatedTopMiddle11" src="images/RelatedArticle5Sintony.png">
-<img id="RelatedBottomMiddle11" src="images/RelatedArticle6Sintony.png">
-<img id="RelatedTopRight11" src="images/RelatedArticle7Sintony.png">
-<img id="RelatedBottomRight11" src="images/RelatedArticle8Sintony.png">
-<img id="BlackLineRelatedBottom11" src="images/BlackLine.png">
+<!-- Story 11: Online Tools -->
+<img id="Story11" src="images/OnlineTools.png" onclick="ScrollStory11 (true);">
+    <p id="HiddenTop11">.</p>
+    <img id="BlackLine11" src="images/BlackLine.png">
+    <sub id="DateTime11">2:45 pm | Yesterday</sub>
+    <h2 id="Title11">THESE SIX TOOLS WILL<br>SAVE YOUR (VIRTUAL) LIFE</h2>
+    <sub id="Subtitle11"><big>And it's not __________.</big></sub>
+    <img id="SquareAd11" src="images/SquareOne.png">
+    <sub id="AuthorTime11">BY <b>ERIN PEACE</b>&nbsp;&nbsp;&nbsp;&nbsp;3 MINUTE READ</sub>
+    <p id="BodyCopy11A">
+      <br><br>Trying to stop wasting time online without any tools is like going to a nightclub when you’re trying to get sober. The Internet is designed to entice us, so there’s no wonder we keep falling for its tricks.
+      <br><br>If you’re trying to be more conscious of your attention spent online, these 6 tools will help you resist technological temptation and take back your time:
+      <br><br>
+      <br><br> <b>1. Be more aware with TimeStats</b>
+      [Outline.png]
+      <br><br>This first step to getting over any addiction is simply admitting you have a problem. Timestats will help you prove it. The Chrome extension outputs a daily graph that show the proportion of your time you’ve spent on social media.
+      <br><br>
+      <br><br><b>2. Take those stats on the go with Moment</b>
+      [Outline.png]
+      <br><br>Moment is an iOS app that shows how much time you’ve spent on your phone. Clean, with well-timed notifications. It will also tell you how many times you’ve picked up your phone, and what apps you use most.
+      <br><br>
+      <br><br><b>3. Waste less time on Facebook with News Feed Eradicator</b>
+      [Outline.png]
+      <br><br>Simply put, THIS IS AWESOME. It allows you to have the full functionality of Facebook, except that it hides your news feed and replaces it with a quote.
+      <br><br>
+      <br><br><b>4. Set small goals with HabitLab</b>
+      [HabitLab.png]
+      <br><br>HabitLab nudges you to be more intentional with your time spent online. Everytime you visit a social media site, it will alert you of how much time you’ve spent on it. Multiple options allow you to set your own goals and create nudges that facilitate them — like a simple reminder before watching a YouTube video.
+      <br><br>
+      <br><br><b>5. Read in peace with Outline</b>
+      [Outline.png]
+      <br><br>Outline is a website and Chrome extension that removes “clutter” — side bars, ads, etc. — from webpages to allow for more focused online reading.
+      <br><br><br><br><b>6. See who’s tracking you with Ghostery</b>
+      [Ghostery.png]
+      <br><br>Ghostery keeps tabs on how many trackers are running on sites you visit — and blocks them.</p>
+        <img id="BlackLineRelatedTop11" src="images/BlackLine.png">
+        <sub id="RelatedArticles11"><b>RELATED ARTICLES</b></sub>
+        <img id="RelatedTopLeft11" src="images/RelatedArticle3Sintony.png">
+        <img id="RelatedBottomLeft11" src="images/RelatedArticle4Sintony.png">
+        <img id="RelatedTopMiddle11" src="images/RelatedArticle5Sintony.png">
+        <img id="RelatedBottomMiddle11" src="images/RelatedArticle6Sintony.png">
+        <img id="RelatedTopRight11" src="images/RelatedArticle7Sintony.png">
+        <img id="RelatedBottomRight11" src="images/RelatedArticle8Sintony.png">
+        <img id="BlackLineRelatedBottom11" src="images/BlackLine.png">
 
 <!-- Story 12: Poem -->
 <!-- <img id="Story12" src="images/AttnStory.png"> -->
@@ -509,6 +541,14 @@
       Story10.scrollIntoView (alignToTop);
       }
     </script>
+<!-- Scroll to Story 11 -->
+  <script type="text/javascript">
+      function ScrollStory11 (alignToTop) {
+      var Story10 = document.getElementById ("HiddenTop11");
+      Story10.scrollIntoView (alignToTop);
+      }
+    </script>
+
 
 <!-- poll -->
     <script>

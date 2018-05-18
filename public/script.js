@@ -45,18 +45,18 @@ function check(){
 
 function timedPopup() {
   setTimeout(function() {
-    document.getElementById("WelcomePopup").style.display = "flex";
-  }, 4000);
+    document.getElementById("CheckoutPopup").style.display = "flex";
+  }, 120000);
 }
 timedPopup();
 function closePopupTwo() {
-  document.getElementById("WelcomePopup").style.display = "none";
+  document.getElementById("CheckoutPopup").style.display = "none";
 }
 
 function timedPopup3() {
   setTimeout(function() {
     document.getElementById("CookiePopup").style.display = "flex";
-  }, 1000);
+  }, 5000);
 }
 timedPopup3();
 function closePopupThree() {
@@ -76,7 +76,7 @@ function closePopupFour() {
 function timedRandomPopup2() {
   setTimeout(function() {
     document.getElementById("RandomPopup2").style.display = "flex";
-  }, 120000);
+  }, 60000);
 }
 timedRandomPopup2();
 function closeRandomPopup2() {
@@ -84,6 +84,7 @@ function closeRandomPopup2() {
 }
 
 //onClick Popups
+
 function MessagePopup() {
   document.getElementById("MessagePopup").style.display = "flex";
 }
