@@ -2,7 +2,7 @@
 /* start.html */
 #RedStar {
   z-index: -1;
-  top: 28vw;
+  top: 27vw;
   left: 42vw;
   width: 15%;
 }
@@ -30,9 +30,11 @@
     src: url("fonts/SF-Pro-Text-Regular.otf") format("opentype");
 }
 h1 {
-  font-family: 'News Cycle';
-  font-size: 5vw;
+  font-family: 'LeagueGothic';
+  font-size: 16em;
+  line-height: .5em;
   text-align: center;
+  /* text-transform: uppercase; */
 }
 h2 {
   font-family: 'LeagueGothic';

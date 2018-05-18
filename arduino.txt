@@ -1,0 +1,165 @@
+/*------------------------------------------------------------------------
+
+
+  IMPORTANT: DECLARATIONS DIFFER FROM PRIOR VERSIONS OF THIS LIBRARY.
+  This is to support newer & more board types, especially ones that don't
+  support SoftwareSerial (e.g. Arduino Due).  You can pass any Stream
+  (e.g. Serial1) to the printer constructor.  See notes below.
+
+  You may need to edit the PRINTER_FIRMWARE value in Adafruit_Thermal.h
+  to match your printer (hold feed button on powerup for test page).
+  ------------------------------------------------------------------------*/
+
+#include "Adafruit_Thermal.h"
+#include "adalogo.h"
+
+// Here's the new syntax when using SoftwareSerial (e.g. Arduino Uno) ----
+// If using hardware serial instead, comment out or remove these lines:
+
+#include "SoftwareSerial.h"
+#define TX_PIN 6 // Arduino transmit  YELLOW WIRE  labeled RX on printer
+#define RX_PIN 5 // Arduino receive   GREEN WIRE   labeled TX on printer
+
+SoftwareSerial mySerial(RX_PIN, TX_PIN); // Declare SoftwareSerial obj first
+Adafruit_Thermal printer(&mySerial);     // Pass addr to printer constructor
+// Then see setup() function regarding serial & printer begin() calls.
+
+// Here's the syntax for hardware serial (e.g. Arduino Due) --------------
+// Un-comment the following line if using hardware serial:
+
+//Adafruit_Thermal printer(&Serial1);      // Or Serial2, Serial3, etc.
+
+// -----------------------------------------------------------------------
+
+int attention = 0;
+
+int incomingByte = 0;   // for incoming serial data
+
+void setup() {
+
+  Serial.begin(9600);     // opens serial port, sets data rate to 9600 bps
+
+  // This line is for compatibility with the Adafruit IotP project pack,
+  // which uses pin 7 as a spare grounding point.  You only need this if
+  // wired up the same way (w/3-pin header into pins 5/6/7):
+  pinMode(7, OUTPUT); digitalWrite(7, LOW);
+
+  // NOTE: SOME PRINTERS NEED 9600 BAUD instead of 19200, check test page.
+  mySerial.begin(19200);  // Initialize SoftwareSerial
+  //Serial1.begin(19200); // Use this instead if using hardware serial
+  printer.begin();        // Init printer (same regardless of serial type)
+}
+
+void loop() {
+  // send data only when you receive data:
+  if (Serial.available() > 0) {
+    // read the incoming byte:
+    attention = Serial.parseInt();
+
+    printReceipt();
+
+    // say what you got:
+    Serial.print("I received: ");
+    Serial.println(incomingByte, DEC);
+  }
+}
+
+void printReceipt() {
+
+  // Logo – hidden for now
+
+  //printer.justify('C');
+  //printer.printBitmap(adalogo_width, adalogo_height, adalogo_data);
+
+  // Thank You Header
+
+  printer.doubleHeightOn();
+  printer.justify('C');
+  printer.setSize('L');
+  printer.println(F("Thank You For\nYour Attention"));
+  printer.doubleHeightOff();
+
+  // The Content Times Info
+
+  printer.feed(1);
+  printer.justify('C');
+  printer.setSize('S');
+  printer.println(F("Dopamine, Inc.\nDivision of Harvest Media, Inc.\nPO BOX 01011 Dover, Delaware"));
+
+  // line
+
+  printer.feed(1);
+  printer.println(F("--------------------------------"));
+  printer.feed(1);
+
+  // Cost breakdown headers
+
+  printer.boldOn();
+  printer.justify('L');
+  printer.setSize('S');
+  printer.println(F("Content                     Cost"));
+  printer.boldOff();
+
+  // Cost breakdown – Item 1
+
+  printer.feed(1);
+  printer.justify('L');
+  printer.setSize('S');
+  printer.print(F("Home Page View              "));
+  printer.println(attention);
+
+  // Cost breakdown – Item 2
+
+  //    printer.feed(1);
+  //    printer.justify('L');
+  //    printer.setSize('S');
+  //    printer.println(F("Anger-Inducing             13.21\nFake News"));
+
+  // Total
+
+  printer.feed(2);
+  printer.boldOn();
+  printer.justify('R');
+  printer.println(F("Total   20.21\n Attention Paid  -20.21\n Balance    0.00"));
+  printer.boldOff();
+
+  // line
+
+  printer.feed(1);
+  printer.println(F("--------------------------------"));
+  printer.feed(1);
+
+  // Information/Explanation
+
+  printer.justify('C');
+  printer.setSize('S');
+  printer.println(F("100% of the proceeds from this\npayment will be used to promote\nsensationalism and encourage\nthe creation ofd fake news."));
+
+  // line
+
+  printer.feed(1);
+  printer.println(F("--------------------------------"));
+  printer.feed(1);
+
+  // Information/Explanation
+
+  printer.justify('C');
+  printer.setSize('M');
+  printer.println(F("YOUR ATTENTION IS NON-REFUNDABLE"));
+
+  // Contact me – hidden for now
+
+  //printer.feed(1);
+  //printer.justify('L');
+  //printer.setSize('S');
+  //printer.println(F("            07391     032889"));
+
+  // End
+
+  printer.feed(7);
+
+  printer.sleep();      // Tell printer to sleep
+  delay(3000L);         // Sleep for 3 seconds
+  printer.wake();       // MUST wake() before printing again, even if reset
+  printer.setDefault(); // Restore printer to defaults
+}

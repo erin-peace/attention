@@ -8,9 +8,8 @@ var server = require('http').Server(app);
 var SerialPort = require('serialport');
 
 // var port = new SerialPort('/dev/cu.usbmodem1411', {
-//   // baudRate: 19200
-//   baudRate: 9600
-// });
+//  baudRate: 9600
+//   });
 
 
 console.log('test');
