@@ -83,6 +83,26 @@ function closeRandomPopup2() {
   document.getElementById("RandomPopup2").style.display = "none";
 }
 
+function timedAdPopup1() {
+  setTimeout(function() {
+    document.getElementById("AdPopup1").style.display = "flex";
+  }, 20000);
+}
+timedAdPopup1();
+function closeAdPopup1() {
+  document.getElementById("AdPopup1").style.display = "none";
+}
+
+function timedAdPopup2() {
+  setTimeout(function() {
+    document.getElementById("AdPopup2").style.display = "flex";
+  }, 30000);
+}
+timedAdPopup2();
+function closeAdPopup2() {
+  document.getElementById("AdPopup2").style.display = "none";
+}
+
 //onClick Popups
 
 function MessagePopup() {
@@ -114,17 +134,7 @@ function closeMarkyMarkPopup() {
 }
 
 
-//Story Popups
-function PoemPopup() {
-  document.getElementById("PoemPopup").style.display = "flex";
-	document.getElementById("body").style.position = "fixed";
-	document.getElementById("WholePage").classList.add("Blanket");
-}
-function closePoemPopup() {
-  document.getElementById("PoemPopup").style.display = "none";
-	document.getElementById("body").style.position = "relative";
-	document.getElementById("WholePage").classList.remove("Blanket");
-}
+
 
 // NAVBAR
 window.onscroll = function() {myFunction()};

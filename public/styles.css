@@ -175,7 +175,7 @@ input {
   width: 18%;
   top: 12vh;
   right: 3%;
-  height: 30vh;
+  height: 32.5vh;
   position: fixed;
   background-color: none;
   border: 0px solid black;
@@ -193,7 +193,7 @@ input {
   transition: background-color .4s ease;
   position:fixed;
   right: 11.5%;
-  top: 35.5vh;
+  top: 36vh;
   z-index: 34;
 }
 #CheckoutPopup button:hover {
@@ -275,6 +275,70 @@ input {
   font-size: 1em;
 }
 #RandomPopup2Style button:hover {
+  background-color: lightblue;
+}
+
+#AdPopup1 {
+  position: fixed;
+  display: none;
+  top: 10vw;
+  width: 60vw;
+  height: 40vw;
+  left: 20vw;
+  z-index: 33;
+  overflow: hidden;
+}
+#AdPopup1Style {
+  background: white;
+  text-align: center;
+  border: 2px solid black;
+  padding: 20px 40px;
+  width: 100%;
+  z-index: 34;
+  overflow: hidden;
+}
+#AdPopup1Style button {
+  padding: .5vw .7vw;
+  border: .1vw solid black;
+  transition: background-color .4s ease;
+  position:absolute;
+  top: 1vw;
+  right: 1vw;
+  font-size: 1em;
+}
+#AdPopup1Style button:hover {
+  background-color: lightblue;
+}
+
+#AdPopup2 {
+  width: 70%;
+  height: 70%;
+  right: 0vw;
+  top: -15vw;
+  display: none;
+  position: fixed;
+  z-index: 33;
+}
+#AdPopup2Style {
+  background-color: white;
+  border: 2px solid black;
+  top: 0vw;
+  left: 0vw;
+  width: 100%;
+  height: 100%;
+  z-index: 33;
+}
+#AdPopup2Style button {
+  padding: .5vw .7vw;
+  border: .1vw solid black;
+  transition: background-color .4s ease;
+  position: fixed;
+  top:13vw;
+  right: 1vw;
+  z-index: 34;
+  font-size: 1em;
+}
+#RAdPopup2Style button:hover {
   background-color: lightblue;
 }
 
@@ -450,7 +514,7 @@ input {
 #MarkyMarkPopup{
   align-items: center;
   cursor: pointer;
-  display: inline-block;
+  display: none;
   justify-content: center;
   position: fixed;
   z-index: 33;
@@ -694,19 +758,12 @@ input {
    width: 80%;
 }
 
-/* Story 1: Deleted */
-#Story1 {
-  z-index: 19;
-  position: absolute;
-  top: 34vw;
-  left: 43.6vw;
-  width: 22.5%;
-}
 
 /* Story 2: Media History */
 #Story2 {
   z-index: 19;
   position: absolute;
+  cursor: pointer;
   top: 34vw;
   left: 57.5vw;
   width: 22.5%;
@@ -714,6 +771,7 @@ input {
 #Radio {
   z-index: 30;
   position: absolute;
+  cursor: pointer;
   top: 33.5vw;
   left: 60.5vw;
   width: 16%;
@@ -906,6 +964,7 @@ input {
 #Story3 {
   z-index: 19;
   position: absolute;
+  cursor: pointer;
   top: 56vw;
   left: 7.7vw;
   width: 22.5%;
@@ -1153,6 +1212,7 @@ input {
 #Story4 {
   z-index: 19;
   position: absolute;
+  cursor: pointer;
   top: 56vw;
   left: 32.6vw;
   width: 22.5%;
@@ -1507,7 +1567,6 @@ input {
   z-index: 19;
   position: absolute;
   cursor: pointer;
-
   top: 78vw;
   left: 32.6vw;
   width: 22.5%;
@@ -1525,6 +1584,7 @@ input {
 #Story8 {
   z-index: 19;
   position: absolute;
+  cursor: pointer;
   top: 78vw;
   left: 57.5vw;
   width: 22.5%;
@@ -1726,14 +1786,16 @@ input {
 #Story9 {
   z-index: 21;
   position: absolute;
-  top: 133vw;
+  cursor: pointer;
+  top: 136vw;
   left: 7.7vw;
   width: 22.5%;
 }
 #TopRated1{
   z-index: 22;
   position: absolute;
-  top: 131vw;
+  cursor: pointer;
+  top: 134vw;
   left: 6vw;
   width: 5%;
 }
@@ -1742,7 +1804,7 @@ input {
 #Story10 {
   z-index: 21;
   position: absolute;
-  top: 133vw;
+  top: 136vw;
   left: 32.6vw;
   width: 22.5%;
   cursor: pointer;
@@ -1872,7 +1934,7 @@ input {
 #Story11 {
   z-index: 21;
   position: absolute;
-  top: 133vw;
+  top: 136vw;
   left: 57.5vw;
   width: 22.5%;
   cursor: pointer;
@@ -1938,7 +2000,7 @@ input {
 }
 #BlackLineRelatedTop11 {
   position: absolute;
-  top: 985vw;
+  top: 1820vw;
   left: 20vw;
   width: 60%;
 }
@@ -1996,47 +2058,6 @@ input {
   top: 1000vw;
   left: 20vw;
   width: 60%;
-}
-
-
-/* Story 12: Poem */
-#Story12 {
-  z-index: 21;
-  position: absolute;
-  cursor: pointer;
-  top: 144vw;
-  left: 7.7vw;
-  width: 22.5%;
-}
-#PoemPopup {
-  display: none;
-  position: fixed;
-  top: 16vh;
-  left: 5.5vw;
-  z-index:33;
-  width: 76%;
-}
-#Poem {
-  z-index:34;
-  width: 99.5%;
-  justify-content: center;
-  left: 3.2vw;
-}
-/* Story 13: Big 5 Personality Quiz */
-#Story13 {
-  z-index: 21;
-  position: absolute;
-  top: 144vw;
-  left: 32.6vw;
-  width: 22.5%;
-}
-/* Story 14: Ad-blocking evil? */
-#Story14 {
-  z-index: 21;
-  position: absolute;
-  top: 144vw;
-  left: 57.5vw;
-  width: 22.5%;
 }
 
 /* Sponsored 1: Jess */

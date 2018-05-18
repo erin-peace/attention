@@ -13,8 +13,6 @@
 
 <!-- poll -->
 
-
-
 <!-- General Pop-ups -->
 <div id="CheckoutPopup">
       <!-- <img id="RedStarCheckout" src="GIFs/RedStar.gif"> -->
@@ -91,6 +89,16 @@
       <button type="button" name="button" onclick="closeRandomPopup2()">X</button>
     </div>
   </div>
+<div id="AdPopup1">
+        <div id="AdPopup1Style">
+          <button type="button" name="button" onclick="closeAdPopup1()">X</button>
+        </div>
+</div>
+<div id="AdPopup2">
+      <div id="AdPopup2Style">
+        <button type="button" name="button" onclick="closeAdPopup2()">X</button>
+      </div>
+</div>
 <div id="TeddyPopup">
     <div id="TeddPopupStyle">
       <h3 align="center">Poll</h3>
@@ -110,7 +118,7 @@
 <div id="MarkyMarkPopup">
     <!-- <div id="MarkyMarkPopupStyle"> -->
       <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/CwugYa3t2Qk?autoplay=0&amp;loop=0&amp;rel=0&amp;controls=0&amp;showinfo=0"
+      src="https://www.youtube.com/embed/CwugYa3t2Qk?rel=0&amp;controls=0&amp;showinfo=0"
       frameborder="0" allowfullscreen></iframe>
       <p align="center">Source: Loop'n'Mix</p>
       <button type="button" name="button" onclick="closeMarkyMarkPopup()">Close</button>
@@ -119,17 +127,6 @@
 
 <!-- Quizzes -->
 
-<!-- Story Pop-ups -->
-<div id="PoemPopup">
-    <div id="ContentModal">
-      <h3>Poem</h3>
-      <p>end</p>
-      <p>end</p>
-      <p>end</p>
-      <p>end</p>
-      <button type="button" name="button" onclick="closePoemPopup()">Close</button>
-    </div>
-  </div>
 
 <!-- Nav bar -->
 <img id="TinyNav" src="images/TinyNav.png">
@@ -151,7 +148,7 @@
 
 <!-- top picks -->
 <img id="Rectangle" src="images/GreyRectangle.png">
-<img id="TopPicks-new" src="images/TopPicks-NewWhite.png">
+<img id="TopPicks-new" src="images/CustomerFaves.png">
 <img id="LOLGIF" src="GIFs/LOLGIF.gif">
 <img id="AngryNewsGIF" src="GIFs/AngryNews.gif">
 <img id="QuizGIF" src="GIFs/PersonalityQuiz.gif">
@@ -196,13 +193,13 @@
   <sub id="NoAlexaAdsSub">“Where attention is paid, the attention merchant lurks patiently to reap his due.”<br> – Tim Wu, <i>The Attention Merchants</i>. Image by Erin Meisenzahl-Peace.</sub>
   <!-- <img id="Article2End" src="images/ArticleEndPlaceholder2.png"> -->
   <img id="BlackLineRelatedTop2" src="images/BlackLine.png">
-  <sub id="RelatedArticles2"><b>RELATED ARTICLES</b></sub>
-  <img id="RelatedTopLeft2" src="images/RelatedArticle4Sintony.png">
-  <img id="RelatedBottomLeft2" src="images/RelatedArticle5Sintony.png">
-  <img id="RelatedTopMiddle2" src="images/RelatedArticle6Sintony.png">
-  <img id="RelatedBottomMiddle2" src="images/RelatedArticle7Sintony.png">
-  <img id="RelatedTopRight2" src="images/RelatedArticle8Sintony.png">
-  <img id="RelatedBottomRight2" src="images/RelatedArticle9Sintony.png">
+  <sub id="RelatedArticles2"><b>RELATED LINKS</b></sub>
+  <img id="RelatedTopLeft2" src="images/RelatedArticle4Sintony.png" onclick="AttnQuizPopup()">
+  <img id="RelatedBottomLeft2" src="images/RelatedArticle5Sintony.png" onclick="ScrollStory5 (true);">
+  <img id="RelatedTopMiddle2" src="images/RelatedArticle6Sintony.png" onclick="ScrollStory6 (true);">
+  <img id="RelatedBottomMiddle2" src="images/RelatedArticle7Sintony.png" onclick="MarkyMarkPopup()">
+  <img id="RelatedTopRight2" src="images/RelatedArticle8Sintony.png" onclick="ScrollStory8 (true);">
+  <img id="RelatedBottomRight2" src="images/RelatedArticle9Sintony.png" onclick="TeddyPopup()">
   <img id="BlackLineRelatedBottom2" src="images/BlackLine.png">
 
 <!-- Story 3: UX Dark Patterns -->
@@ -245,13 +242,13 @@
     <br><br>Oh, and stop falling for them.</p>
   <!-- <img id="Article3End" src="images/ArticleEndPlaceholder2.png"> -->
   <img id="BlackLineRelatedTop3" src="images/BlackLine.png">
-  <sub id="RelatedArticles3"><b>RELATED ARTICLES</b></sub>
-  <img id="RelatedTopLeft3" src="images/RelatedArticle5Sintony.png">
-  <img id="RelatedBottomLeft3" src="images/RelatedArticle6Sintony.png">
-  <img id="RelatedTopMiddle3" src="images/RelatedArticle7Sintony.png">
-  <img id="RelatedBottomMiddle3" src="images/RelatedArticle8Sintony.png">
-  <img id="RelatedTopRight3" src="images/RelatedArticle9Sintony.png">
-  <img id="RelatedBottomRight3" src="images/RelatedArticle10Sintony.png">
+  <sub id="RelatedArticles3"><b>RELATED LINKS</b></sub>
+  <img id="RelatedTopLeft3" src="images/RelatedArticle5Sintony.png" onclick="ScrollStory5 (true);">
+  <img id="RelatedBottomLeft3" src="images/RelatedArticle6Sintony.png" onclick="ScrollStory6 (true);">
+  <img id="RelatedTopMiddle3" src="images/RelatedArticle7Sintony.png" onclick="MarkyMarkPopup()">
+  <img id="RelatedBottomMiddle3" src="images/RelatedArticle8Sintony.png" onclick="ScrollStory8 (true);">
+  <img id="RelatedTopRight3" src="images/RelatedArticle9Sintony.png" onclick="TeddyPopup()">
+  <img id="RelatedBottomRight3" src="images/RelatedArticle10Sintony.png" onclick="ScrollStory10 (true);">
   <img id="BlackLineRelatedBottom3" src="images/BlackLine.png">
 
 <!-- Story 4: Attention Quiz -->
@@ -277,13 +274,13 @@
     <br><br>The best theories behind this drama trace all three of these techno-people back to a company called Cain Intelligence, who claim to be "leaders in machine learning and artificial intelligence.” Maybe it’s just a graphic designer hungry for attention, mused Beatrice Hazlehurst in an article for <i>Paper Magazine</i>. Or maybe it’s the work of marketing geniuses who are “constructing a spectacular scam to bring attention to both the pages of Lil Miquela and Bermuda, all the while analyzing how we react online to racially ambiguous, beautiful, stylish, 'Black Lives Matter' supporter versus a pro-gun, Tomi Lahren-loving, Aryan Republican.”</p>
   <!-- <img id="Article5End" src="images/ArticleEndPlaceholder2.png"> -->
   <img id="BlackLineRelatedTop5" src="images/BlackLine.png">
-  <sub id="RelatedArticles5"><b>RELATED ARTICLES</b></sub>
-  <img id="RelatedTopLeft5" src="images/RelatedArticle6Sintony.png">
-  <img id="RelatedBottomLeft5" src="images/RelatedArticle7Sintony.png">
-  <img id="RelatedTopMiddle5" src="images/RelatedArticle8Sintony.png">
-  <img id="RelatedBottomMiddle5" src="images/RelatedArticle9Sintony.png">
-  <img id="RelatedTopRight5" src="images/RelatedArticle10Sintony.png">
-  <img id="RelatedBottomRight5" src="images/RelatedArticle11Sintony.png">
+  <sub id="RelatedArticles5"><b>RELATED LINKS</b></sub>
+  <img id="RelatedTopLeft5" src="images/RelatedArticle6Sintony.png" onclick= "ScrollStory6 (true);">
+  <img id="RelatedBottomLeft5" src="images/RelatedArticle7Sintony.png" onclick= "MarkyMarkPopup()">
+  <img id="RelatedTopMiddle5" src="images/RelatedArticle8Sintony.png" onclick= "ScrollStory8 (true);">
+  <img id="RelatedBottomMiddle5" src="images/RelatedArticle9Sintony.png" onclick= "TeddyPopup()">
+  <img id="RelatedTopRight5" src="images/RelatedArticle10Sintony.png" onclick= "ScrollStory10 (true);">
+  <img id="RelatedBottomRight5" src="images/RelatedArticle11Sintony.png" onclick= "ScrollStory11 (true);">
   <img id="BlackLineRelatedBottom5" src="images/BlackLine.png">
 
 <!-- Story 6: CSM -->
@@ -315,13 +312,13 @@
   <br><br><i>Honestly, what was he even doing here?</i></p>
   <!-- <img id="Article6End" src="images/ArticleEndPlaceholder2.png"> -->
   <img id="BlackLineRelatedTop6" src="images/BlackLine.png">
-  <sub id="RelatedArticles6"><b>RELATED ARTICLES</b></sub>
-  <img id="RelatedTopLeft6" src="images/RelatedArticle7Sintony.png">
-  <img id="RelatedBottomLeft6" src="images/RelatedArticle8Sintony.png">
-  <img id="RelatedTopMiddle6" src="images/RelatedArticle9Sintony.png">
-  <img id="RelatedBottomMiddle6" src="images/RelatedArticle10Sintony.png">
-  <img id="RelatedTopRight6" src="images/RelatedArticle11Sintony.png">
-  <img id="RelatedBottomRight6" src="images/RelatedArticle3Sintony.png">
+  <sub id="RelatedArticles6"><b>RELATED LINKS</b></sub>
+  <img id="RelatedTopLeft6" src="images/RelatedArticle7Sintony.png" onclick= "MarkyMarkPopup()">
+  <img id="RelatedBottomLeft6" src="images/RelatedArticle8Sintony.png" onclick= "ScrollStory8 (true);">
+  <img id="RelatedTopMiddle6" src="images/RelatedArticle9Sintony.png" onclick= "TeddyPopup()">
+  <img id="RelatedBottomMiddle6" src="images/RelatedArticle10Sintony.png" onclick= "ScrollStory10 (true);">
+  <img id="RelatedTopRight6" src="images/RelatedArticle11Sintony.png" onclick= "ScrollStory11 (true);">
+  <img id="RelatedBottomRight6" src="images/RelatedArticle3Sintony.png" onclick= "ScrollStory3 (true);">
   <img id="BlackLineRelatedBottom6" src="images/BlackLine.png">
 
 <!-- Story 7: Mark Zuckerberg -->
@@ -342,7 +339,7 @@
   <p id="BodyCopy8A">
     <br><br>Ever told yourself you’d get up and start your day at 7am, only to find you’re still in bed, scrolling through social media, at 8:30? You’re not alone, and it’s not (completely) your fault.
     <br><br>In <i>The Principles of Psychology</i>, written far before the time of the iPhone, psychologist Williams James empowers us with agency over our attention. "Without selective interest, experience is an utter chaos. Interest alone gives accent and emphasis, light and shade, background and foreground intelligible perspective," he wrote. "My experience is what I agree to attend to."
-    <br><br>In today’s attention economy, this agreement does not feel mutual. Pervasive, persuasive techniques like autoplays and time-varied notifications play on our psychological vulnerabilities. "Related articles" at the bottom of online articles, links embedded within articles, and popups that are triggered by a mouse moving toward the "exit" button are all examples of design choices that play on human biases in order to capture additional moments of attention.
+    <br><br>In today’s attention economy, this agreement does not feel mutual. Pervasive, persuasive techniques like autoplays and time-varied notifications play on our psychological vulnerabilities. "RELATED LINKS" at the bottom of online articles, links embedded within articles, and popups that are triggered by a mouse moving toward the "exit" button are all examples of design choices that play on human biases in order to capture additional moments of attention.
     <br><br><b><big>Infinite scrolling</big></b>
     <br><br>This technique takes clever advantage of a psychological phenomenon demonstrated by Cornell professor Brian Wansink in his 2005 "Bottomless Bowl" study. In the study, researchers found that people consumed 75 percent more soup when it was automatically refilled, without reporting any greater feelings of satisfaction. This type of psychologically grounded manipulation is utilised by most popular social media applications.
     <br><br><b><big>Notifications</big></b>
@@ -353,13 +350,13 @@
     <br><br>But don’t get <i>too</i> comfy. After all, your experience is what you attend to.</p>
   <!-- <img id="Article8End" src="images/ArticleEndPlaceholder2.png"> -->
   <img id="BlackLineRelatedTop8" src="images/BlackLine.png">
-  <sub id="RelatedArticles8"><b>RELATED ARTICLES</b></sub>
-  <img id="RelatedTopLeft8" src="images/RelatedArticle1Sintony.png">
-  <img id="RelatedBottomLeft8" src="images/RelatedArticle2Sintony.png">
-  <img id="RelatedTopMiddle8" src="images/RelatedArticle3Sintony.png">
-  <img id="RelatedBottomMiddle8" src="images/RelatedArticle4Sintony.png">
-  <img id="RelatedTopRight8" src="images/RelatedArticle7Sintony.png">
-  <img id="RelatedBottomRight8" src="images/RelatedArticle6Sintony.png">
+  <sub id="RelatedArticles8"><b>RELATED LINKS</b></sub>
+  <img id="RelatedTopLeft8" src="images/RelatedArticle11Sintony.png" onclick= "ScrollStory11 (true);">
+  <img id="RelatedBottomLeft8" src="images/RelatedArticle2Sintony.png" onclick= "ScrollStory2 (true);">
+  <img id="RelatedTopMiddle8" src="images/RelatedArticle3Sintony.png" onclick= "ScrollStory3 (true);">
+  <img id="RelatedBottomMiddle8" src="images/RelatedArticle4Sintony.png" onclick= "TeddyPopup()">
+  <img id="RelatedTopRight8" src="images/RelatedArticle7Sintony.png" onclick= "MarkyMarkPopup()">
+  <img id="RelatedBottomRight8" src="images/RelatedArticle6Sintony.png" onclick= "ScrollStory6 (true);">
   <img id="BlackLineRelatedBottom8" src="images/BlackLine.png">
 
 <!-- Story 9: Cute Puppies -->
@@ -387,13 +384,13 @@
     <br><br>Under the guise of research, Kogan effectively stole user data, selling it to CA, who used it to create psychographic profiles of users and devise persuasive and personalised political messaging strategies. Because this data was obtained illegally, prosecutors have been able to vilify CA for its actions. But the legal actions that most online media companies take every day are going unchecked — which might be far more sinister.</p>
   <!-- <img id="Article10End" src="images/ArticleEndPlaceholder2.png"> -->
   <img id="BlackLineRelatedTop10" src="images/BlackLine.png">
-  <sub id="RelatedArticles10"><b>RELATED ARTICLES</b></sub>
-  <img id="RelatedTopLeft10" src="images/RelatedArticle2Sintony.png">
-  <img id="RelatedBottomLeft10" src="images/RelatedArticle3Sintony.png">
-  <img id="RelatedTopMiddle10" src="images/RelatedArticle4Sintony.png">
-  <img id="RelatedBottomMiddle10" src="images/RelatedArticle5Sintony.png">
-  <img id="RelatedTopRight10" src="images/RelatedArticle6Sintony.png">
-  <img id="RelatedBottomRight10" src="images/RelatedArticle7Sintony.png">
+  <sub id="RelatedArticles10"><b>RELATED LINKS</b></sub>
+  <img id="RelatedTopLeft10" src="images/RelatedArticle2Sintony.png" onclick= "ScrollStory2 (true);">
+  <img id="RelatedBottomLeft10" src="images/RelatedArticle3Sintony.png" onclick= "ScrollStory3 (true);">
+  <img id="RelatedTopMiddle10" src="images/RelatedArticle4Sintony.png" onclick="AttnQuizPopup()">
+  <img id="RelatedBottomMiddle10" src="images/RelatedArticle5Sintony.png" onclick= "ScrollStory5 (true);">
+  <img id="RelatedTopRight10" src="images/RelatedArticle6Sintony.png" onclick= "ScrollStory6 (true);">
+  <img id="RelatedBottomRight10" src="images/RelatedArticle11Sintony.png" onclick= "ScrollStory11 (true);">
   <img id="BlackLineRelatedBottom10" src="images/BlackLine.png">
 
 <!-- Story 11: Online Tools -->
@@ -432,18 +429,14 @@
       [Ghostery.png]
       <br><br>Ghostery keeps tabs on how many trackers are running on sites you visit — and blocks them.</p>
         <img id="BlackLineRelatedTop11" src="images/BlackLine.png">
-        <sub id="RelatedArticles11"><b>RELATED ARTICLES</b></sub>
-        <img id="RelatedTopLeft11" src="images/RelatedArticle3Sintony.png">
-        <img id="RelatedBottomLeft11" src="images/RelatedArticle4Sintony.png">
-        <img id="RelatedTopMiddle11" src="images/RelatedArticle5Sintony.png">
-        <img id="RelatedBottomMiddle11" src="images/RelatedArticle6Sintony.png">
-        <img id="RelatedTopRight11" src="images/RelatedArticle7Sintony.png">
-        <img id="RelatedBottomRight11" src="images/RelatedArticle8Sintony.png">
+        <sub id="RelatedArticles11"><b>RELATED LINKS</b></sub>
+        <img id="RelatedTopLeft11" src="images/RelatedArticle3Sintony.png" onclick= "ScrollStory3 (true);">
+        <img id="RelatedBottomLeft11" src="images/RelatedArticle8Sintony.png" onclick= "ScrollStory8 (true);">
+        <img id="RelatedTopMiddle11" src="images/RelatedArticle5Sintony.png" onclick= "ScrollStory5 (true);">
+        <img id="RelatedBottomMiddle11" src="images/RelatedArticle6Sintony.png" onclick= "ScrollStory6 (true);">
+        <img id="RelatedTopRight11" src="images/RelatedArticle10Sintony.png" onclick= "ScrollStory10 (true);">
+        <img id="RelatedBottomRight11" src="images/RelatedArticle9Sintony.png" onclick= "ScrollStory9 (true);">
         <img id="BlackLineRelatedBottom11" src="images/BlackLine.png">
-
-<!-- Story 12: Poem -->
-<!-- <img id="Story12" src="images/AttnStory.png"> -->
-<!-- <img id="TopRated1" src="images/TopRatedTilted.png"> -->
 
 <!-- Story 13: Big 5 Personality Quiz -->
 <!-- <img id="Story13" src="images/Big5.png"> -->
