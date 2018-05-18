@@ -105,7 +105,7 @@ void printReceipt() {
   printer.feed(1);
   printer.justify('L');
   printer.setSize('S');
-  printer.print(F("Home Page View              "));
+  printer.print(F("DOPAMINE.fun              "));
   printer.println(attention);
 
   // Cost breakdown – Item 2
@@ -120,7 +120,11 @@ void printReceipt() {
   printer.feed(2);
   printer.boldOn();
   printer.justify('R');
-  printer.println(F("Total   20.21\n Attention Paid  -20.21\n Balance    0.00"));
+  printer.println(F("Total           "));
+  printer.println(attention);
+  printer.println(F("Attention Paid        -"));
+  printer.println(attention);
+  printer.println(F("Balance        0.00"));
   printer.boldOff();
 
   // line
@@ -133,11 +137,13 @@ void printReceipt() {
 
   printer.justify('C');
   printer.setSize('S');
-  printer.println(F("100% of the proceeds from this\npayment will be used to promote\nsensationalism and encourage\nthe creation ofd fake news."));
+  printer.println(F("100% of the proceeds from this\npayment will be resold to\nyadvertisers and media placements\ntcompanies for a large profit\n."));
+
+  printer.println(F("Not happy with your purchase?\nLet us know why:."));
 
   // line
 
-  printer.feed(1);
+  printer.feed(5);
   printer.println(F("--------------------------------"));
   printer.feed(1);
 
