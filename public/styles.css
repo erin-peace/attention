@@ -1,3 +1,49 @@
+/* QUIZ */
+#table_1 {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        color: black;
+        text-align: center;
+        font-family: "Sintony", sans-serif;
+    }
+#center001 {
+        text-align: center;
+        font-family: "Sintony", sans-serif;
+    }
+#question01 {
+        text-align: center;
+        font-family: "Sintony", sans-serif;
+        font-size: 2em;
+        line-height: 1.2em;
+        }
+#q001 {
+  color: rgb(0,0,0,0);
+  line-height: .2em;
+  font-size: .2em;
+}
+#score001 {
+  color: rgb(0,0,0,0);
+  line-height: .2em;
+  font-size: .2em;
+}
+#attempts {
+  color: rgb(0,0,0,0);
+  line-height: .2em;
+  font-size: .2em;
+}
+#b001 {
+  padding: 10px 20px;
+  border: 2px solid black;
+  transition: background-color .4s ease;
+  font-size: 2em;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  left: 35%;
+}
+
 
 /* start.html */
 #RedStar {
@@ -197,7 +243,7 @@ input {
   z-index: 34;
 }
 #CheckoutPopup button:hover {
-  background-color: lightblue;
+  background-color: lightgray;
 }
 #RedStarCheckout {
   position:fixed;
@@ -236,7 +282,7 @@ input {
   font-size: 1em;
 }
 #RandomPopup1Style button:hover {
-  background-color: lightblue;
+  background-color: lightgray;
 }
 #wave {
   top: 1vw;
@@ -275,21 +321,21 @@ input {
   font-size: 1em;
 }
 #RandomPopup2Style button:hover {
-  background-color: lightblue;
+  background-color: lightgray;
 }
 
 #AdPopup1 {
-  position: fixed;
+  background-image:url("images/PopupAd.png");
+  width: 20%;
+  height: 70%;
+  left: 3vw;
+  top:20vh;
   display: none;
-  top: 10vw;
-  width: 60vw;
-  height: 40vw;
-  left: 20vw;
+  position: fixed;
   z-index: 33;
-  overflow: hidden;
 }
 #AdPopup1Style {
-  background: white;
+  background-image: url("images/PopupAd.png");
   text-align: center;
   border: 2px solid black;
   padding: 20px 40px;
@@ -307,20 +353,20 @@ input {
   font-size: 1em;
 }
 #AdPopup1Style button:hover {
-  background-color: lightblue;
+  background-color: lightgray;
 }
-
 #AdPopup2 {
-  width: 70%;
+  background-image:url("images/PopupAd.png");
+  width: 20%;
   height: 70%;
-  right: 0vw;
-  top: -15vw;
+  right: 3vw;
+  top: 20vh;
   display: none;
   position: fixed;
   z-index: 33;
 }
 #AdPopup2Style {
-  background-color: white;
+  background-image:url("images/PopupAd.png");
   border: 2px solid black;
   top: 0vw;
   left: 0vw;
@@ -333,13 +379,13 @@ input {
   border: .1vw solid black;
   transition: background-color .4s ease;
   position: fixed;
-  top:13vw;
-  right: 1vw;
+  top:12vw;
+  right: 4vw;
   z-index: 34;
   font-size: 1em;
 }
 #RAdPopup2Style button:hover {
-  background-color: lightblue;
+  background-color: lightgray;
 }
 
 /* iPhone */
@@ -479,36 +525,67 @@ input {
   transition: background-color .4s ease
 }
 #AttnQuizPopupStyle button:hover {
-  background-color: lightblue;
+  background-color: lightgray;
 }
 
-#TeddyPopup{
+#AttnQuizPopup2{
   align-items: center;
   display: none;
   justify-content: center;
   position: fixed;
   z-index: 33;
-  width: 90%;
+  width: 75%;
   top: 5vh;
   left: 50%;
   height: 80vh;
   transform: translateX(-50%);
   overflow-y: scroll;
-  background-color: lightgray;
+  background-color: white;
   border: 2px solid black;
 }
-#TeddyPopupStyle {
-  /* padding: 2vw;
-  width: 100%;
-  z-index: 34; */
-}
-#TeddyPopupStyle button {
+#AttnQuizPopup2 button {
   padding: 10px 20px;
   border: 2px solid black;
-  transition: background-color .4s ease
+  transition: background-color .4s ease;
+  z-index: 34;
+
 }
-#TeddyPopupStyle button:hover {
-  background-color: lightblue;
+
+#AttnQuizPopup2 button:hover {
+  background-color: lightgray;
+}
+#Teddy3{
+  z-index: 30;
+  top: 22vw;
+  left: 2vw;
+  width: 90%;
+}
+#TeddyPopup{
+  align-items: center;
+  display: none;
+  justify-content: center;
+  background-color: white;
+  position: fixed;
+  z-index: 34;
+  width: 40%;
+  top: 15vh;
+  left: 50%;
+  height: 80vh;
+  transform: translateX(-50%);
+  overflow-y: scroll;
+  border: 2px solid black;
+}
+
+#TeddyPopup button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  transition: background-color .4s ease;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#TeddyPopup button:hover {
+  background-color: lightgray;
 }
 
 #MarkyMarkPopup{
@@ -539,7 +616,7 @@ input {
   transition: background-color .4s ease
 }
 #MarkyMarkPopup button:hover {
-  background-color: lightblue;
+  background-color: lightgray;
 }
 
 
@@ -1993,14 +2070,33 @@ input {
   right: 25vw;
   line-height: 1.4em;
 }
-#Article11End {
-  position: absolute;
-  top: 1775vw;
+#Timestats {
   width: 100%;
+  position: relative;
+}
+#Moment {
+  width: 50%;
+  position: relative;
+}
+#NewsFeedEradicator {
+  width: 100%;
+  position: relative;
+}
+#HabitLab {
+  width: 100%;
+  position: relative;
+}
+#Outline {
+  width: 100%;
+  position: relative;
+}
+#Ghostery {
+  width: 100%;
+  position: relative;
 }
 #BlackLineRelatedTop11 {
   position: absolute;
-  top: 1820vw;
+  top: 2112vw;
   left: 20vw;
   width: 60%;
 }
@@ -2055,7 +2151,7 @@ input {
 }
 #BlackLineRelatedBottom11 {
   position: absolute;
-  top: 1000vw;
+  top: 2120vw;
   left: 20vw;
   width: 60%;
 }
@@ -2185,17 +2281,26 @@ input {
 }
 
 /* Footer */
+#BannerAdBottom {
+  z-index: 30;
+  position: absolute;
+  top: 2117vw;
+  left: 10vw;
+  width: 80%;
+}
 #footer{
   z-index: 29;
   position: absolute;
-  top: 2000vw;
-  left: 5vw;
-  width: 90%;
+  top: 2130vw;
+  left: 0vw;
+  width: 100%;
+  text-align: center;
+  color: lightgray;
 }
 
 /* Timers */
 #minutes {
-  z-index: 35;
+  z-index: 32;
   font-family: 'Sintony';
   font-size: 2vw;
   position: fixed;
@@ -2206,7 +2311,7 @@ input {
   color: #000000;
 }
 #seconds {
-  z-index: 35;
+  z-index: 32;
   font-family: 'Sintony';
   font-size: 2vw;
   position: fixed;

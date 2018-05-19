@@ -40,10 +40,6 @@
       <h3 align="center">Quiz: Can You Guess Which Type Of Attention<br>You Need In Each Of These Situations?</h3>
       <form id="quiz" name="How Well Do You Know Your Attention?">
           <p>1. You're at a loud party but you can easily have a conversation with the person next to you</p>
-            <input id="mc" type="radio" name="question1" value="Selective">&nbsp;Selective<br>
-            <input id="mc" type="radio" name="question1" value="Alternating">&nbsp;Alternating<br>
-            <input id="mc" type="radio" name="question1" value="Divided">&nbsp;Divided<br>
-            <input id="mc" type="radio" name="question1" value="Sustained">&nbsp;Sustained<br>
           <p>2. You read from a recipe while cooking</p>
             <input id="mc" type="radio" name="question2" value="Selective">&nbsp;Selective<br>
             <input id="mc" type="radio" name="question2" value="Alternating">&nbsp;Alternating<br>
@@ -66,7 +62,7 @@
           <p id="message"></p>
           <img id="picture">
       </div>
-      <!-- <button type="button" name="button" onclick="closeAttnQuizPopup()">Close</button> -->
+      <button type="button" name="button" onclick="closeAttnQuizPopup()">Close</button>
     </div>
   </div>
   <!-- ocean popup -->
@@ -80,6 +76,82 @@
     </div>
   </div> -->
   <!-- notification game popup -->
+<!-- <div id="AttnQuizPopup2">
+  <div id="table_1">
+          <button type="button" name="button" onclick="closeAttnQuizPopup2()">X</button>
+          <h3 align="center">Quiz: Can You Guess Which Type Of Attention<br>You Need In Each Of These Situations?</h3>
+          <hr>
+          <div id="center001">Question: <text id="q001">0</text> Score: <text id="score001">0</text> Attempt: <text id="attempts">2</text></div>
+          <p id="question01"></p>
+          <p id="msg01"></p>
+          <br />
+          <br />
+          <div id="starter01">
+              <button onclick="begin001()" id="b001">Begin</button><br />
+          </div>
+          <p id="n001"></p>
+  </div>
+  <script>
+            var b = 0;
+            b++;
+            var c = 2;
+            c--;
+            var d = 0;
+            d++;
+
+      function begin001() {
+        document.getElementById("q001").innerHTML = d++;
+        document.getElementById("question01").innerHTML = "1. You're at a loud party but you can easily have a conversation with the person next to you" + "<br /><br /><br />" + "<button onclick=ans001() id=q1>Selective</button><br />" + "<button onclick=ans002() id=q2>Divided</button><br />" + "<button onclick=ans002() id=q3>Sustained</button><br />" + "<button onclick=ans002() id=q4>Alternating</button><br />";
+        document.getElementById("starter01").innerHTML = "";
+        }
+        function ans001() {
+            document.getElementById("score001").innerHTML = b++;
+        document.getElementById("question01").innerHTML = "Correct";
+        document.getElementById("starter01").innerHTML = "";
+        document.getElementById("n001").innerHTML = "<button onclick=nxt1()>Next</button><br />";
+        }
+        function ans002() {
+        document.getElementById("question01").innerHTML = "Incorrect";
+        document.getElementById("starter01").innerHTML = "";
+        document.getElementById("n001").innerHTML = "<button onclick=nxt1()>Next</button><br />";
+        document.getElementById("attempts").innerHTML = c--;
+        if (c < 0) {
+            document.getElementById("question01").innerHTML = "";
+            document.getElementById("msg01").innerHTML = "Sorry. You lost!";
+            document.getElementById("n001").innerHTML = "";
+        }
+        }
+        function nxt1() {
+        document.getElementById("question01").innerHTML = "2. You read from a recipe while cooking" + "<br /><br /><br />" + "<button onclick=ans004() id=q4>Selective</button><br />" + "<button onclick=ans004() id=q5>Divided</button><br />" + "<button onclick=ans003() id=q6>Alternating</button><br />" + "<button onclick=ans004() id=q6>Sustained</button><br />";
+        document.getElementById("n001").innerHTML = "";
+        document.getElementById("q001").innerHTML = d++;
+
+        }
+        function ans003() {
+            document.getElementById("score001").innerHTML = b++;
+            document.getElementById("question01").innerHTML = "Correct";
+            document.getElementById("starter01").innerHTML = "";
+            document.getElementById("n001").innerHTML = "<button onclick=nxt2()>Next</button><br />";
+        }
+        function ans004() {
+        document.getElementById("question01").innerHTML = "Incorrect";
+        document.getElementById("starter01").innerHTML = "";
+        document.getElementById("n001").innerHTML = "<button onclick=nxt2()>Next</button><br />";
+        document.getElementById("attempts").innerHTML = c--;
+        if (c < 0) {
+            document.getElementById("question01").innerHTML = "";
+            document.getElementById("msg01").innerHTML = "Sorry. You lost!";
+            document.getElementById("n001").innerHTML = "";
+        }
+        }
+        function nxt2() {
+        document.getElementById("question01").innerHTML = "";
+        document.getElementById("msg01").innerHTML = "End of Quiz.";
+        document.getElementById("n001").innerHTML = "";
+        }
+        </script>
+ </div> -->
+
 <div id="RandomPopup2">
     <div id="RandomPopup2Style">
       <!-- iPhone Game -->
@@ -100,19 +172,78 @@
       </div>
 </div>
 <div id="TeddyPopup">
-    <div id="TeddPopupStyle">
-      <h3 align="center">Poll</h3>
-      <div id="poll">
-        <h3>Do you like PHP and AJAX so far?</h3>
-          <form>
-          Yes:
-            <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
-          <br>
-          No:
-            <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
-          </form>
-        </div>
-      <button type="button" name="button" onclick="closeTeddyPopup()">Close</button>
+      <!-- <div id="table_1"> -->
+        <!-- <br><button type="button" name="button" onclick="closeTeddyPopup()">Close</button> -->
+              <img id="Teddy3" src="images/Teddy3.png">
+              <div id="center001"><text id="q001"></text><text id="score001"></text><text id="attempts"></text></div>
+              <p id="question01"></p>
+              <p id="msg01"></p>
+              <br />
+              <br />
+              <div id="starter01">
+                  <button onclick="begin001()" id="b001">Take Quiz</button><br />
+              </div>
+              <p id="n001"></p>
+      <script>
+                var b = 0;
+                b++;
+                var c = 2;
+                c--;
+                var d = 0;
+                d++;
+
+          function begin001() {
+            document.getElementById("q001").innerHTML = d++;
+            document.getElementById("question01").innerHTML = "Is this puppy really really cute or<br>is he actually super duper cute?" + "<br /><br /><br />" + "<button onclick=ans001() id=q1>Really Really</button><br />" + "<button onclick=ans002() id=q2>Super Duper</button><br />";
+            document.getElementById("starter01").innerHTML = "";
+            }
+            function ans001() {
+                document.getElementById("score001").innerHTML = b++;
+            document.getElementById("question01").innerHTML = "Sorry. This puppy is<br> actually super duper cute!";
+            document.getElementById("starter01").innerHTML = "";
+            document.getElementById("n001").innerHTML = "<button onclick=closeTeddyPopup()>Close</button><br />";
+            }
+            function ans002() {
+            document.getElementById("question01").innerHTML = "Correct!";
+            document.getElementById("starter01").innerHTML = "";
+            document.getElementById("n001").innerHTML = "<button onclick=closeTeddyPopup()>Close</button><br />";
+            document.getElementById("attempts").innerHTML = c--;
+            if (c < 0) {
+                document.getElementById("question01").innerHTML = "";
+                document.getElementById("msg01").innerHTML = "Sorry. This puppy is actually super duper cute!";
+                document.getElementById("n001").innerHTML = "";
+            }
+            }
+            // function nxt1() {
+            // document.getElementById("question01").innerHTML = "2. You read from a recipe while cooking" + "<br /><br /><br />" + "<button onclick=ans004() id=q4>Selective</button><br />" + "<button onclick=ans004() id=q5>Divided</button><br />" + "<button onclick=ans003() id=q6>Alternating</button><br />" + "<button onclick=ans004() id=q6>Sustained</button><br />";
+            // document.getElementById("n001").innerHTML = "";
+            // document.getElementById("q001").innerHTML = d++;
+            //
+            // }
+            // function ans003() {
+            //     document.getElementById("score001").innerHTML = b++;
+            //     document.getElementById("question01").innerHTML = "Correct";
+            //     document.getElementById("starter01").innerHTML = "";
+            //     document.getElementById("n001").innerHTML = "<button onclick=nxt2()>Next</button><br />";
+            // }
+            // function ans004() {
+            // document.getElementById("question01").innerHTML = "Incorrect";
+            // document.getElementById("starter01").innerHTML = "";
+            // document.getElementById("n001").innerHTML = "<button onclick=nxt2()>Next</button><br />";
+            // document.getElementById("attempts").innerHTML = c--;
+            // if (c < 0) {
+            //     document.getElementById("question01").innerHTML = "";
+            //     document.getElementById("msg01").innerHTML = "Sorry. You lost!";
+            //     document.getElementById("n001").innerHTML = "";
+            // }
+            // }
+            function nxt2() {
+            document.getElementById("question01").innerHTML = "";
+            document.getElementById("msg01").innerHTML = "End of Quiz.";
+            document.getElementById("n001").innerHTML = "";
+            }
+            </script>
+     <!-- </div> -->
     </div>
 </div>
 <div id="MarkyMarkPopup">
@@ -145,6 +276,8 @@
 <img id="SkyscraperStory6" src="images/Skyscraper.png">
 <img id="SkyscraperStory8" src="images/Skyscraper.png">
 <img id="SkyscraperStory10" src="images/Skyscraper.png">
+<img id="BannerAdBottom" src="images/SmallBanner1.png">
+
 
 <!-- top picks -->
 <img id="Rectangle" src="images/GreyRectangle.png">
@@ -252,7 +385,7 @@
   <img id="BlackLineRelatedBottom3" src="images/BlackLine.png">
 
 <!-- Story 4: Attention Quiz -->
-<img id="Story4" src="images/QuizTitle.png" onclick="AttnQuizPopup()">
+<img id="Story4" src="images/QuizTitle.png" onclick="AttnQuizPopup2()">
 
 <!-- Story 5: CGI Models -->
 <img id="Story5" src="images/InstaRobotSintony.png" onclick="ScrollStory5 (true);">
@@ -406,27 +539,27 @@
       <br><br>Trying to stop wasting time online without any tools is like going to a nightclub when you’re trying to get sober. The Internet is designed to entice us, so there’s no wonder we keep falling for its tricks.
       <br><br>If you’re trying to be more conscious of your attention spent online, these 6 tools will help you resist technological temptation and take back your time:
       <br><br>
-      <br><br> <b>1. Be more aware with TimeStats</b>
-      [Outline.png]
+      <br><br> <b>1. Be more aware with Timestats</b>
+      <br><br><img id="Timestats" src="images/Timestats.jpg">
       <br><br>This first step to getting over any addiction is simply admitting you have a problem. Timestats will help you prove it. The Chrome extension outputs a daily graph that show the proportion of your time you’ve spent on social media.
       <br><br>
       <br><br><b>2. Take those stats on the go with Moment</b>
-      [Outline.png]
+      <br><br><img id="Moment" src="images/Moment.jpg">
       <br><br>Moment is an iOS app that shows how much time you’ve spent on your phone. Clean, with well-timed notifications. It will also tell you how many times you’ve picked up your phone, and what apps you use most.
       <br><br>
       <br><br><b>3. Waste less time on Facebook with News Feed Eradicator</b>
-      [Outline.png]
+      <br><br><img id="NewsFeedEradicator" src="images/NewsFeed.png">
       <br><br>Simply put, THIS IS AWESOME. It allows you to have the full functionality of Facebook, except that it hides your news feed and replaces it with a quote.
       <br><br>
       <br><br><b>4. Set small goals with HabitLab</b>
-      [HabitLab.png]
+      <br><br><img id="HabitLab" src="images/HabitLab.png">
       <br><br>HabitLab nudges you to be more intentional with your time spent online. Everytime you visit a social media site, it will alert you of how much time you’ve spent on it. Multiple options allow you to set your own goals and create nudges that facilitate them — like a simple reminder before watching a YouTube video.
       <br><br>
       <br><br><b>5. Read in peace with Outline</b>
-      [Outline.png]
+      <br><br><img id="Outline" src="images/Outline.png">
       <br><br>Outline is a website and Chrome extension that removes “clutter” — side bars, ads, etc. — from webpages to allow for more focused online reading.
       <br><br><br><br><b>6. See who’s tracking you with Ghostery</b>
-      [Ghostery.png]
+      <br><br><img id="Ghostery" src="images/Ghostery.png">
       <br><br>Ghostery keeps tabs on how many trackers are running on sites you visit — and blocks them.</p>
         <img id="BlackLineRelatedTop11" src="images/BlackLine.png">
         <sub id="RelatedArticles11"><b>RELATED LINKS</b></sub>
@@ -437,6 +570,15 @@
         <img id="RelatedTopRight11" src="images/RelatedArticle10Sintony.png" onclick= "ScrollStory10 (true);">
         <img id="RelatedBottomRight11" src="images/RelatedArticle9Sintony.png" onclick= "ScrollStory9 (true);">
         <img id="BlackLineRelatedBottom11" src="images/BlackLine.png">
+    <img id="BlackLineRelatedTop11" src="images/BlackLine.png">
+    <sub id="RelatedArticles11"><b>RELATED LINKS</b></sub>
+    <!-- <img id="RelatedTopLeft11" src="images/RelatedArticle5Sintony.png" onclick= "ScrollStory5 (true);"> -->
+    <!-- <img id="RelatedBottomLeft101" src="images/RelatedArticle6Sintony.png" onclick= "ScrollStory6 (true);">
+    <img id="RelatedTopMiddle11" src="images/RelatedArticle8Sintony.png" onclick="ScrollStory8 (true);">
+    <img id="RelatedBottomMiddle11" src="images/RelatedArticle2Sintony.png" onclick= "ScrollStory2 (true);">
+    <img id="RelatedTopRight11" src="images/RelatedArticle3Sintony.png" onclick= "ScrollStory3 (true);">
+    <img id="RelatedBottomRight11" src="images/RelatedArticle10Sintony.png" onclick= "ScrollStory10 (true);">
+    <img id="BlackLineRelatedBottom11" src="images/BlackLine.png"> -->
 
 <!-- Story 13: Big 5 Personality Quiz -->
 <!-- <img id="Story13" src="images/Big5.png"> -->
@@ -447,14 +589,14 @@
 <img id="BlackLineSponsored" src="images/BlackLine.png">
 
 <!-- Sponsored 1: Jess -->
-<img id="Sponsored1" src="images/JessAd.png" onclick="window.scrollBy(0,3000)">
+<img id="Sponsored1" src="images/Sponsored1.png" onclick="window.scrollBy(0,3000)">
   <img id="JessGIF" src="GIFs/JessGIF.gif" onclick="window.scrollBy(0,3000)">
 
 <!-- Sponsored 2: Rikke -->
-<img id="Sponsored2" src="images/RikkeAd.png">
+<img id="Sponsored2" src="images/Sponsored2.png">
 
 <!-- Sponsored 3: Julie -->
-<img id="Sponsored3" src="images/JulieAd.png">
+<img id="Sponsored3" src="images/Sponsored3.png">
   <img id="JulieGIF" src="GIFs/JulieGIF.gif">
 
 <!-- Dog -->
@@ -464,7 +606,8 @@
 
 
 <!--Footer-->
-<img id="footer" src="images/footer-placeholder.png">
+<!-- <img id="footer" src="images/footer-placeholder.png"> -->
+<sub id="footer">Advertise | Privacy Policy | Terms | Contact | About Us | Site Map | Dopamine, Inc. Division of Harvest Media, Inc.<br><br><br>.</sub>
 
 <!-- Timer -->
 <label id="minutes">00</label><label id="seconds">00</label>

@@ -86,7 +86,7 @@ function closeRandomPopup2() {
 function timedAdPopup1() {
   setTimeout(function() {
     document.getElementById("AdPopup1").style.display = "flex";
-  }, 20000);
+  }, 30000);
 }
 timedAdPopup1();
 function closeAdPopup1() {
@@ -117,6 +117,13 @@ function AttnQuizPopup() {
 }
 function closeAttnQuizPopup() {
   document.getElementById("AttnQuizPopup").style.display = "none";
+}
+
+function AttnQuizPopup2() {
+  document.getElementById("AttnQuizPopup2").style.display = "block";
+}
+function closeAttnQuizPopup2() {
+  document.getElementById("AttnQuizPopup2").style.display = "none";
 }
 
 function TeddyPopup() {
