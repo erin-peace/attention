@@ -405,6 +405,13 @@ input {
   width: 170%;
   z-index:30;
 }
+#RightHandGIF {
+  right: -10vw;
+  position: fixed;
+  top: -28.5vh;
+  width: 119%;
+  z-index: 31;
+}
 #notification-iPhones {
   z-index: 30;
   top: 15.6vw;
