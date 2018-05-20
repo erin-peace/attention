@@ -137,7 +137,7 @@ void printReceipt() {
 
   printer.justify('C');
   printer.setSize('S');
-  printer.println(F("100% of the proceeds from this\npayment will be resold to\nyadvertisers and media placements\ntcompanies for a large profit\n."));
+  printer.println(F("100% of the proceeds from this\npayment will be resold to\nadvertisers and media placement\ncompanies in millionth-of-a-second algorithmic auctions."));
 
   printer.println(F("Not happy with your purchase?\nLet us know why:."));
 
