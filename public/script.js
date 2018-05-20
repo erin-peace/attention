@@ -76,7 +76,7 @@ function closePopupFour() {
 function timedRandomPopup2() {
   setTimeout(function() {
     document.getElementById("RandomPopup2").style.display = "flex";
-  }, 1000);
+  }, 240000);
 }
 timedRandomPopup2();
 function closeRandomPopup2() {
@@ -86,7 +86,7 @@ function closeRandomPopup2() {
 function timedAdPopup1() {
   setTimeout(function() {
     document.getElementById("AdPopup1").style.display = "flex";
-  }, 30000);
+  }, 90000);
 }
 timedAdPopup1();
 function closeAdPopup1() {
@@ -96,7 +96,7 @@ function closeAdPopup1() {
 function timedAdPopup2() {
   setTimeout(function() {
     document.getElementById("AdPopup2").style.display = "flex";
-  }, 30000);
+  }, 90000);
 }
 timedAdPopup2();
 function closeAdPopup2() {
@@ -138,6 +138,27 @@ function MarkyMarkPopup() {
 }
 function closeMarkyMarkPopup() {
   document.getElementById("MarkyMarkPopup").style.display = "none";
+}
+
+function JessPopup() {
+  document.getElementById("JessPopup").style.display = "block";
+}
+function closeJessPopup() {
+  document.getElementById("JessPopup").style.display = "none";
+}
+
+function RikkePopup() {
+  document.getElementById("RikkePopup").style.display = "block";
+}
+function closeRikkePopup() {
+  document.getElementById("RikkePopup").style.display = "none";
+}
+
+function JuliePopup() {
+  document.getElementById("JuliePopup").style.display = "block";
+}
+function closeJuliePopup() {
+  document.getElementById("JuliePopup").style.display = "none";
 }
 
 

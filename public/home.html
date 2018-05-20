@@ -30,41 +30,11 @@
     <div id="MessagePopupStyle">
       <sub><b>Messages (1)</b></sub>
       <button type="button" name="button" onclick="closeMessagePopup()">X</button>
-      <p><font size="20px" color="blue">•</font><b>&nbsp;&nbsp;Welcome!</b></p>
-      <p>Thanks for spending your attention here. Feel free to shop around! Just make sure to check out when you've finished ;)</p>
+      <p><font id="BlueDot" size="20px" color="blue">•</font><b>&nbsp;&nbsp;Welcome!</b></p>
+      <p>Thanks for spending your attention here. Feel free to shop around! Just make sure to check out when you've finished.</p>
     </div>
   </div>
 <div id="blanket" style="display:none;"></div>
-<div id="AttnQuizPopup">
-    <div id="AttnQuizPopupStyle">
-      <h3 align="center">Quiz: Can You Guess Which Type Of Attention<br>You Need In Each Of These Situations?</h3>
-      <form id="quiz" name="How Well Do You Know Your Attention?">
-          <p>1. You're at a loud party but you can easily have a conversation with the person next to you</p>
-          <p>2. You read from a recipe while cooking</p>
-            <input id="mc" type="radio" name="question2" value="Selective">&nbsp;Selective<br>
-            <input id="mc" type="radio" name="question2" value="Alternating">&nbsp;Alternating<br>
-            <input id="mc" type="radio" name="question2" value="Divided">&nbsp;Divided<br>
-            <input id="mc" type="radio" name="question2" value="Sustained">&nbsp;Sustained<br>
-          <p>3. You listen to a lecture for a full two hours</p>
-            <input id="mc" type="radio" name="question3" value="Selective">&nbsp;Selective<br>
-            <input id="mc" type="radio" name="question3" value="Alternating">&nbsp;Alternating<br>
-            <input id="mc" type="radio" name="question3" value="Divided">&nbsp;Divided<br>
-            <input id="mc" type="radio" name="question3" value="Sustained">&nbsp;Sustained<br>
-          <p>4. You check an important email while listening in a meeting</p>
-            <input id="mc" type="radio" name="question4" value="Selective">&nbsp;Selective<br>
-            <input id="mc" type="radio" name="question4" value="Alternating">&nbsp;Alternating<br>
-            <input id="mc" type="radio" name="question4" value="Divided">&nbsp;Divided<br>
-            <input id="mc" type="radio" name="question4" value="Sustained">&nbsp;Sustained<br>
-          <input id="quizdone" type="button" value="I'm Finished!" onclick="check();">
-      </form>
-      <div id="after_submit">
-          <p id="number_correct"></p>
-          <p id="message"></p>
-          <img id="picture">
-      </div>
-      <button type="button" name="button" onclick="closeAttnQuizPopup()">Close</button>
-    </div>
-  </div>
   <!-- ocean popup -->
 <!-- <div id="RandomPopup1">
     <div id="RandomPopup1Style">
@@ -151,7 +121,6 @@
         }
         </script>
  </div> -->
-
 <div id="RandomPopup2">
     <div id="RandomPopup2Style">
       <!-- iPhone Game -->
@@ -257,8 +226,19 @@
       <button type="button" name="button" onclick="closeMarkyMarkPopup()">Close</button>
     <!-- </div> -->
 </div>
+<div id="JessPopup">
+  <p align="center"><small>&nbsp;Check out Jessica Marston's<br>project, <i>Loughborough Junction</i></small></p>
+        <button type="button" name="button" onclick="closeJessPopup()">X</button>
+</div>
+<div id="RikkePopup">
+  <p align="center"><small>&nbsp;Check out Rikke Linneberg's<br>project,<i>Banned Words</i></small></p>
+        <button type="button" name="button" onclick="closeRikkePopup()">X</button>
+</div>
+<div id="JuliePopup">
+  <p align="center"><small>&nbsp;Check out Julie Sander's<br>project, <i>Hard Conversations</i></small></p>
+        <button type="button" name="button" onclick="closeJuliePopup()">X</button>
+</div>
 
-<!-- Quizzes -->
 
 
 <!-- Nav bar -->
@@ -266,7 +246,7 @@
 <div id="navbar"><a href="#home"><h2>DOPAMINE</h2></a></div>
 <img id="MessageIcon" src="images/MessageIcon.png">
 <img id=notification-pulse src="GIFs/transparent.gif" onclick="MessagePopup()">
-<h6 id="checkoutclick" onclick="window.location.href = '/print?attention=' + totalSeconds">checkout</h6>
+<h6 id="checkoutclick" onclick="window.location.href = '/print?attention=' + totalSeconds">CHECKOUT</h6>
 
 <!-- Ads -->
 <img id="BannerAd" src="images/SmallBanner1.png">
@@ -278,6 +258,8 @@
 <img id="SkyscraperStory6" src="images/Skyscraper.png">
 <img id="SkyscraperStory8" src="images/Skyscraper.png">
 <img id="SkyscraperStory10" src="images/Skyscraper.png">
+<img id="SkyscraperStory11" src="images/Skyscraper.png">
+<img id="SkyscraperStory11B" src="images/Skyscraper.png">
 <img id="BannerAdBottom" src="images/SmallBanner1.png">
 
 
@@ -313,16 +295,16 @@
   <sub id="NoRadioAdsSub">“Advertising by Radio Cannot Be Done; It Would Ruin the Radio Business, for Nobody Would Stand for It. <br>Mr. McQuiston in <a href="http://earlyradiohistory.us/1922ads.htm">this Article</a>, Explains Why.” <i>Radio News</i>, August, 1922, pages 232, 332-334.</sub>
   <p id="BodyCopy2B">
     <br><br>While McQuiston’s ethics were strong, his prediction was wrong. By 1947, Nielsen radio ratings had determined a way to gather a seeming trove of data on listeners’ habits and preferences, laying the foundations for an emerging industry: radio advertising.
-    <br><br>With the ratings, advertisers were able to specifically target groups of people based on their content-consumption habits (sound familiar?). Content producers were making a fortune, and soon altered their formats to better accommodate their new masters. Amos ‘n’ Andy, a popular radio sitcom, altered its weekly single-sponsor format to become a 30-minute daily program dotted with multiple advertisements throughout. The show became full of even more cliffhangers, gripping plot questions left dangling until after the commercial break.
-    <br><br>Fast forward to the 1950s and we see how television employed similar techniques. Game shows like The $64,000 Question (and later, reality shows like The Real World) used pre-break cliffhangers to buy the same rapt consumer attention at a discount in order to resell it to desperate advertisers for a premium.
+    <br><br>With the ratings, advertisers were able to specifically target groups of people based on their content-consumption habits (sound familiar?). Content producers were making a fortune, and soon altered their formats to better accommodate their new masters. <i>Amos ‘n’ Andy</i>, a popular radio sitcom, altered its weekly single-sponsor format to become a 30-minute daily program dotted with multiple advertisements throughout. The show became full of even more cliffhangers, gripping plot questions left dangling until after the commercial break.
+    <br><br>Fast forward to the 1950s and we see how television employed similar techniques. Game shows like The <i>$64,000 Question</i> (and later, reality shows like <i>The Real World</i>) used pre-break cliffhangers to buy the same rapt consumer attention at a discount in order to resell it to desperate advertisers for a premium.
     <br><br>An extra tactic of these shows, too, was their ability to turn any regular Joe into a short-term celebrity. Paying its actors in attention was an extremely effective cost-cutting measure for the show, and it had the added bonus of inspiring aspirations of similar fame in its viewers’ minds.
-    <br><br>This appeal to ego would find its footing with the rise in popularity of AOL email in the early 1990s. People were desperate to sit through their dial tones to receive the dopamine-inducing “You’ve Got Mail!” — and by the late 1990s, those millions of expectant eyes on screen were purchased in bulk by admen.
-    <br><br>For it was the same game we’ve been playing since Benjamin Day’s <i>New York Daily Sun</i> waged a bet by bringing previously elite newspapers to the pedestrian level. Drive circulation with unmissable, salacious (and sometimes fake) content, and offset production costs by reselling readers’ attention to advertisers.</p>
+    <br><br>By the early 1990s, Americal OnLine had learned how to capitalise on that appeal to ego with email. People were desperate to sit through their dial tones to receive the dopamine-inducing “You’ve Got Mail!” — and by the late 1990s, those millions of expectant eyes on screen were purchased in bulk by admen.
+    <br><br>This race for our attention wasn't new. It was the same game we’d been playing since Benjamin Day’s <i>New York Daily Sun</i> waged a bet by bringing previously elite newspapers to the pedestrian level. Drive circulation with unmissable, salacious (and sometimes fake) content, and offset production costs by reselling readers’ attention to advertisers.</p>
   <img id="MoonHoax" src="images/MoonHoax.jpg">
   <sub id="MoonHoaxSub">Lithograph of the moon as described by journalist Richard Adams Locke in a series of <i>New York Daily Sun</i> articles that ran beginning August 1835. The features claimed to be reporting on evidence from famous contemporary astronomer Sir John Herschel. This fake news drove circulation statistics to record levels, confirming Sun editor Benjamin Day’s business proposition that content should be little more than a conduit for advertising. Source: Wikimedia Commons.</sub>
   <p id="BodyCopy2C">
-    <br><br>And it’s the same game we’re playing now. Modern media moguls have coupled the allure of salacious content with the personalisation of email to bring us our most addicting advertising vehicle yet: social media.
-    <br><br>With psychologically grounded techniques like infinite scrolling and personalised, intermittent variable rewards (notifications), we are induced to continue staring at ours screens and nonchalantly sharing information about ourselves that is fed through a maze of ad placement middlemen (and middlebots) to make a lot of money for a lot of other people.
+    <br><br>And it’s the same game we’re playing now. Modern tech companies have coupled the allure of salacious content with the personalisation of email to bring us our most addicting advertising vehicle yet: social media.
+    <br><br>With psychologically grounded techniques like infinite scrolling and personalised, intermittent variable rewards (notifications), we are induced to keep staring and sharing, feeding a maze of ad placement middlemen (and middlebots), making a lot of money for a lot of other people.
     <br><br>The question is: is it the same game we will be playing in the future? Is there a future for media that serves the public, or will our precious new tech soon become overrun? </p>
   <img id="NoAlexaAds" src="images/NoAlexaAds.png">
   <sub id="NoAlexaAdsSub">“Where attention is paid, the attention merchant lurks patiently to reap his due.”<br> – Tim Wu, <i>The Attention Merchants</i>. Image by Erin Meisenzahl-Peace.</sub>
@@ -343,12 +325,12 @@
   <img id="BlackLine3" src="images/BlackLine.png">
   <sub id="DateTime3">7:45 am | Today</sub>
   <h2 id="Title3">WHAT IS CONFIRMSHAMING,<br>AND ARE YOU A VICTIM?</h2>
-  <sub id="Subtitle3"><big>A (very) brief history of attention</big></sub>
+  <sub id="Subtitle3"><big>You've probably fallen for one<br>of these UX "dark patterns."</big></sub>
   <img id="SquareAd3" src="images/SquareOne.png">
   <sub id="AuthorTime3">BY <b>ERIN PEACE</b>&nbsp;&nbsp;&nbsp;&nbsp;3 MINUTE READ</sub>
   <p id="BodyCopy3A">
     <br><br>It’s a safe bet that every internet user has at some point encountered – and fallen prey to – the dark art of online advertising.
-    <br><br>There are the classic players who promote their product with a flashy banner ad or annoying pop-up, but these traditionalists are no match for the truly sinister.
+    <br><br>There are the classic players who promote their product with a flashy banner ad or annoying pop-up, but those traditionalists are no match for the truly sinister.
     <br><br>The advertisers trafficking in “dark patterns” use visual cues to confuse users into repeatedly reading their message:</p>
     <img id="Dark1" src="images/Dark1.png">
   <p id="BodyCopy3B">
@@ -372,7 +354,7 @@
     <img id="Dark9" src="images/Dark9.png">
   <p id="BodyCopy3G">
 
-    <br><br>These ads may be ugly, but they’re not badly designed. In fact, they’re proof of highly effective problem-solving on the part of the designers. That is, if their problem is that not enough people are clicking on the client’s ads.
+    <br><br>These ads may be ugly, but they’re not badly designed. In fact, they’re proof of highly effective problem-solving on the part of the designers — if their problem is that not enough people are clicking on the client’s ads.
     <br><br>And unfortunately, click-through rates matter. But Harry Brignull, founder of the Dark Patterns “Hall of Shame” (where the photos above were sourced from), says the first step to combating them is simply to complain. Because the best way to eradicate them is to name them and shame them.
     <br><br>Oh, and stop falling for them.</p>
   <!-- <img id="Article3End" src="images/ArticleEndPlaceholder2.png"> -->
@@ -387,7 +369,7 @@
   <img id="BlackLineRelatedBottom3" src="images/BlackLine.png">
 
 <!-- Story 4: Attention Quiz -->
-<img id="Story4" src="images/QuizTitle.png" onclick="AttnQuizPopup2()">
+<img id="Story4" src="images/CSM.png" onclick="ScrollStory6 (true);">
 
 <!-- Story 5: CGI Models -->
 <img id="Story5" src="images/InstaRobotSintony.png" onclick="ScrollStory5 (true);">
@@ -404,9 +386,9 @@
     <br><br>But for those who had doubts about her too-perfect skin, their suspicions were confirmed in a recent text post:</p>
   <img id="RobotConfession" src="images/RobotConfession.png">
   <p id="BodyCopy5B">
-    <br><br>But not being human doesn’t prohibit Lil Miquela from accepting donations to her favourite charity, blackgirlscode, and it doesn’t stop her from doing interviews and taking on modelling gigs with <i>Novembre</i>, <i>Interview</i> and <i>V Magazine</i>. She gets free stuff from her brands, and definitely makes money through her releases on Spotify and iTunes.
+    <br><br>Not being human, however, doesn’t prohibit Lil Miquela from accepting donations to her favourite charity (blackgirlscode), and it doesn’t stop her from doing interviews and taking on modelling gigs with <i>Novembre</i>, <i>Interview</i> and <i>V Magazine</i>. She gets free stuff from her brands, and she definitely makes money through her releases on Spotify and iTunes.
     <br><br>How many influential Instagram robots are there out there in the world? We at least know of two others — Ronnie Blawko, a <i>very cool</i> male robot, and Bermuda, a female, pro-Trump climate change denier who hacked Lil Miquela’s account in May and pushed her to out herself as non-human.
-    <br><br>The best theories behind this drama trace all three of these techno-people back to a company called Cain Intelligence, who claim to be "leaders in machine learning and artificial intelligence.” Maybe it’s just a graphic designer hungry for attention, mused Beatrice Hazlehurst in an article for <i>Paper Magazine</i>. Or maybe it’s the work of marketing geniuses who are “constructing a spectacular scam to bring attention to both the pages of Lil Miquela and Bermuda, all the while analyzing how we react online to racially ambiguous, beautiful, stylish, 'Black Lives Matter' supporter versus a pro-gun, Tomi Lahren-loving, Aryan Republican.”</p>
+    <br><br>The best theories behind this drama trace all three of these techno-people back to a company called Cain Intelligence, which claims to be made up of "leaders in machine learning and artificial intelligence.” Maybe it’s just a graphic designer hungry for attention, mused Beatrice Hazlehurst in an article for <i>Paper Magazine</i>. Or maybe it’s the work of marketing geniuses who are “constructing a spectacular scam to bring attention to both the pages of Lil Miquela and Bermuda, all the while analyzing how we react online to racially ambiguous, beautiful, stylish, 'Black Lives Matter' supporter versus a pro-gun, Tomi Lahren-loving, Aryan Republican.”</p>
   <!-- <img id="Article5End" src="images/ArticleEndPlaceholder2.png"> -->
   <img id="BlackLineRelatedTop5" src="images/BlackLine.png">
   <sub id="RelatedArticles5"><b>RELATED LINKS</b></sub>
@@ -419,7 +401,7 @@
   <img id="BlackLineRelatedBottom5" src="images/BlackLine.png">
 
 <!-- Story 6: CSM -->
-<img id="Story6" src="images/CSM.png" onclick= "ScrollStory6 (true);">
+<img id="Story6" src="images/SquareOne.png">
   <p id="HiddenTop6">.</p>
   <img id="BlackLine6" src="images/BlackLine.png">
   <sub id="DateTime6">2:45 am | Today</sub>
@@ -467,14 +449,14 @@
   <p id="HiddenTop8">.</p>
   <img id="BlackLine8" src="images/BlackLine.png">
   <sub id="DateTime8">11:59 pm | Yesterday</sub>
-  <h2 id="Title8">THREE REASONS YOU<br>CAN'T STOP SCROLLING<br></h2>
-  <sub id="Subtitle8"><big>Subtitle here.</big></sub>
+  <h2 id="Title8">ARE YOU ADDICTED TO<br>YOUR SMARTPHONE?<br>HERE'S WHY</h2>
+  <sub id="Subtitle8"><big>It's not completely your fault.</big></sub>
   <img id="SquareAd8" src="images/SquareOne.png">
   <sub id="AuthorTime8">BY <b>ERIN PEACE</b>&nbsp;&nbsp;&nbsp;&nbsp;6 MINUTE READ</sub>
   <p id="BodyCopy8A">
     <br><br>Ever told yourself you’d get up and start your day at 7am, only to find you’re still in bed, scrolling through social media, at 8:30? You’re not alone, and it’s not (completely) your fault.
     <br><br>In <i>The Principles of Psychology</i>, written far before the time of the iPhone, psychologist Williams James empowers us with agency over our attention. "Without selective interest, experience is an utter chaos. Interest alone gives accent and emphasis, light and shade, background and foreground intelligible perspective," he wrote. "My experience is what I agree to attend to."
-    <br><br>In today’s attention economy, this agreement does not feel mutual. Pervasive, persuasive techniques like autoplays and time-varied notifications play on our psychological vulnerabilities. "RELATED LINKS" at the bottom of online articles, links embedded within articles, and popups that are triggered by a mouse moving toward the "exit" button are all examples of design choices that play on human biases in order to capture additional moments of attention.
+    <br><br>In today’s attention economy, this agreement does not feel mutual. Pervasive, persuasive techniques like autoplays and time-varied notifications play on our psychological vulnerabilities. Along with "RELATED LINKS" at the bottom of online articles, links embedded within articles, and popups that are triggered by a mouse moving toward the "exit" button, these three design choices play on human biases in order to capture additional moments of attention:
     <br><br><b><big>Infinite scrolling</big></b>
     <br><br>This technique takes clever advantage of a psychological phenomenon demonstrated by Cornell professor Brian Wansink in his 2005 "Bottomless Bowl" study. In the study, researchers found that people consumed 75 percent more soup when it was automatically refilled, without reporting any greater feelings of satisfaction. This type of psychologically grounded manipulation is utilised by most popular social media applications.
     <br><br><b><big>Notifications</big></b>
@@ -504,7 +486,7 @@
   <img id="BlackLine10" src="images/BlackLine.png">
   <sub id="DateTime10">9:45 pm | Yesterday</sub>
   <h2 id="Title10">CAMBRIDGE ANALYTICA IS<br>ACTUALLY TOTALLY RIGHT<br>ABOUT ONE MAJOR THING</h2>
-  <sub id="Subtitle10"><big>And it's not __________.</big></sub>
+  <sub id="Subtitle10"><big>Their press release tells all.</big></sub>
   <img id="SquareAd10" src="images/SquareOne.png">
   <sub id="AuthorTime10">BY <b>ERIN PEACE</b>&nbsp;&nbsp;&nbsp;&nbsp;7 MINUTE READ</sub>
   <p id="BodyCopy10A">
@@ -512,7 +494,7 @@
     <br><br>“Cambridge Analytica has been the subject of numerous unfounded accusations,” the press release stated. It claimed the data-driven marketing company had been “vilified for activities that are not only legal, but also widely accepted as a standard component of online advertising in both the political and commercial arenas.”
     <br><br>While the thrust of the accusation against them — that they were using illegally obtained personal data to influence voters, was very well founded, the statement makes a point in calling out the media companies that vilified them for engaging in the exact same kind of game that Cambridge Analytica was playing: using data to determine users’ drivers and desires in order to market to them.
     <br><br>“Any of these media outlets could have been talking about the company for which they worked,” said Julian Malins, a member of the Queen’s Council who co-authored an investigative report with Linda Hudson, which denied most accusations and claimed SCL no longer had access to the data illegally obtained by Cambridge University researcher Alexsandr Kogan.
-    <br><br>“Others say companies have little moral standing to criticise Facebook’s practices, when they have themselves relied on the social network to acquire customers, using the same ad-targeting tools that rely on personal data that have stirred up so much controversy in the context of politics,” writes Nick Wingfield for The New York Times (which also runs targeted ads, even for paying customers).
+    <br><br>“Others say companies have little moral standing to criticise Facebook’s practices, when they have themselves relied on the social network to acquire customers, using the same ad-targeting tools that rely on personal data that have stirred up so much controversy in the context of politics,” writes Nick Wingfield for <i>The New York Times</i> (which also runs targeted ads, even for paying customers).
     <br><br>The more we share, the more we can be understood and profiled as consumers. At first, this targeted, “optimised” advertising was generally welcomed. When it was being used to sell us shoes, we said, oh that’s just strategic. It’s a little annoying, maybe even a little creepy, but it’s not fundamentally harmful. After all, I have the free will to choose whether to purchase those shoes.
     <br><br>It seems we only sounded the alarm bells when this highly targeted advertising was being used for something political — something political that many people didn’t agree with. But what would have happened if Christopher Wylie was not the pink-haired, pro-LGBT liberal that he is? Would a data breach like that of Aleksandr Kogan’s ever be known outside of Steve Bannon’s inner circles?
     <br><br>When we wait for whistleblowers, our approach is necessarily reactive. We want to regulate Facebook, fine it, watch Zuckerberg squirm in a starchy suit while testifying. But this kind of gratifying revenge, those images of Zuckerberg’s bruised face are, ironically, clickbait. Incendiary imagery intended to drive eyes to websites that are supported by advertising.
@@ -534,7 +516,7 @@
     <img id="BlackLine11" src="images/BlackLine.png">
     <sub id="DateTime11">2:45 pm | Yesterday</sub>
     <h2 id="Title11">THESE SIX TOOLS WILL<br>SAVE YOUR (VIRTUAL) LIFE</h2>
-    <sub id="Subtitle11"><big>And it's not __________.</big></sub>
+    <sub id="Subtitle11"><big>Take back your time online.</big></sub>
     <img id="SquareAd11" src="images/SquareOne.png">
     <sub id="AuthorTime11">BY <b>ERIN PEACE</b>&nbsp;&nbsp;&nbsp;&nbsp;3 MINUTE READ</sub>
     <p id="BodyCopy11A">
@@ -564,14 +546,14 @@
       <br><br><img id="Ghostery" src="images/Ghostery.png">
       <br><br>Ghostery keeps tabs on how many trackers are running on sites you visit — and blocks them.</p>
         <img id="BlackLineRelatedTop11" src="images/BlackLine.png">
-        <sub id="RelatedArticles11"><b>RELATED LINKS</b></sub>
+        <!-- <sub id="RelatedArticles11"><b>RELATED LINKS</b></sub>
         <img id="RelatedTopLeft11" src="images/RelatedArticle3Sintony.png" onclick= "ScrollStory3 (true);">
         <img id="RelatedBottomLeft11" src="images/RelatedArticle8Sintony.png" onclick= "ScrollStory8 (true);">
         <img id="RelatedTopMiddle11" src="images/RelatedArticle5Sintony.png" onclick= "ScrollStory5 (true);">
         <img id="RelatedBottomMiddle11" src="images/RelatedArticle6Sintony.png" onclick= "ScrollStory6 (true);">
         <img id="RelatedTopRight11" src="images/RelatedArticle10Sintony.png" onclick= "ScrollStory10 (true);">
         <img id="RelatedBottomRight11" src="images/RelatedArticle9Sintony.png" onclick= "ScrollStory9 (true);">
-        <img id="BlackLineRelatedBottom11" src="images/BlackLine.png">
+        <img id="BlackLineRelatedBottom11" src="images/BlackLine.png"> -->
     <img id="BlackLineRelatedTop11" src="images/BlackLine.png">
     <sub id="RelatedArticles11"><b>RELATED LINKS</b></sub>
     <!-- <img id="RelatedTopLeft11" src="images/RelatedArticle5Sintony.png" onclick= "ScrollStory5 (true);"> -->
@@ -591,15 +573,15 @@
 <img id="BlackLineSponsored" src="images/BlackLine.png">
 
 <!-- Sponsored 1: Jess -->
-<img id="Sponsored1" src="images/Sponsored1.png" onclick="window.scrollBy(0,3000)">
-  <img id="JessGIF" src="GIFs/JessGIF.gif" onclick="window.scrollBy(0,3000)">
+<img id="Sponsored1" src="images/Sponsored1.png" onclick="JessPopup()">
+  <img id="JessGIF" src="GIFs/JessGIF.gif" onclick="JessPopup()">
 
 <!-- Sponsored 2: Rikke -->
-<img id="Sponsored2" src="images/Sponsored2.png">
+<img id="Sponsored2" src="images/Sponsored2.png" onclick="RikkePopup()">
 
 <!-- Sponsored 3: Julie -->
-<img id="Sponsored3" src="images/Sponsored3.png">
-  <img id="JulieGIF" src="GIFs/JulieGIF.gif">
+<img id="Sponsored3" src="images/Sponsored3.png" onclick="JuliePopup()">
+  <img id="JulieGIF" src="GIFs/JulieGIF.gif" onclick ="JuliePopup()">
 
 <!-- Dog -->
 <!-- <img id="PuppyCouch" src="images/PuppyCouch.png"> -->
@@ -612,7 +594,7 @@
 <sub id="footer">Advertise | Privacy Policy | Terms | Contact | About Us | Site Map | Dopamine, Inc. Division of Harvest Media, Inc.<br><br><br>.</sub>
 
 <!-- Timer -->
-<label id="minutes">00</label><label id="seconds">00</label>
+<label id="minutes">00</label><label id="colon">:</label><label id="seconds">00</label>
 
 <!-- back to top -->
 
