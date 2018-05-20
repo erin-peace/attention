@@ -1,3 +1,8 @@
+#checkoutclick {
+  cursor: pointer;
+}
+
+
 /* QUIZ */
 #table_1 {
         background-color: white;
@@ -411,6 +416,13 @@ input {
   top: -28.5vh;
   width: 119%;
   z-index: 31;
+}
+#RightHandGIFYellow {
+  right: -10vw;
+  position: fixed;
+  top: -28.5vh;
+  width: 119%;
+  z-index: 30;
 }
 #notification-iPhones {
   z-index: 30;
