@@ -76,7 +76,7 @@ function closePopupFour() {
 function timedRandomPopup2() {
   setTimeout(function() {
     document.getElementById("RandomPopup2").style.display = "flex";
-  }, 240000);
+  }, 105000);
 }
 timedRandomPopup2();
 function closeRandomPopup2() {
